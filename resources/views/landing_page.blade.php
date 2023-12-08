@@ -2,15 +2,23 @@
 
     <!-- Header -->
     <header id="header" class="header py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32">
-        <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
-            <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
-                <h1 class="h1-large mb-5">Team management mobile application</h1>
-                <p class="p-large mb-8">Start getting things done together with your team based on Pavo's revolutionary team management features</p>
-                <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Download</a>
-                <a class="btn-solid-lg secondary" href="#your-link"><i class="fab fa-google-play"></i>Download</a>
+        <div class="video-background">
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="/video/forest.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8 header-content">
+            <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12 fadeIn">
+                <h1 class="h1-large mb-5 text-white">Team management mobile application</h1>
+                <p class="p-large mb-8 text-gray-200">Start getting things done together with your team based on Pavo's revolutionary team management features</p>
+                {{-- <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Download</a>
+                <a class="btn-solid-lg secondary" href="#your-link"><i class="fab fa-google-play"></i>Download</a> --}}
             </div>
-            <div class="xl:text-right">
-                <img class="inline" src="images/header-smartphone.png" alt="alternative" />
+            <div class="xl:text-right hidden sm:flex  items-center slideInRight">
+                <img
+                    class="inline sm:w-1/3 lg:w-auto drone-float "
+                    src="img/dronewhite.png"
+                    alt="alternative" />
             </div>
         </div> <!-- end of container -->
     </header> <!-- end of header -->
@@ -29,7 +37,6 @@
     <!-- Features -->
     <div id="features" class="cards-1">
         <div class="container px-4 sm:px-8 xl:px-4">
-
             <!-- Card -->
             <div class="card">
                 <div class="card-image">
@@ -483,5 +490,79 @@
         </div> <!-- end of container -->
     </div> <!-- end of basic-5 -->
     <!-- end of conclusion -->
+<style>
+    .video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+.video-background video {
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    filter: brightness(0.4);
+}
+.header-content {
+    z-index: 2;
+}
+/* Add this to your CSS file */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
 
+.drone-float {
+  animation: float 3s ease-in-out infinite;
+}
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInRight {
+  0% {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  visibility: hidden;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  visibility: visible;
+  }
+  }
+  .fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+</style>
 </x-landing-layout>

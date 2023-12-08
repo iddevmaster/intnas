@@ -10,3 +10,9 @@ initTE({ Tooltip });
 // Initialization for ES Users
 import { Select} from "tw-elements";
 initTE({ Select });
+
+
+// TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com
+// Initialization for ES Users
+import {Animate} from "tw-elements";
+initTE({ Animate });

@@ -8,7 +8,7 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- icon  -->
-        <link rel="icon" href="img/logoiddrives.png" />
+        <link rel="icon" href="img/logodronettc.png" />
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -54,7 +54,7 @@
                 <!-- <a class="text-gray-800 font-semibold text-3xl leading-4 no-underline page-scroll" href="index.html">Pavo</a> -->
 
                 <!-- Image Logo -->
-                <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="#">
+                <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="">
                     <img src="/img/logodronettc.png" alt="alternative" class="h-8" />
                 </a>
 
@@ -65,6 +65,24 @@
                 <div class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center" id="navbarsExampleDefault">
                     <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
                         <li>
+                            <a class="nav-link page-scroll" href="/home">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link page-scroll" href="">Features</a>
+                        </li>
+                        <li>
+                            <a class="nav-link page-scroll" href="">Service</a>
+                        </li>
+                        <li>
+                            <a class="nav-link page-scroll" href="">Course</a>
+                        </li>
+                        <li>
+                            <a class="nav-link page-scroll" href="/portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="nav-link page-scroll" href="/contacts">Contacts</a>
+                        </li>
+                        {{-- <li>
                             <a class="nav-link page-scroll active" href="#header">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li>
@@ -88,7 +106,7 @@
                         </li>
                         <li>
                             <a class="nav-link page-scroll" href="#download">Download</a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div> <!-- end of navbar-collapse -->
             </div> <!-- end of container -->
