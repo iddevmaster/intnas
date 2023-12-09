@@ -8,7 +8,7 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- icon  -->
-        <link rel="icon" href="img/logodronettc.png" />
+        <link rel="icon" href="img/dronecamera.png" />
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -28,6 +28,9 @@
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <!-- Swiper CSS -->
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+        {{-- aos animations --}}
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
         <!-- Scripts -->
@@ -64,17 +67,29 @@
 
                 <div class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center" id="navbarsExampleDefault">
                     <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
-                        <li>
+                        {{-- <li>
                             <a class="nav-link page-scroll" href="/home">Home</a>
+                        </li> --}}
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="/home" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                <a class="dropdown-item page-scroll" href="#header">Home</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item page-scroll" href="#features">Features</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item page-scroll" href="#details">Details</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item page-scroll" href="#pricing">Pricing</a>
+                            </div>
                         </li>
                         <li>
-                            <a class="nav-link page-scroll" href="">Features</a>
+                            <a class="nav-link page-scroll" href="">Product</a>
                         </li>
                         <li>
                             <a class="nav-link page-scroll" href="">Service</a>
                         </li>
                         <li>
-                            <a class="nav-link page-scroll" href="">Course</a>
+                            <a class="nav-link page-scroll" href="">Activity</a>
                         </li>
                         <li>
                             <a class="nav-link page-scroll" href="/portfolio">Portfolio</a>
@@ -164,9 +179,9 @@
                     <li class="mb-2"><a href="terms.html">Terms & Conditions</a></li>
                     <li class="mb-2"><a href="privacy.html">Privacy Policy</a></li>
                 </ul>
-                <p class="pb-2 p-small statement">Copyright © <a href="#your-link" class="no-underline">Your name</a></p>
+                <p class="pb-2 p-small statement">Copyright © <a href="#your-link" class="no-underline">Drone TTC</a></p>
 
-                <p class="pb-2 p-small statement">Distributed by :<a href="https://themewagon.com/" class="no-underline">Themewagon</a></p>
+                <p class="pb-2 p-small statement">Distributed by : <a href="https://themewagon.com/" class="no-underline">บริษัท ไอดีไดรฟ์ จำกัด</a></p>
             </div>
 
         <!-- end of container -->
@@ -176,5 +191,11 @@
         {{-- Load Other Dependencies After jQuery --}}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
         {{-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script> --}}
+
+        {{-- aos animations --}}
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>

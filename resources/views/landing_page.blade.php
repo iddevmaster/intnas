@@ -3,18 +3,28 @@
     <!-- Header -->
     <header id="header" class="header py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32">
         <div class="video-background">
-            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="/img/poster.jpg" onload="this.load()">
                 <source src="/video/forest.mp4" type="video/mp4">
             </video>
         </div>
         <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8 header-content">
             <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12 fadeIn">
-                <h1 class="h1-large mb-5 text-white">Team management mobile application</h1>
-                <p class="p-large mb-8 text-gray-200">Start getting things done together with your team based on Pavo's revolutionary team management features</p>
+                <div class="flex justify-center lg:max-w-xl lg:mx-auto">
+                    <img src="/img/logodronettc.png" alt="">
+                </div>
+                {{-- <h1 class="text-center h1-large mb-5 text-white fadeIn" >Drone Technology Training Center</h1> --}}
+                <h1 class="text-center h1-large mb-5 text-white fadeIn" id="typewriter"></h1>
+                {{-- <div class="w-full h-full flex justify-center items-center">
+                    <h1 id="typewriter" class="text-4xl font-bold"></h1>
+                </div> --}}
+                {{-- ศูนย์ฝึกอบรมเทคโนโลยีโดรนสำหรับผู้ที่หลงใหลในการบินและนวัตกรรม, --}}
+                <p class="text-center p-large mb-8 text-gray-200 fadeIn2">
+                    เปิดประตูสู่โลกแห่งทักษะการบินพร้อมทั้งประสบการณ์ทางปฏิบัติและความรู้เฉพาะทางจากผู้เชี่ยวชาญ
+                </p>
                 {{-- <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Download</a>
                 <a class="btn-solid-lg secondary" href="#your-link"><i class="fab fa-google-play"></i>Download</a> --}}
             </div>
-            <div class="xl:text-right hidden sm:flex  items-center slideInRight">
+            <div class="xl:text-right hidden sm:flex justify-center items-center slideInRight">
                 <img
                     class="inline sm:w-1/3 lg:w-auto drone-float "
                     src="img/dronewhite.png"
@@ -28,7 +38,12 @@
     <!-- Introduction -->
     <div class="pt-4 pb-14 text-center">
         <div class="container px-4 sm:px-8 xl:px-4">
-            <p class="mb-4 text-gray-800 text-3xl leading-10 lg:max-w-5xl lg:mx-auto"> Team management mobile apps don’t get better than Pavo. It’s probably the best app in the world for this purpose. Don’t hesitate to give it a try today and you will fall in love with it</p>
+            <p class="mb-4 font-bold text-black text-3xl leading-10 lg:max-w-5xl lg:mx-auto" style="color: var(--second-color)">
+                "เปิดโลกมุมมองใหม่, บินสู่อนาคตกับหลักสูตรการบินโดรนของเรา"
+            </p>
+            <p class="mb-4 text-gray-800 text-xl leading-10 lg:max-w-4xl lg:mx-auto">
+                ที่นี่คุณจะได้เรียนรู้ทักษะที่จำเป็นทั้งหมดเพื่อควบคุมและใช้งานโดรนอย่างมืออาชีพ, พร้อมก้าวสู่อาชีพในโลกของเทคโนโลยีการบินที่ไม่มีขีดจำกัด!
+            </p>
         </div> <!-- end of container -->
     </div>
     <!-- end of introduction -->
@@ -36,6 +51,7 @@
 
     <!-- Features -->
     <div id="features" class="cards-1">
+        <p class="text-4xl mb-12 font-bold text-black">สินค้าและบริการของเรา</p>
         <div class="container px-4 sm:px-8 xl:px-4">
             <!-- Card -->
             <div class="card">
@@ -43,7 +59,7 @@
                     <img src="images/features-icon-1.svg" alt="alternative" />
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Platform Integration</h5>
+                    <h5 class="card-title">ตัวแทนจำหน่ายโดรน</h5>
                     <p class="mb-4">You sales force can use the app on any smartphone platform without compatibility issues</p>
                 </div>
             </div>
@@ -55,7 +71,7 @@
                     <img src="images/features-icon-2.svg" alt="alternative" />
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Easy On Resources</h5>
+                    <h5 class="card-title">หลักสูตรอบรม</h5>
                     <p class="mb-4">Works smoothly even on older generation hardware due to our optimization efforts</p>
                 </div>
             </div>
@@ -67,7 +83,7 @@
                     <img src="images/features-icon-3.svg" alt="alternative" />
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Great Performance</h5>
+                    <h5 class="card-title">ขึ้นทะเบียนโดรน</h5>
                     <p class="mb-4">Optimized code and innovative technology insure no delays and ultra-fast responsiveness</p>
                 </div>
             </div>
@@ -79,7 +95,7 @@
                     <img src="images/features-icon-4.svg" alt="alternative" />
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Multiple Languages</h5>
+                    <h5 class="card-title">ทำประกันภัยโดรน</h5>
                     <p class="mb-4">Choose from one of the 40 languages that come pre-installed and start selling smarter</p>
                 </div>
             </div>
@@ -91,7 +107,7 @@
                     <img src="images/features-icon-5.svg" alt="alternative" />
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Free Updates</h5>
+                    <h5 class="card-title">บริการฉีดพ่น</h5>
                     <p class="mb-4">Don't worry about future costs, pay once and receive all future updates at no extra cost</p>
                 </div>
             </div>
@@ -103,7 +119,7 @@
                     <img src="images/features-icon-6.svg" alt="alternative" />
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Community Support</h5>
+                    <h5 class="card-title">การจัดแสดงสินค้า</h5>
                     <p class="mb-4">Register the app and get acces to knowledge and ideas from the Pavo online community</p>
                 </div>
             </div>
@@ -118,15 +134,32 @@
     <div id="details" class="pt-12 pb-16 lg:pt-16">
         <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
             <div class="lg:col-span-5">
-                <div class="mb-16 lg:mb-0 xl:mt-16">
-                    <h2 class="mb-6">Results driven ground breaking technology</h2>
-                    <p class="mb-4">Based on our team's extensive experience in developing line of business applications and constructive customer feedback we reached a new level of revenue.</p>
-                    <p class="mb-4">We enjoy helping small and medium sized tech businesses take a shot at established Fortune 500 companies</p>
+                <div class="mb-16 lg:mb-0 xl:mt-16"
+                    data-aos="zoom-in"
+                    data-aos-once="true"
+                    data-aos-delay="300"
+                    data-aos-offset="200"
+                    data-aos-duration="400"
+                    data-aos-once="true"
+                    data-aos-mirror="true"
+                    data-aos-easing="ease-in-out"
+                    >
+                        <h2 class="mb-6">โดรนเกษตร</h2>
+                        <p class="mb-4">Based on our team's extensive experience in developing line of business applications and constructive customer feedback we reached a new level of revenue.</p>
+                        <p class="mb-4">We enjoy helping small and medium sized tech businesses take a shot at established Fortune 500 companies</p>
                 </div>
             </div> <!-- end of col -->
-            <div class="lg:col-span-7">
-                <div class="xl:ml-14">
-                    <img class="inline" src="images/details-1.jpg" alt="alternative" />
+            <div class="lg:col-span-7 transition hover:scale-125">
+                <div class="xl:ml-14"
+                    data-aos="fade-left"
+                    {{-- data-aos-offset="200" --}}
+                    {{-- data-aos-delay="50" --}}
+                    data-aos-duration="600"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="true"
+                    >
+                        <img class="inline drone-float" src="img/droneagri.png" alt="alternative" />
                 </div>
             </div> <!-- end of col -->
         </div> <!-- end of container -->
@@ -137,30 +170,45 @@
     <!-- Details 2 -->
     <div class="py-24">
         <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
-            <div class="lg:col-span-7">
-                <div class="mb-12 lg:mb-0 xl:mr-14">
-                    <img class="inline" src="images/details-2.jpg" alt="alternative" />
+            <div class="lg:col-span-7 transition hover:scale-125">
+                <div class="mb-12 lg:mb-0 xl:mr-14"
+                    data-aos="fade-right"
+                    data-aos-duration="600"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="true"
+                    >
+                        <img class="inline drone-float" src="img/dronesurv.png" alt="alternative" />
                 </div>
             </div> <!-- end of col -->
             <div class="lg:col-span-5">
-                <div class="xl:mt-12">
-                    <h2 class="mb-6">Instant results for the marketing department</h2>
-                    <ul class="list mb-7 space-y-2">
-                        <li class="flex">
-                            <i class="fas fa-chevron-right"></i>
-                            <div>Features that will help you and your marketers</div>
-                        </li>
-                        <li class="flex">
-                            <i class="fas fa-chevron-right"></i>
-                            <div>Smooth learning curve due to the knowledge base</div>
-                        </li>
-                        <li class="flex">
-                            <i class="fas fa-chevron-right"></i>
-                            <div>Ready out-of-the-box with minor setup settings</div>
-                        </li>
-                    </ul>
-                    <a class="btn-solid-reg popup-with-move-anim mr-1.5" href="#details-lightbox">Lightbox</a>
-                    <a class="btn-outline-reg" href="article.html">Details</a>
+                <div class="xl:mt-12"
+                    data-aos="zoom-in"
+                    data-aos-once="true"
+                    data-aos-delay="300"
+                    data-aos-offset="200"
+                    data-aos-duration="400"
+                    data-aos-once="true"
+                    data-aos-mirror="true"
+                    data-aos-easing="ease-in-out"
+                    >
+                        <h2 class="mb-6">โดรนสำรวจ</h2>
+                        <ul class="list mb-7 space-y-2">
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>Features that will help you and your marketers</div>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>Smooth learning curve due to the knowledge base</div>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>Ready out-of-the-box with minor setup settings</div>
+                            </li>
+                        </ul>
+                        <a class="btn-solid-reg popup-with-move-anim mr-1.5" href="#details-lightbox">Lightbox</a>
+                        <a class="btn-outline-reg" href="article.html">Details</a>
                 </div>
             </div> <!-- end of col -->
         </div> <!-- end of container -->
@@ -219,16 +267,31 @@
     <div class="pt-16 pb-12">
         <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
             <div class="lg:col-span-5">
-                <div class="mb-16 lg:mb-0 xl:mt-16">
-                    <h2 class="mb-6">Platform integration and life time free updates</h2>
-                    <p class="mb-4">Get a glimpse of what this app can do for your marketing automation and understand why current users are so excited when using Pavo
-                        together with their teams.</p>
-                    <p class="mb-4">We will promptly answer any questions and honor your requests based on the service level agreement</p>
+                <div class="mb-16 lg:mb-0 xl:mt-16"
+                    data-aos="zoom-in"
+                    data-aos-once="true"
+                    data-aos-delay="300"
+                    data-aos-offset="200"
+                    data-aos-duration="400"
+                    data-aos-once="true"
+                    data-aos-mirror="true"
+                    data-aos-easing="ease-in-out"
+                    >
+                        <h2 class="mb-6">โดรนถ่ายภาพ</h2>
+                        <p class="mb-4">Get a glimpse of what this app can do for your marketing automation and understand why current users are so excited when using Pavo
+                            together with their teams.</p>
+                        <p class="mb-4">We will promptly answer any questions and honor your requests based on the service level agreement</p>
                 </div>
             </div> <!-- end of col -->
-            <div class="lg:col-span-7">
-                <div class="ml-14">
-                    <img class="inline" src="images/details-3.jpg" alt="alternative" />
+            <div class="lg:col-span-7 transition hover:scale-125">
+                <div class="ml-14"
+                    data-aos="fade-left"
+                    data-aos-duration="600"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="true"
+                    >
+                        <img class="inline drone-float" src="img/dronecamera.png" alt="alternative" />
                 </div>
             </div> <!-- end of col -->
         </div> <!-- end of container -->
@@ -270,8 +333,30 @@
     <!-- end of statistics -->
 
 
-    <!-- Testimonials -->
+    <!-- Video -->
     <div class="slider-1 py-32 bg-gray">
+        <div class="container px-4 sm:px-8">
+            <h2 class="text-center lg:max-w-xl lg:mx-auto">ฝึกอบรมที่ DRONE TTC</h2>
+            <p class="mb-10 text-center lg:max-w-xl lg:mx-auto">จุดประกายความเป็นมืออาชีพ พัฒนาทักษะการบินโดรนและนำไปใช้ในอาชีพที่หลากหลาย</p>
+
+            <!-- container -->
+            <div class="container">
+                {{-- <video class="w-full shadow-lg" autoplay loop controls>
+                    <source src="/video/banner.mp4" type="video/mp4" />
+                </video> --}}
+                <video playsinline="playsinline" autoplay="autoplay" id="videoElement" loop="loop" preload="auto">
+                    <source src="/video/banner.mp4" type="video/mp4">
+                </video>
+            </div> <!-- end of slider-container -->
+            <!-- end of container -->
+
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of Video -->
+
+
+    <!-- Testimonials -->
+    <div class="slider-1 py-32">
         <div class="container px-4 sm:px-8">
             <h2 class="mb-12 text-center lg:max-w-xl lg:mx-auto">What do users think about Pavo</h2>
 
@@ -372,33 +457,36 @@
     <div id="pricing" class="cards-2">
         <div class="absolute bottom-0 h-40 w-full bg-white"></div>
         <div class="container px-4 pb-px sm:px-8">
-            <h2 class="mb-2.5 text-white lg:max-w-xl lg:mx-auto">Pricing options for all budgets</h2>
-            <p class="mb-16 text-white lg:max-w-3xl lg:mx-auto"> Our pricing plans are setup in such a way that any user can start enjoying Pavo without worrying so much about costs. They are flexible and work for any type of industry </p>
+            <h2 class="mb-2.5 text-white lg:max-w-xl lg:mx-auto">หลักสูตรอบรมเชิงปฏิบัติการ</h2>
+            <p class="mb-16 text-white lg:max-w-3xl lg:mx-auto">
+                หลักสูตรการบินโดรนที่ถูกออกแบบมาอย่างพิถีพิถันเพื่อมอบประสบการณ์ที่คุ้มค่าและการฝึกอบรมที่ครอบคลุมให้กับคุณ
+                ไม่ว่าคุณจะเป็นมือใหม่ที่กำลังเริ่มต้นหรือผู้ที่มีประสบการณ์และต้องการพัฒนาทักษะของตนเอง
+            </p>
 
             <!-- Card-->
             <div class="card">
                 <div class="card-body">
-                    <div class="card-title">STANDARD</div>
-                    <div class="price"><span class="currency">$</span><span class="value">29</span></div>
-                    <div class="frequency">monthly</div>
-                    <p>This basic package covers the marketing needs of small startups</p>
+                    <div class="card-title">โดรนเกษตร</div>
+                    <div class="price"><span class="value">15k</span></div>
+                    <div class="frequency">บาท</div>
+                    <p>หลักสูตรอบรม การสอนนักบินโดรนเพื่อการเกษตรมืออาชีพ</p>
                     <ul class="list mb-7 space-y-2 text-left">
                         <li class="flex">
                             <i class="fas fa-chevron-right"></i>
-                            <div>List building and relations</div>
+                            <div>ระยะเวลาอบรม 19 ชั่วโมง</div>
                         </li>
                         <li class="flex">
                             <i class="fas fa-chevron-right"></i>
-                            <div>Seamless platform integration</div>
+                            <div>ภาคทฤษฎี 8 บทเรียน 5 ชั่วโมง</div>
                         </li>
                         <li class="flex">
                             <i class="fas fa-chevron-right"></i>
-                            <div>Great performance on devices</div>
+                            <div>ภาคปฏิบัติ 7 บทเรียน 14 ชั่วโมง</div>
                         </li>
-                        <li class="flex">
+                        {{-- <li class="flex">
                             <i class="fas fa-chevron-right"></i>
                             <div>Community support and videos</div>
-                        </li>
+                        </li> --}}
                     </ul>
                     <div class="button-wrapper">
                         <a class="btn-solid-reg page-scroll" href="#download">Download</a>
@@ -410,27 +498,27 @@
             <!-- Card-->
             <div class="card">
                 <div class="card-body">
-                    <div class="card-title">ADVANCED</div>
-                    <div class="price"><span class="currency">$</span><span class="value">39</span></div>
-                    <div class="frequency">monthly</div>
-                    <p>This is a more advanced package suited for medium companies</p>
+                    <div class="card-title">โดรนสำรวจ</div>
+                    <div class="price"><span class="value">15k</span></div>
+                    <div class="frequency">บาท</div>
+                    <p>หลักสูตรอบรม การสอนนักบินโดรนเพื่อการสำรวจมืออาชีพ</p>
                     <ul class="list mb-7 space-y-2 text-left">
                         <li class="flex">
                             <i class="fas fa-chevron-right"></i>
-                            <div>List building and relations</div>
+                            <div>ระยะเวลาอบรม 19 ชั่วโมง</div>
                         </li>
                         <li class="flex">
                             <i class="fas fa-chevron-right"></i>
-                            <div>Seamless platform integration</div>
+                            <div>ภาคทฤษฎี 8 บทเรียน 5 ชั่วโมง</div>
                         </li>
                         <li class="flex">
                             <i class="fas fa-chevron-right"></i>
-                            <div>Great performance on devices</div>
+                            <div>ภาคปฏิบัติ 7 บทเรียน 14 ชั่วโมง</div>
                         </li>
-                        <li class="flex">
+                        {{-- <li class="flex">
                             <i class="fas fa-chevron-right"></i>
                             <div>Community support and videos</div>
-                        </li>
+                        </li> --}}
                     </ul>
                     <div class="button-wrapper">
                         <a class="btn-solid-reg page-scroll" href="#download">Download</a>
@@ -442,27 +530,27 @@
             <!-- Card-->
             <div class="card">
                 <div class="card-body">
-                    <div class="card-title">COMPLETE</div>
-                    <div class="price"><span class="currency">$</span><span class="value">49</span></div>
-                    <div class="frequency">monthly</div>
-                    <p>This is a comprehensive package designed for big organizations</p>
+                    <div class="card-title">โดรนถ่ายภาพ</div>
+                    <div class="price"><span class="value">9k</span></div>
+                    <div class="frequency">บาท</div>
+                    <p>หลักสูตรอบรม การสอนนักบินโดรนถ่ายภาพมืออาชีพ</p>
                     <ul class="list mb-7 text-left space-y-2">
                         <li class="flex">
                             <i class="fas fa-chevron-right"></i>
-                            <div>List building and relations</div>
+                            <div>ระยะเวลาอบรม 12 ชั่วโมง</div>
                         </li>
                         <li class="flex">
                             <i class="fas fa-chevron-right"></i>
-                            <div>Seamless platform integration</div>
+                            <div>ภาคทฤษฎี 8 บทเรียน 4 ชั่วโมง</div>
                         </li>
                         <li class="flex">
                             <i class="fas fa-chevron-right"></i>
-                            <div>Great performance on devices</div>
+                            <div>ภาคปฏิบัติ 7 บทเรียน 8 ชั่วโมง</div>
                         </li>
-                        <li class="flex">
+                        {{-- <li class="flex">
                             <i class="fas fa-chevron-right"></i>
-                            <div>Community support and videos</div>
-                        </li>
+                            <div>15+ บทเรียน</div>
+                        </li> --}}
                     </ul>
                     <div class="button-wrapper">
                         <a class="btn-solid-reg page-scroll" href="#download">Download</a>
@@ -480,16 +568,88 @@
     <div id="download" class="basic-5">
         <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2">
             <div class="mb-16 lg:mb-0">
-                <img src="images/conclusion-smartphone.png" alt="alternative" />
+                <img src="img/controller.png" alt="alternative" />
             </div>
             <div class="lg:mt-24 xl:mt-44 xl:ml-12">
-                <p class="mb-9 text-gray-800 text-3xl leading-10">Team management mobile applications don’t get much better than Pavo. Download it today</p>
-                <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Download</a>
-                <a class="btn-solid-lg secondary" href="#your-link"><i class="fab fa-google-play"></i>Download</a>
+                <p class="mb-9 text-gray-800 text-2xl leading-10">
+                    <span class="text-4xl font-bold" >"บินสู่อนาคตกับ <span style="color: var(--second-color)">Drone TTC</span>"</span> <br>
+                    ฝึกอบรมโดรนกับมืออาชีพ พร้อมเปิดประสบการณ์ใหม่ในโลกแห่งการบินไร้คนขับ!
+                </p>
+                {{-- <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Download</a>
+                <a class="btn-solid-lg secondary" href="#your-link"><i class="fab fa-google-play"></i>Download</a> --}}
             </div>
         </div> <!-- end of container -->
     </div> <!-- end of basic-5 -->
     <!-- end of conclusion -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var video = document.getElementById('videoElement');
+    video.volume = 0.2;
+    // Function to check if the video is in the viewport
+    function checkIfVideoInView() {
+        var rect = video.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    // Event listener for scrolling and resizing
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+
+    function handleScroll() {
+        if (checkIfVideoInView()) {
+            if (video.paused) {
+                video.play();
+            }
+        } else {
+            // video.currentTime = 0;
+            video.pause();
+        }
+    }
+
+    // Initial check
+    handleScroll();
+});
+
+const words = ["Drone Technology Training Center", "Welcome to my website!", "This is a Drone TTC."];
+let i = 0;
+let j = 0;
+let currentWord = "";
+let isDeleting = false;
+
+function type() {
+  currentWord = words[i];
+
+  if (isDeleting) {
+    document.getElementById("typewriter").textContent = currentWord.substring(0, j - 1);
+    j--;
+    if (j == 0) {
+      isDeleting = false;
+      i++;
+      if (i == words.length) {
+        i = 0;
+      }
+    }
+    setTimeout(type, 50);  // Standard speed when deleting
+  } else {
+    document.getElementById("typewriter").textContent = currentWord.substring(0, j + 1);
+    j++;
+    if (j == currentWord.length) {
+      isDeleting = true;
+      setTimeout(type, 5000);  // Delay before deleting
+    } else {
+      setTimeout(type, 50);  // Standard speed when typing
+    }
+  }
+}
+
+type(); // Start the typewriter effect
+
+</script>
 <style>
     .video-background {
   position: absolute;
@@ -534,8 +694,8 @@
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
   -webkit-animation-duration: 1s;
-  animation-duration: 3s;
-  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-delay: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   }
@@ -556,7 +716,16 @@
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  animation-delay: 4s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  .fadeIn2 {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  animation-delay: 2.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   }
