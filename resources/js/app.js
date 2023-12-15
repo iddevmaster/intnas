@@ -25,3 +25,6 @@ import {
   } from "tw-elements";
 
   initTE({ Modal, Ripple });
+
+
+import '/pavo/scripts.js';
