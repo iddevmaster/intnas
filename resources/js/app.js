@@ -16,3 +16,12 @@ initTE({ Select });
 // Initialization for ES Users
 import {Animate} from "tw-elements";
 initTE({ Animate });
+
+
+// Initialization for ES Users
+import {
+    Modal,
+    Ripple,
+  } from "tw-elements";
+
+  initTE({ Modal, Ripple });

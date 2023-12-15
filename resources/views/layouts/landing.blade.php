@@ -23,6 +23,9 @@
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
+        {{-- owl carousel --}}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
         <!-- Swiper JS -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -83,16 +86,16 @@
                             </div>
                         </li>
                         <li>
-                            <a class="nav-link page-scroll" href="">Product</a>
+                            <a class="nav-link page-scroll" href="/products">Product</a>
                         </li>
                         <li>
-                            <a class="nav-link page-scroll" href="">Service</a>
+                            <a class="nav-link page-scroll" href="/services">Service</a>
                         </li>
                         <li>
-                            <a class="nav-link page-scroll" href="">Activity</a>
+                            <a class="nav-link page-scroll" href="/blogs">News</a>
                         </li>
                         <li>
-                            <a class="nav-link page-scroll" href="/portfolio">Portfolio</a>
+                            <a class="nav-link page-scroll" href="/activity">Activity</a>
                         </li>
                         <li>
                             <a class="nav-link page-scroll" href="/contacts">Contacts</a>
@@ -133,36 +136,30 @@
         <!-- Footer -->
         <div class="footer">
             <div class="container px-4 sm:px-8">
-                <h4 class="mb-8 lg:max-w-3xl lg:mx-auto">Pavo is a mobile application for marketing automation and you can reach the team at <a class="text-indigo-600 hover:text-gray-500" href="mailto:email@domain.com">email@domain.com</a></h4>
+                <h4 class="mb-8 lg:max-w-3xl lg:mx-auto">Pavo is a mobile application for marketing automation and you can reach the team at <a class="text-indigo-600 hover:text-gray-500" href="mailto:Dronettc@iddrives.co.th">Dronettc@iddrives.co.th</a></h4>
                 <div class="social-container">
                     <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
+                        <a href="https://www.facebook.com/dronettc" target="_Blank">
+                            <i class="fas fa-circle fa-stack-2x fa-stack-fb" ></i>
                             <i class="fab fa-facebook-f fa-stack-1x"></i>
                         </a>
                     </span>
                     <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        <a href="https://lin.ee/UDqzxmt" target="_Blank">
+                            <i class="fas fa-circle fa-stack-2x fa-stack-ln"></i>
+                            <i class="fab fa-line fa-stack-1x"></i>
                         </a>
                     </span>
                     <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                        <a href="/contacts">
+                            <i class="fas fa-circle fa-stack-2x fa-stack-ma"></i>
+                            <i class="fa fa-envelope fa-stack-1x"></i>
                         </a>
                     </span>
                     <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-instagram fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-youtube fa-stack-1x"></i>
+                        <a href="/contacts">
+                            <i class="fas fa-circle fa-stack-2x fa-stack-ph"></i>
+                            <i class="fa fa-phone fa-stack-1x"></i>
                         </a>
                     </span>
                 </div> <!-- end of social-container -->
@@ -188,6 +185,7 @@
         </div> <!-- end of copyright -->
         <!-- end of copyright -->
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         {{-- Load Other Dependencies After jQuery --}}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
         {{-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script> --}}

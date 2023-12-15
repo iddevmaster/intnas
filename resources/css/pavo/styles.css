@@ -912,6 +912,22 @@ input[type="checkbox"] {
     color: #252c38;
 }
 
+.footer .fa-stack:hover .fa-stack-fb {
+    color: rgb(83, 192, 255);
+}
+
+.footer .fa-stack:hover .fa-stack-ln {
+    color: green;
+}
+
+.footer .fa-stack:hover .fa-stack-ma {
+    color: red;
+}
+
+.footer .fa-stack:hover .fa-stack-ph {
+    color: blue;
+}
+
 /*********************/
 /*     Copyright     */
 /*********************/

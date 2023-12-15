@@ -13,17 +13,33 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'welcome');
-Route::view('/home', 'landing_page');
-Route::view('/portfolio', 'portfolio');
+Route::view('/admin', 'welcome');
+
+// Landing page
+Route::view('/', 'landing_page');
+Route::view('/activity', 'portfolio');
 Route::view('/contacts', 'contacts');
+Route::view('/products', 'products');
+Route::view('/blogs', 'blogs');
+Route::get('/product/{prod_id}/detail', function ($prod_id) {
+    return view('product_detail', ['prod_id' => $prod_id]);
+});
+Route::get('/blog/{blog_id}/detail', function ($prod_id) {
+    return view('blog_detail', ['blog_id' => $prod_id]);
+});
+Route::view('/services', 'services');
 
-Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
+// Backend
+Route::middleware(['auth'])->group(function () {
+    Route::view('dashboard', 'dashboard')
+        ->middleware('verified') // Specific middleware for this route
+        ->name('dashboard');
 
-Route::view('profile', 'profile')
-    ->middleware(['auth'])
-    ->name('profile');
+    Route::view('profile', 'profile')
+        ->name('profile');
+
+    Route::view('/main', 'backend.main');
+
+});
 
 require __DIR__.'/auth.php';

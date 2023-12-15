@@ -119,7 +119,7 @@
                     <img src="images/features-icon-6.svg" alt="alternative" />
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">การจัดแสดงสินค้า</h5>
+                    <h5 class="card-title">ซ่อมบำรุง</h5>
                     <p class="mb-4">Register the app and get acces to knowledge and ideas from the Pavo online community</p>
                 </div>
             </div>
@@ -488,9 +488,9 @@
                             <div>Community support and videos</div>
                         </li> --}}
                     </ul>
-                    <div class="button-wrapper">
+                    {{-- <div class="button-wrapper">
                         <a class="btn-solid-reg page-scroll" href="#download">Download</a>
-                    </div>
+                    </div> --}}
                 </div>
             </div> <!-- end of card -->
             <!-- end of card -->
@@ -520,9 +520,9 @@
                             <div>Community support and videos</div>
                         </li> --}}
                     </ul>
-                    <div class="button-wrapper">
+                    {{-- <div class="button-wrapper">
                         <a class="btn-solid-reg page-scroll" href="#download">Download</a>
-                    </div>
+                    </div> --}}
                 </div>
             </div> <!-- end of card -->
             <!-- end of card -->
@@ -552,9 +552,9 @@
                             <div>15+ บทเรียน</div>
                         </li> --}}
                     </ul>
-                    <div class="button-wrapper">
+                    {{-- <div class="button-wrapper">
                         <a class="btn-solid-reg page-scroll" href="#download">Download</a>
-                    </div>
+                    </div> --}}
                 </div>
             </div> <!-- end of card -->
             <!-- end of card -->
@@ -615,7 +615,7 @@
     handleScroll();
 });
 
-const words = ["Drone Technology Training Center", "Welcome to my website!", "This is a Drone TTC."];
+const words = ["Drone Technology Training Center", "Welcome to my website!", "We are Drone TTC."];
 let i = 0;
 let j = 0;
 let currentWord = "";

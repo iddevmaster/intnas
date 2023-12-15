@@ -1,0 +1,82 @@
+<section class="bg-white dark:bg-gray-900">
+    <div class="container px-6 py-10 mx-auto">
+        <div class="text-center">
+            <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">From the blog</h1>
+
+            <p class="max-w-lg mx-auto mt-4 text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis sint autem nesciunt, laudantium
+                quia tempore delect
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+            <div>
+                <img class="relative z-10 object-cover w-full rounded-md h-96" src="/img/activity/ac02/04.jpg" alt="">
+
+                <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+                    <a href="/blog/1/detail" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                        งานข้าวหอมโลก จ.ร้อยเอ็ด
+                    </a>
+
+                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                        วันที่ 11-13 ธ.ค 66 งานข้าวหอมมะลิโลก 101 จ.ร้อยเอ็ด บริษัท ID Drives เป็นตัวแทน proviceder ของภาคอีสานนำนวัตกรรม
+                    เข้าร่วมออกบูทโครงการโดรนชุมชนและศูนย์ซ่อมโดรนชุมชน....
+                    </p>
+
+                    <p class="mt-3 text-sm text-blue-500">11 ธันวาคม 66</p>
+                </div>
+            </div>
+
+            <div>
+                <img class="relative z-10 object-cover w-full rounded-md h-96" src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+
+                <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+                    <a href="/blog/2/detail" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                        How to use sticky note for problem solving
+                    </a>
+
+                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis sint autem nesciunt,
+                        laudantium quia tempore delect
+                    </p>
+
+                    <p class="mt-3 text-sm text-blue-500">20 October 2019</p>
+                </div>
+            </div>
+
+            <div>
+                <img class="relative z-10 object-cover w-full rounded-md h-96" src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+
+                <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+                    <a href="/blog/3/detail" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                        How to use sticky note for problem solving
+                    </a>
+
+                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis sint autem nesciunt,
+                        laudantium quia tempore delect
+                    </p>
+
+                    <p class="mt-3 text-sm text-blue-500">20 October 2019</p>
+                </div>
+            </div>
+
+            <div>
+                <img class="relative z-10 object-cover w-full rounded-md h-96" src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+
+                <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+                    <a href="/blog/4/detail" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                        How to use sticky note for problem solving
+                    </a>
+
+                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis sint autem nesciunt,
+                        laudantium quia tempore delect
+                    </p>
+
+                    <p class="mt-3 text-sm text-blue-500">20 October 2019</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
