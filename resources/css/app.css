@@ -1,5 +1,8 @@
+@import '/resources/css/pavo/fontawesome-all.css';
+@import '/resources/css/pavo/magnific-popup.css';
+@import '/resources/css/pavo/styles.css';
+@import '/resources/css/pavo/swiper.css';
 @tailwind base;
-
 @layer base {
     html {
       @apply text-[#4f4f4f];
@@ -12,8 +15,3 @@
 
 @tailwind components;
 @tailwind utilities;
-
-@import '/pavo/fontawesome-all.css';
-@import '/pavo/magnific-popup.css';
-@import '/pavo/styles.css';
-@import '/pavo/swiper.css';

@@ -27,4 +27,4 @@ import {
   initTE({ Modal, Ripple });
 
 
-import '/pavo/scripts.js';
+import './pavo/scripts.js';
