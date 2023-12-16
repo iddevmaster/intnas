@@ -35,150 +35,113 @@
         {{-- aos animations --}}
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+        {{-- Sweet alert --}}
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
         <!-- Scripts -->
         @vite([
             // CSS
             'resources/css/app.css',
-
+            '/resources/css/pavo/fontawesome-all.css',
+            '/resources/css/pavo/magnific-popup.css',
+            '/resources/css/pavo/styles.css',
+            '/resources/css/pavo/swiper.css',
             // JS
             'resources/js/app.js',
+            'resources/js/pavo/scripts.js',
         ])
     </head>
     <body data-spy="scroll" data-target=".fixed-top">
 
-        <!-- Navigation -->
-        <nav class="navbar fixed-top">
-            <div class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between lg:flex-nowrap">
-
-                <!-- Text Logo - Use this if you don't have a graphic logo -->
-                <!-- <a class="text-gray-800 font-semibold text-3xl leading-4 no-underline page-scroll" href="index.html">Pavo</a> -->
-
-                <!-- Image Logo -->
-                <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="">
-                    <img src="/img/logodronettc.png" alt="alternative" class="h-8" />
-                </a>
-
-                <button class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400" type="button" data-toggle="offcanvas">
-                    <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
-                </button>
-
-                <div class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center" id="navbarsExampleDefault">
-                    <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
-                        {{-- <li>
-                            <a class="nav-link page-scroll" href="/home">Home</a>
-                        </li> --}}
-                        <li class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="/home" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                <a class="dropdown-item page-scroll" href="#header">Home</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item page-scroll" href="#features">Features</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item page-scroll" href="#details">Details</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item page-scroll" href="#pricing">Pricing</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="/products">Product</a>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="/services">Service</a>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="/blogs">News</a>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="/activity">Activity</a>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="/contacts">Contacts</a>
-                        </li>
-                        {{-- <li>
-                            <a class="nav-link page-scroll active" href="#header">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="#features">Features</a>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="#details">Details</a>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="#pricing">Pricing</a>
-                        </li>
-                        <li class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                <a class="dropdown-item page-scroll" href="/portfolio">Portfolio</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item page-scroll" href="#">Terms Conditions</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item page-scroll" href="#">Privacy Policy</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="#download">Download</a>
-                        </li> --}}
-                    </ul>
-                </div> <!-- end of navbar-collapse -->
-            </div> <!-- end of container -->
-        </nav> <!-- end of navbar -->
-        <!-- end of navigation -->
+        <livewire:layout.land_nav />
 
         {{ $slot }}
 
-        <!-- Footer -->
-        <div class="footer">
-            <div class="container px-4 sm:px-8">
-                <h4 class="mb-8 lg:max-w-3xl lg:mx-auto">Pavo is a mobile application for marketing automation and you can reach the team at <a class="text-indigo-600 hover:text-gray-500" href="mailto:Dronettc@iddrives.co.th">Dronettc@iddrives.co.th</a></h4>
-                <div class="social-container">
-                    <span class="fa-stack">
-                        <a href="https://www.facebook.com/dronettc" target="_Blank">
-                            <i class="fas fa-circle fa-stack-2x fa-stack-fb" ></i>
-                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+        <footer class="py-6 bg-gray-800 text-gray-50">
+            <div class="container px-6 mx-auto space-y-6 divide-y divide-gray-400 md:space-y-12 divide-opacity-50">
+                <div class="grid grid-cols-12">
+                    <div class="pb-6 col-span-full md:pb-0 md:col-span-6">
+                        <a rel="noopener noreferrer" target="_BLANK" href="https://iddrives.co.th/web/" class="flex flex-col items-center gap-2 justify-center space-x-3 md:justify-start">
+                            <img src="/img/logoiddrives.png" width="70" alt="">
+                            <span class="self-center text-2xl font-semibold">บริษัท ไอดีไดรฟ์ จำกัด</span>
+                            <p class=" md:px-8 lg:px-24">200 222 หมู่ที่ 2 ถนน ชัยพฤกษ์ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
+                            {{-- <p>โทรศัพท์ : 043-228 899</p>
+                            <p>Email : idofficer@iddrives.co.th</p> --}}
                         </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="https://lin.ee/UDqzxmt" target="_Blank">
-                            <i class="fas fa-circle fa-stack-2x fa-stack-ln"></i>
-                            <i class="fab fa-line fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="/contacts">
-                            <i class="fas fa-circle fa-stack-2x fa-stack-ma"></i>
-                            <i class="fa fa-envelope fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="/contacts">
-                            <i class="fas fa-circle fa-stack-2x fa-stack-ph"></i>
-                            <i class="fa fa-phone fa-stack-1x"></i>
-                        </a>
-                    </span>
-                </div> <!-- end of social-container -->
-            </div> <!-- end of container -->
-        </div> <!-- end of footer -->
-        <!-- end of footer -->
+                    </div>
 
-
-        <!-- Copyright -->
-        <div class="copyright">
-            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-3">
-                <ul class="mb-4 list-unstyled p-small">
-                    <li class="mb-2"><a href="article.html">Article Details</a></li>
-                    <li class="mb-2"><a href="terms.html">Terms & Conditions</a></li>
-                    <li class="mb-2"><a href="privacy.html">Privacy Policy</a></li>
-                </ul>
-                <p class="pb-2 p-small statement">Copyright © <a href="#your-link" class="no-underline">Drone TTC</a></p>
-
-                <p class="pb-2 p-small statement">Distributed by : <a href="https://themewagon.com/" class="no-underline">บริษัท ไอดีไดรฟ์ จำกัด</a></p>
+                    <div class="col-span-12 sm:col-span-6 text-center md:text-left md:col-span-3">
+                        <p class="pb-1 text-xl font-medium text-pink-500 mb-4" >ติดต่อสอบถาม</p>
+                        <ul>
+                            <li>
+                                <div class="flex gap-4 mb-2">
+                                    <i class="fa fa-phone-square text-3xl text-pink-500" aria-hidden="true"></i>
+                                    <p class="text-white">+6661 925 6996</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-4 mb-2">
+                                    <i class="fa-brands fa-square-facebook text-3xl text-pink-500"></i>
+                                    <p class="text-white">Dronettc</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-4 mb-2">
+                                    <i class="fa-brands fa-line text-3xl text-pink-500"></i>
+                                    <p class="text-white">droneTTC</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-4 mb-2">
+                                    <i class="fa-solid fa-envelope text-3xl text-pink-500"></i>
+                                    <p class="text-white">Dronettc@iddrives.co.th</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 text-center md:text-left md:col-span-3">
+                        <p class="pb-1 text-xl font-medium text-pink-500 mb-4" >แผนที่</p>
+                        <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.0135083544146!2d102.85578767601251!3d16.424140329837293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228bea5279c7d5%3A0xd098a61935e43d5f!2zRHJvbmVUVEMgLSDguYDguKPguLXguKLguJnguJrguLTguJnguYLguJTguKPguJnguJ7guKPguYnguK3guKHguILguLbguYnguJnguJfguLDguYDguJrguLXguKLguJnguYLguJTguKPguJk!5e0!3m2!1sth!2sth!4v1702715454859!5m2!1sth!2sth"
+                                {{-- width="350"
+                                height="200" --}}
+                                class="w-full h-full"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid justify-center pt-6 lg:justify-between">
+                    <div class="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
+                        <span>©2566 บริษัท ไอดีไดรฟ์ จำกัด</span>
+                        {{-- <a rel="noopener noreferrer" href="#">
+                            <span>Privacy policy</span>
+                        </a>
+                        <a rel="noopener noreferrer" href="#">
+                            <span>Terms of service</span>
+                        </a> --}}
+                    </div>
+                    <div class="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
+                        <a rel="noopener noreferrer" target="_BLANK" href="https://www.facebook.com/dronettc" title="Facebook" class="flex items-center justify-center w-10 h-10 rounded-full bg-violet-400 text-gray-900">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a rel="noopener noreferrer" target="_BLANK" href="https://lin.ee/UDqzxmt" title="Line" class="flex items-center justify-center w-10 h-10 rounded-full bg-violet-400 text-gray-900">
+                            <i class="fa-brands fa-line"></i>
+                        </a>
+                        <a rel="noopener noreferrer" target="_BLANK" href="mailto:Dronettc@iddrives.co.th" title="Gmail" class="flex items-center justify-center w-10 h-10 rounded-full bg-violet-400 text-gray-900">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
+        </footer>
 
-        <!-- end of container -->
-        </div> <!-- end of copyright -->
-        <!-- end of copyright -->
+
+
+        <script src="https://kit.fontawesome.com/872d5aa762.js" crossorigin="anonymous"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         {{-- Load Other Dependencies After jQuery --}}

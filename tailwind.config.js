@@ -8,7 +8,10 @@ export default {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
         "./src/**/*.{html,js}",
-        "./node_modules/tw-elements/dist/js/**/*.js"
+        "./node_modules/tw-elements/dist/js/**/*.js",
+        "./resources/**/*.blade.php",
+        "./resources/**/*.js",
+        "./resources/**/*.vue",
     ],
 
     theme: {
@@ -19,6 +22,9 @@ export default {
         },
     },
 
-    plugins: [forms, require("tw-elements/dist/plugin.cjs")],
+    plugins: [
+        forms,
+        require("tw-elements/dist/plugin.cjs"),
+    ],
     darkMode: "class"
 };

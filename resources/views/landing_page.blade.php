@@ -60,7 +60,7 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">ตัวแทนจำหน่ายโดรน</h5>
-                    <p class="mb-4">You sales force can use the app on any smartphone platform without compatibility issues</p>
+                    <p class="mb-4">ตัวแทนจำหน่ายโดรนอย่างเป็นทางการ คุณภาพระดับโลก</p>
                 </div>
             </div>
             <!-- end of card -->
@@ -72,7 +72,7 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">หลักสูตรอบรม</h5>
-                    <p class="mb-4">Works smoothly even on older generation hardware due to our optimization efforts</p>
+                    <p class="mb-4">หลักสูตรอบรมคุณภาพ จากผู้เชี่ยวชาญ ประสบการณ์ตรง</p>
                 </div>
             </div>
             <!-- end of card -->
@@ -84,7 +84,7 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">ขึ้นทะเบียนโดรน</h5>
-                    <p class="mb-4">Optimized code and innovative technology insure no delays and ultra-fast responsiveness</p>
+                    <p class="mb-4">ถูกต้องตามกฎหมาย สะดวก รวดเร็ว ปลอดภัย ไปกับเรา</p>
                 </div>
             </div>
             <!-- end of card -->
@@ -96,7 +96,7 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">ทำประกันภัยโดรน</h5>
-                    <p class="mb-4">Choose from one of the 40 languages that come pre-installed and start selling smarter</p>
+                    <p class="mb-4">ทำประกันภัยโดรนกับเรา มั่นใจในความปลอดภัย บินได้อย่างไร้ขีดจำกัด</p>
                 </div>
             </div>
             <!-- end of card -->
@@ -107,8 +107,8 @@
                     <img src="images/features-icon-5.svg" alt="alternative" />
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">บริการฉีดพ่น</h5>
-                    <p class="mb-4">Don't worry about future costs, pay once and receive all future updates at no extra cost</p>
+                    <h5 class="card-title">บริการฉีดพ่นด้วยโดรน</h5>
+                    <p class="mb-4">ตอบโจทย์ทุกความต้องการ รวดเร็ว ปลอดภัย ด้วยเทคโนโลยีล้ำสมัย</p>
                 </div>
             </div>
             <!-- end of card -->
@@ -120,7 +120,7 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">ซ่อมบำรุง</h5>
-                    <p class="mb-4">Register the app and get acces to knowledge and ideas from the Pavo online community</p>
+                    <p class="mb-4">อะไหล่แท้ มาตรฐานสากล รับประกันผลงาน มั่นใจได้</p>
                 </div>
             </div>
             <!-- end of card -->
@@ -145,8 +145,8 @@
                     data-aos-easing="ease-in-out"
                     >
                         <h2 class="mb-6">โดรนเกษตร</h2>
-                        <p class="mb-4">Based on our team's extensive experience in developing line of business applications and constructive customer feedback we reached a new level of revenue.</p>
-                        <p class="mb-4">We enjoy helping small and medium sized tech businesses take a shot at established Fortune 500 companies</p>
+                        <p class="mb-4 indent-8">โดรนที่ออกแบบมาเพื่อใช้ในภาคการเกษตร ใช้ในการปฏิบัติงานต่างๆ เช่น การฉีดพ่นยาฆ่าแมลง ปุ๋ย และน้ำ</p>
+                        <p class="mb-4 indent-8">โดรนเกษตรสามารถฉีดพ่นยาฆ่าแมลงและปุ๋ยได้อย่างทั่วถึงและแม่นยำกว่าการเดินฉีดแบบเดิมๆ ช่วยให้พืชได้รับสารอาหารและสารป้องกันกำจัดศัตรูพืชอย่างเพียงพอและมีประสิทธิภาพ</p>
                 </div>
             </div> <!-- end of col -->
             <div class="lg:col-span-7 transition hover:scale-125">
@@ -193,22 +193,12 @@
                     data-aos-easing="ease-in-out"
                     >
                         <h2 class="mb-6">โดรนสำรวจ</h2>
-                        <ul class="list mb-7 space-y-2">
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>Features that will help you and your marketers</div>
-                            </li>
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>Smooth learning curve due to the knowledge base</div>
-                            </li>
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>Ready out-of-the-box with minor setup settings</div>
-                            </li>
-                        </ul>
-                        <a class="btn-solid-reg popup-with-move-anim mr-1.5" href="#details-lightbox">Lightbox</a>
-                        <a class="btn-outline-reg" href="article.html">Details</a>
+                        <p class="indent-8 mb-4">โดรนสำรวจสามารถนำมาใช้ในการสำรวจได้หลากหลายวัตถุประสงค์ เช่น</p>
+                        <p>- การถ่ายภาพและวิดีโอความละเอียดสูง</p>
+                        <p>- การตรวจวัดระยะทาง ระดับความสูง และพื้นที่ เพื่อใช้ในการออกแบบ วางแผน และประเมินโครงการ</p>
+                        <p>- การตรวจสอบสภาพพื้นที่ เช่น สภาพป่าไม้ สภาพพืชผล</p>
+                        {{-- <a class="btn-solid-reg popup-with-move-anim mr-1.5" href="#details-lightbox">Lightbox</a>
+                        <a class="btn-outline-reg" href="article.html">Details</a> --}}
                 </div>
             </div> <!-- end of col -->
         </div> <!-- end of container -->
@@ -278,9 +268,9 @@
                     data-aos-easing="ease-in-out"
                     >
                         <h2 class="mb-6">โดรนถ่ายภาพ</h2>
-                        <p class="mb-4">Get a glimpse of what this app can do for your marketing automation and understand why current users are so excited when using Pavo
-                            together with their teams.</p>
-                        <p class="mb-4">We will promptly answer any questions and honor your requests based on the service level agreement</p>
+                        <p class="mb-4 indent-8">โดรนถ่ายภาพใช้ประโยชน์ในหลากหลายด้าน เช่น การถ่ายทำวิดีโอ, การถ่ายภาพ, การสำรวจและการทำแผนที่.</p>
+                        <p class="mb-4 indent-8">การใช้โดรนในการถ่ายภาพช่วยเปิดมุมมองใหม่ๆ ที่ไม่เคยเห็นมาก่อน, และนำเสนอมุมมองที่น่าตื่นตาตื่นใจได้อย่างสร้างสรรค์.</p>
+
                 </div>
             </div> <!-- end of col -->
             <div class="lg:col-span-7 transition hover:scale-125">
@@ -356,99 +346,13 @@
 
 
     <!-- Testimonials -->
-    <div class="slider-1 py-32">
-        <div class="container px-4 sm:px-8">
-            <h2 class="mb-12 text-center lg:max-w-xl lg:mx-auto">What do users think about Pavo</h2>
-
-            <!-- Card Slider -->
-            <div class="slider-container">
-                <div class="swiper-container card-slider">
-                    <div class="swiper-wrapper">
-
-                        <!-- Slide -->
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img class="card-image" src="images/testimonial-1.jpg" alt="alternative" />
-                                <div class="card-body">
-                                    <p class="italic mb-3">It's been so fun to work with Pavo, I've managed to integrate it properly into my business flow and it's great</p>
-                                    <p class="testimonial-author">Jude Thorn - Designer</p>
-                                </div>
-                            </div>
-                        </div> <!-- end of swiper-slide -->
-                        <!-- end of slide -->
-
-                        <!-- Slide -->
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img class="card-image" src="images/testimonial-2.jpg" alt="alternative" />
-                                <div class="card-body">
-                                    <p class="italic mb-3">We were so focused on launching as many campaigns as possible that we've forgotten to target our loyal customers</p>
-                                    <p class="testimonial-author">Roy Smith - Developer</p>
-                                </div>
-                            </div>
-                        </div> <!-- end of swiper-slide -->
-                        <!-- end of slide -->
-
-                        <!-- Slide -->
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img class="card-image" src="images/testimonial-3.jpg" alt="alternative" />
-                                <div class="card-body">
-                                    <p class="italic mb-3">I've been searching for a tool like Pavo for so long. I love the reports it generates and the amazing high accuracy</p>
-                                    <p class="testimonial-author">Marsha Singer - Marketer</p>
-                                </div>
-                            </div>
-                        </div> <!-- end of swiper-slide -->
-                        <!-- end of slide -->
-
-                        <!-- Slide -->
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img class="card-image" src="images/testimonial-4.jpg" alt="alternative" />
-                                <div class="card-body">
-                                    <p class="italic mb-3">We've been waiting for a powerful piece of software that can help businesses manage their marketing projects</p>
-                                    <p class="testimonial-author">Tim Shaw - Designer</p>
-                                </div>
-                            </div>
-                        </div> <!-- end of swiper-slide -->
-                        <!-- end of slide -->
-
-                        <!-- Slide -->
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img class="card-image" src="images/testimonial-5.jpg" alt="alternative" />
-                                <div class="card-body">
-                                    <p class="italic mb-3">Searching for a great prototyping and layout design app was difficult but thankfully I found app suite quickly</p>
-                                    <p class="testimonial-author">Lindsay Spice - Marketer</p>
-                                </div>
-                            </div>
-                        </div> <!-- end of swiper-slide -->
-                        <!-- end of slide -->
-
-                        <!-- Slide -->
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img class="card-image" src="images/testimonial-6.jpg" alt="alternative" />
-                                <div class="card-body">
-                                    <p class="italic mb-3">The app support team is amazing. They've helped me with some issues and I am so grateful to the entire team</p>
-                                    <p class="testimonial-author">Ann Blake - Developer</p>
-                                </div>
-                            </div>
-                        </div> <!-- end of swiper-slide -->
-                        <!-- end of slide -->
-
-                    </div> <!-- end of swiper-wrapper -->
-
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <!-- end of add arrows -->
-
-                </div> <!-- end of swiper-container -->
-            </div> <!-- end of slider-container -->
-            <!-- end of card slider -->
-
-        </div> <!-- end of container -->
+    <div class="py-32 container px-4 sm:px-6 md:px-8">
+        <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+            <div class="flex justify-center items-center"><img class="transition hover:scale-125" src="/img/logoiddrives.png" width="100" alt=""></div>
+            <div class="flex justify-center items-center"><img class="transition hover:scale-125" src="/img/logodronettc.png" width="200" alt=""></div>
+            <div class="flex justify-center items-center"><img class="transition hover:scale-125" src="/img/aiang.webp" width="200" alt=""></div>
+            <div class="flex justify-center items-center"><img class="transition hover:scale-125" src="/img/djilogo.png" width="200" alt=""></div>
+        </div>
     </div> <!-- end of slider-1 -->
     <!-- end of testimonials -->
 
@@ -615,7 +519,7 @@
     handleScroll();
 });
 
-const words = ["Drone Technology Training Center", "Welcome to my website!", "We are Drone TTC."];
+const words = ["Drone Technology Training Center", "Welcome to DroneTTC", "We are DroneTTC."];
 let i = 0;
 let j = 0;
 let currentWord = "";

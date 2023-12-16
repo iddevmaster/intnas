@@ -17,6 +17,7 @@ Route::view('/admin', 'welcome');
 
 // Landing page
 Route::view('/', 'landing_page');
+Route::view('/home', 'landing_page');
 Route::view('/activity', 'portfolio');
 Route::view('/contacts', 'contacts');
 Route::view('/products', 'products');
