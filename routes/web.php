@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/admin', 'welcome');
+Route::get('/admin', function () {
+    Auth::logout();
+    return view('welcome');
+});
 
 // Landing page
 Route::view('/', 'landing_page');
