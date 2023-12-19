@@ -13,7 +13,7 @@ new #[Layout('layouts.guest')] class extends Component
     /**
      * Handle an incoming authentication request.
      */
-    public function login(): void
+    public function login()
     {
         $this->validate();
 
@@ -21,10 +21,11 @@ new #[Layout('layouts.guest')] class extends Component
 
         Session::regenerate();
 
-        $this->redirect(
-            session('url.intended', RouteServiceProvider::HOME),
-            navigate: true
-        );
+        return redirect()->route('dashboard-analytics');
+        // $this->redirect(
+        //     session('url.intended', RouteServiceProvider::HOME),
+        //     navigate: true
+        // );
     }
 }; ?>
 

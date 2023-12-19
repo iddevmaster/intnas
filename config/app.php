@@ -170,6 +170,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\VoltServiceProvider::class,
         Phattarachai\LineNotify\LineNotifyServiceProvider::class,
+        App\Providers\MenuServiceProvider::class,
     ])->toArray(),
 
     /*
