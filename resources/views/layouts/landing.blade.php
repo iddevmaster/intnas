@@ -38,17 +38,19 @@
         {{-- Sweet alert --}}
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+        <link rel="stylesheet" href="/css/pavo/styles.css">
+        <link rel="stylesheet" href="/css/pavo/fontawesome-all.css">
+        <link rel="stylesheet" href="/css/pavo/magnific-popup.css">
+        <link rel="stylesheet" href="/css/pavo/swiper.css">
+
+        <script src="/js/pavo/scripts.js"></script>
+
         <!-- Scripts -->
         @vite([
-            // CSS
             'resources/css/app.css',
-            '/resources/css/pavo/fontawesome-all.css',
-            '/resources/css/pavo/magnific-popup.css',
-            '/resources/css/pavo/styles.css',
-            '/resources/css/pavo/swiper.css',
-            // JS
+            'resources/css/pavo/styles.css',
+
             'resources/js/app.js',
-            'resources/js/pavo/scripts.js',
         ])
     </head>
     <body data-spy="scroll" data-target=".fixed-top">
