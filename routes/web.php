@@ -115,7 +115,7 @@ Route::middleware(['auth'])->group(function () {
     // pages
 
         // Product
-        Route::get('/admin/products', [ProductController::class, 'inde'])->name('admin-products');
+        Route::get('/admin/products', [ProductController::class, 'index'])->name('admin-products');
         Route::get('/admin/products/add', [ProductController::class, 'addProduct'])->name('add-products');
         Route::get('/admin/products/edit/1', [ProductController::class, 'editProduct'])->name('edit-product');
 
