@@ -19,7 +19,7 @@
   </div>
   <div class="table-responsive text-nowrap">
     <table class="table table-hover">
-      <thead>
+      <thead class="table-primary">
         <tr>
           <th>Name</th>
           <th>category</th>

@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Server Error</title>
+    <title>500 {{ config('app.name', 'Laravel') }}</title>
+
+    <!-- icon  -->
+    <link rel="icon" href="/img/dronecamera.png" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .main-error-page {

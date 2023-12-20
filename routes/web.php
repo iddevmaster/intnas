@@ -8,6 +8,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\AccountController;
+use App\Http\Controllers\OrganizController;
 use App\Http\Controllers\pages\AccountSettingsAccount;
 use App\Http\Controllers\pages\AccountSettingsNotifications;
 use App\Http\Controllers\pages\AccountSettingsConnections;
@@ -131,6 +132,11 @@ Route::middleware(['auth'])->group(function () {
 
         // Account
         Route::get('/admin/account-setting', [AccountController::class, 'index'])->name('admin-account-setting');
+
+        // Organization
+        Route::get('/admin/organization', [OrganizController::class, 'index'])->name('admin-organization');
+        Route::post('/admin/organization/add', [OrganizController::class, 'addAgn']);
+        Route::post('/admin/organization/delete', [OrganizController::class, 'deleteData']);
 
     // Log out
     Route::get('/admin/logout', function () {
