@@ -42,7 +42,7 @@
         @vite([
             // CSS
             'resources/css/app.css',
-            '/resources/css/pavo/fontawesome-all.css',
+            'resources/css/pavo/fontawesome-all.css',
             '/resources/css/pavo/magnific-popup.css',
             '/resources/css/pavo/styles.css',
             '/resources/css/pavo/swiper.css',
