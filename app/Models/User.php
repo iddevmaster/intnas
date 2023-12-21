@@ -25,6 +25,7 @@ class User extends Authenticatable
         'brn',
         'dpm',
         'role',
+        'profile_img'
     ];
 
     /**

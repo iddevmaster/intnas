@@ -19,4 +19,8 @@ class Product extends Model
         'detail',
         'create_by',
     ];
+
+    public function getCate() {
+        return $this->belongsTo(Product_category::class, 'category');
+    }
 }

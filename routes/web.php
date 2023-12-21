@@ -118,7 +118,10 @@ Route::middleware(['auth'])->group(function () {
         // Product
         Route::get('/admin/products', [ProductController::class, 'index'])->name('admin-products');
         Route::get('/admin/products/add', [ProductController::class, 'addProduct'])->name('add-products');
-        Route::get('/admin/products/edit/1', [ProductController::class, 'editProduct'])->name('edit-product');
+        Route::get('/admin/products/edit/{pid}', [ProductController::class, 'editProduct'])->name('edit-product');
+        Route::post('/admin/products/store', [ProductController::class, 'storeProduct'])->name('store-product');
+        Route::post('/admin/products/update/{pid}', [ProductController::class, 'updateProduct'])->name('update-product');
+        Route::post('/admin/products/category/add', [ProductController::class, 'addCate'])->name('add-product-cate');
 
         // News
         Route::get('/admin/news', [NewsController::class, 'index'])->name('admin-news');
@@ -132,6 +135,8 @@ Route::middleware(['auth'])->group(function () {
 
         // Account
         Route::get('/admin/account-setting', [AccountController::class, 'index'])->name('admin-account-setting');
+        Route::post('/update-profile', [AccountController::class, 'updateProfile'])->name('update-profile');
+        Route::post('/update-account', [AccountController::class, 'updateAccount'])->name('update-account');
 
         // Organization
         Route::get('/admin/organization', [OrganizController::class, 'index'])->name('admin-organization');

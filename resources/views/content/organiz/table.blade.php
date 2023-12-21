@@ -130,17 +130,6 @@
 </div>
 <!-- Department Table rows -->
 <script>
-    const addbtn = document.querySelectorAll('.adddata');
-    addbtn.forEach(btn  => {
-        btn.addEventListener('click', function () {
-            Swal.fire({
-                title: "Add Agency",
-                input: "text",
-                inputPlaceholder: "Enter agency name",
-            });
-        });
-    });
-
     $(document).ready(function() {
         $('.addagn').click(function(){
             const addtype = $(this).attr('addtype');
