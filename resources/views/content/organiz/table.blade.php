@@ -35,7 +35,7 @@
                                 <span class="tf-icons bx bx-cog"></span>
                             </button>
                         </a>
-                        <button type="button" class="btn btn-icon btn-danger deldata" delid="{{ $agn->id }}" deltype="agn" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-trash bx-xs' ></i> <span>Delete product</span>">
+                        <button type="button" class="btn btn-icon btn-danger deldata" delid="{{ $agn->id }}" deltype="agn" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-trash bx-xs' ></i> <span>Delete </span>">
                             <span class="tf-icons bx bx-trash"></span>
                         </button>
                     </td>
@@ -77,7 +77,7 @@
                                     <span class="tf-icons bx bx-cog"></span>
                                 </button>
                             </a>
-                            <button type="button" class="btn btn-icon btn-danger deldata" delid="{{ $brn->id }}" deltype="brn" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-trash bx-xs' ></i> <span>Delete product</span>">
+                            <button type="button" class="btn btn-icon btn-danger deldata" delid="{{ $brn->id }}" deltype="brn" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-trash bx-xs' ></i> <span>Delete </span>">
                                 <span class="tf-icons bx bx-trash"></span>
                             </button>
                             </td>
@@ -118,7 +118,7 @@
                                     <span class="tf-icons bx bx-cog"></span>
                                 </button>
                             </a>
-                            <button type="button" class="btn btn-icon btn-danger deldata" delid="{{ $dpm->id }}" deltype="dpm" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-trash bx-xs' ></i> <span>Delete product</span>">
+                            <button type="button" class="btn btn-icon btn-danger deldata" delid="{{ $dpm->id }}" deltype="dpm" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-trash bx-xs' ></i> <span>Delete</span>">
                                 <span class="tf-icons bx bx-trash"></span>
                             </button>
                             </td>
