@@ -30,8 +30,8 @@
                     <td>{{ $index + 1 }}</td>
                     <td>{{ $agn->name }}</td>
                     <td>
-                        <a href="{{ route('edit-product') }}">
-                            <button type="button" class="btn btn-icon btn-primary" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-cog bx-xs' ></i> <span>Edit product</span>">
+                        <a href="">
+                            <button type="button" class="btn btn-icon btn-primary" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-cog bx-xs' ></i> <span>Edit</span>">
                                 <span class="tf-icons bx bx-cog"></span>
                             </button>
                         </a>
@@ -72,8 +72,8 @@
                             <td>{{ $brn->name }}</td>
                             <td>{{ optional($brn->getAgn)->name }}</td>
                             <td>
-                            <a href="{{ route('edit-product') }}">
-                                <button type="button" class="btn btn-icon btn-primary" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-cog bx-xs' ></i> <span>Edit product</span>">
+                            <a href="">
+                                <button type="button" class="btn btn-icon btn-primary" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-cog bx-xs' ></i> <span>Edit</span>">
                                     <span class="tf-icons bx bx-cog"></span>
                                 </button>
                             </a>
@@ -113,8 +113,8 @@
                             <td>{{ $dpm->name }}</td>
                             <td>{{ optional($dpm->getBrn)->name }}</td>
                             <td>
-                            <a href="{{ route('edit-product') }}">
-                                <button type="button" class="btn btn-icon btn-primary" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-cog bx-xs' ></i> <span>Edit product</span>">
+                            <a href="">
+                                <button type="button" class="btn btn-icon btn-primary" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-cog bx-xs' ></i> <span>Edit</span>">
                                     <span class="tf-icons bx bx-cog"></span>
                                 </button>
                             </a>
