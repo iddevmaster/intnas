@@ -119,11 +119,13 @@
 
             $.ajax({
                 type: 'POST',
-                url: window.location.protocol + '//' + window.location.host + '/update-profile',
-                // url: '{{ route('update-profile') }}',
+                url: '{{ route('update-profile') }}',
                 data: formData,
                 processData: false,
                 contentType: false,
+                headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') // CSRF token for Laravel
+                        },
                 success: function (response) {
                     // Handle the success response, if needed
                     console.log(response);
