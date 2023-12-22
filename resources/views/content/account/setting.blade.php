@@ -36,7 +36,7 @@
             @csrf
             <!-- Your existing form fields -->
             <div class="d-flex align-items-start align-items-sm-center gap-4">
-                <img src="{{ asset('/uploads/profile/'. $user->profile_img) }}" alt="user-avatar" class="d-block rounded" height="100" width="100" id="uploadedAvatar" />
+                <img src="/uploads/profile/{{ $user->profile_img }}" alt="user-avatar" class="d-block rounded" height="100" width="100" id="uploadedAvatar" />
                 <div class="button-wrapper">
                     <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
                         <span class="d-none d-sm-block">Upload new photo</span>
@@ -119,8 +119,8 @@
 
             $.ajax({
                 type: 'POST',
+                url: window.location.protocol + '//' + window.location.host + '/update-profile',
                 // url: '{{ route('update-profile') }}',
-                url: '{{ secure_url('update-profile') }}',
                 data: formData,
                 processData: false,
                 contentType: false,
