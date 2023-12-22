@@ -119,7 +119,8 @@
 
             $.ajax({
                 type: 'POST',
-                url: '{{ route('update-profile') }}',
+                // url: '{{ route('update-profile') }}',
+                url: '{{ secure_url('update-profile') }}',
                 data: formData,
                 processData: false,
                 contentType: false,
