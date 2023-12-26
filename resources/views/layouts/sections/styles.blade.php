@@ -13,6 +13,11 @@
 <!-- Vendors CSS -->
 <link rel="stylesheet" href="{{ asset('assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
 
+<!--Material Design Iconic Font-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+{{-- file uploader --}}
+<link rel="stylesheet" href="{{ asset('imgUploader/image-uploader.min.css') }}" />
+
 <!-- Vendor Styles -->
 @yield('vendor-style')
 

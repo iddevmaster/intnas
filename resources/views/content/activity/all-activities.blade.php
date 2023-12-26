@@ -17,102 +17,91 @@
         </button>
     </a>
   </div>
+    @if(session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
   <div class="table-responsive text-nowrap">
     <table class="table table-hover">
-      <thead class="table-primary">
-        <tr>
-          <th>Title</th>
-          <th>Image</th>
-          <th>update</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-      <tbody class="table-border-bottom-0">
-        <tr>
-          <td><span class="fw-medium">React Project</span></td>
-          <td>
-            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Lilian Fuller">
-                <img src="{{asset('assets/img/avatars/5.png')}}" alt="Avatar" class="rounded">
-              </li>
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Sophia Wilkerson">
-                <img src="{{asset('assets/img/avatars/6.png')}}" alt="Avatar" class="rounded">
-              </li>
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Christina Parker">
-                <img src="{{asset('assets/img/avatars/7.png')}}" alt="Avatar" class="rounded">
-              </li>
-            </ul>
-          </td>
-          <td><span class="badge bg-label-primary me-1">2/10</span></td>
-          <td>
-            <a href="{{ route('edit-activity') }}">
-                <button type="button" class="btn btn-icon btn-primary" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-cog bx-xs' ></i> <span>Edit activity</span>">
-                    <span class="tf-icons bx bx-cog"></span>
-                </button>
-            </a>
-            <button type="button" class="btn btn-icon btn-danger" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-trash bx-xs' ></i> <span>Delete activity</span>">
-                <span class="tf-icons bx bx-trash"></span>
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>Barry Hunter</td>
-          <td>
-            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Lilian Fuller">
-                <img src="{{asset('assets/img/avatars/5.png')}}" alt="Avatar" class="rounded">
-              </li>
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Sophia Wilkerson">
-                <img src="{{asset('assets/img/avatars/6.png')}}" alt="Avatar" class="rounded">
-              </li>
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Christina Parker">
-                <img src="{{asset('assets/img/avatars/7.png')}}" alt="Avatar" class="rounded">
-              </li>
-            </ul>
-          </td>
-          <td><span class="badge bg-label-success me-1">Completed</span></td>
-          <td>
-            <a href="{{ route('edit-activity') }}">
-                <button type="button" class="btn btn-icon btn-primary" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-cog bx-xs' ></i> <span>Edit activity</span>">
-                    <span class="tf-icons bx bx-cog"></span>
-                </button>
-            </a>
-            <button type="button" class="btn btn-icon btn-danger" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-trash bx-xs' ></i> <span>Delete activity</span>">
-                <span class="tf-icons bx bx-trash"></span>
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>Trevor Baker</td>
-          <td>
-            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Lilian Fuller">
-                <img src="{{asset('assets/img/avatars/5.png')}}" alt="Avatar" class="rounded">
-              </li>
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Sophia Wilkerson">
-                <img src="{{asset('assets/img/avatars/6.png')}}" alt="Avatar" class="rounded">
-              </li>
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Christina Parker">
-                <img src="{{asset('assets/img/avatars/7.png')}}" alt="Avatar" class="rounded">
-              </li>
-            </ul>
-          </td>
-          <td><span class="badge bg-label-info me-1">Scheduled</span></td>
-          <td>
-            <a href="{{ route('edit-activity') }}">
-                <button type="button" class="btn btn-icon btn-primary" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-cog bx-xs' ></i> <span>Edit activity</span>">
-                    <span class="tf-icons bx bx-cog"></span>
-                </button>
-            </a>
-            <button type="button" class="btn btn-icon btn-danger" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-trash bx-xs' ></i> <span>Delete activity</span>">
-                <span class="tf-icons bx bx-trash"></span>
-            </button>
-          </td>
-        </tr>
-      </tbody>
+        <thead class="table-primary">
+            <tr>
+            <th>Title</th>
+            <th>Media</th>
+            <th>update</th>
+            <th>By</th>
+            <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody class="table-border-bottom-0">
+            @foreach ($activities as $index => $activity)
+                <tr>
+                    <td><span class="fw-medium">{{ $activity->title }}</span></td>
+                    <td>
+                        <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                            @foreach ($activity->media as $key => $media)
+                                @if ($key !== 'by')
+                                    <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-md pull-up" title="{{ $key + 1 }}">
+                                        <img src="{{asset('uploads/activity/'. $media)}}" alt="Avatar" class="rounded">
+                                    </li>
+                                @endif
+                            @endforeach
+                        </ul>
+                    </td>
+                    <td>{{ $activity->updated_at }}</td>
+                    <td>{{ App\Models\User::find($activity->media['by'])->name }}</td>
+                    <td>
+                        <a href="{{ route('edit-activity', ['aid' => $activity->id]) }}">
+                            <button type="button" class="btn btn-icon btn-primary" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-cog bx-xs' ></i> <span>Edit</span>">
+                                <span class="tf-icons bx bx-cog"></span>
+                            </button>
+                        </a>
+                        <button type="button" class="btn btn-icon btn-danger delact" aid="{{ $activity->id }}" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-trash bx-xs' ></i> <span>Delete</span>">
+                            <span class="tf-icons bx bx-trash"></span>
+                        </button>
+                    </td>
+                </tr>
+            @endforeach
+        </tbody>
     </table>
   </div>
 </div>
 <!--/ Hoverable Table rows -->
-
+<script>
+    $(document).ready(function() {
+        $('.delact').click(function(){
+            const aid = $(this).attr('aid');
+            Swal.fire({
+                title: "Are you sure?",
+                text: "You won't be able to revert this!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, delete it!"
+            }).then((result) => {
+                if (result.isConfirmed && result.value) {
+                    $.ajax({
+                        url: '/admin/activity/del/' + aid, // URL where the POST request is sent
+                        type: 'GET',
+                        success: function(response) {
+                            // Handle success. For example, showing a success message
+                            console.log(response.data);
+                            Swal.fire('Saved!', 'Activity has been deleted.', 'success')
+                            .then((result) => {
+                                if (result.isConfirmed) {
+                                    window.location.reload()
+                                }
+                            });
+                        },
+                        error: function(xhr, status, error) {
+                            // Handle errors
+                            Swal.fire('Error', 'There was a problem deleting the activity.', 'error');
+                        }
+                    });
+                }
+            });
+        });
+    });
+</script>
 @endsection

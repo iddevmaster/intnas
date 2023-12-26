@@ -48,7 +48,7 @@
                         <span class="tf-icons bx bx-cog"></span>
                     </button>
                 </a>
-                <button type="button" class="btn btn-icon btn-danger" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-trash bx-xs' ></i> <span>Delete product</span>">
+                <button type="button" class="btn btn-icon btn-danger delpro" pid="{{ $product->id }}" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-trash bx-xs' ></i> <span>Delete product</span>">
                     <span class="tf-icons bx bx-trash"></span>
                 </button>
                 </td>
@@ -59,5 +59,41 @@
   </div>
 </div>
 <!--/ Hoverable Table rows -->
-
+<script>
+    $(document).ready(function() {
+        $('.delpro').click(function(){
+            const pid = $(this).attr('pid');
+            Swal.fire({
+                title: "Are you sure?",
+                text: "You won't be able to revert this!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, delete it!"
+            }).then((result) => {
+                if (result.isConfirmed && result.value) {
+                    $.ajax({
+                        url: '/admin/products/del/' + pid, // URL where the POST request is sent
+                        type: 'GET',
+                        success: function(response) {
+                            // Handle success. For example, showing a success message
+                            console.log(response.data);
+                            Swal.fire('Saved!', 'Product has been delete.', 'success')
+                            .then((result) => {
+                                if (result.isConfirmed) {
+                                    window.location.reload()
+                                }
+                            });
+                        },
+                        error: function(xhr, status, error) {
+                            // Handle errors
+                            Swal.fire('Error', 'There was a problem deletting product.', 'error');
+                        }
+                    });
+                }
+            });
+        });
+    });
+</script>
 @endsection

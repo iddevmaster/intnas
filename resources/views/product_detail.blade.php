@@ -3,7 +3,7 @@
     <!-- Header -->
     <header class="ex-header bg-gray">
         <div class="container px-4 sm:px-8 xl:px-4">
-            <h1 class="xl:ml-24">DJI AGRAS T10</h1>
+            <h1 class="xl:ml-24">{{ $product->name }}</h1>
             <nav class="bg-grey-light w-full rounded-md xl:ml-24">
                 <ol class="list-reset flex">
                     <li>
@@ -27,7 +27,7 @@
                         <span class="mx-2 text-neutral-500 dark:text-neutral-400">></span>
                     </li>
                     <li style="color: #eb427e">
-                        DJI_AGRAS_T10
+                        {{ $product->name }}
                     </li>
                 </ol>
             </nav>

@@ -1,3 +1,23 @@
+<?php
+
+use App\Livewire\Actions\Logout;
+use Illuminate\Support\Facades\Auth;
+use Livewire\Volt\Component;
+use App\Models\Blog;
+
+new class extends Component
+{
+    public array $blogs = [];
+
+    /**
+     * Delete the currently authenticated user.
+     */
+     public function mount(): void
+    {
+        $this->blogs = Blog::all()->toArray();
+    }
+}; ?>
+
 <section class="bg-white dark:bg-gray-900">
     <div class="container px-6 py-10 mx-auto">
         <div class="text-center">
@@ -10,73 +30,38 @@
         </div>
 
         <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
-            <div>
-                <img class="relative z-10 object-cover w-full rounded-md h-96" src="/img/activity/ac02/04.jpg" alt="">
+            @foreach ($blogs as $blog)
+                <div>
+                    <img class="relative z-10 object-cover w-full rounded-md h-96" src="/uploads/news/{{ $blog['cover'] }}" alt="">
 
-                <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
-                    <a href="/blog/1/detail" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
-                        งานข้าวหอมโลก จ.ร้อยเอ็ด
-                    </a>
+                    <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+                        <a href="/blog/detail/{{ $blog['id'] }}" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                            {{ $blog['title'] }}
+                        </a>
 
-                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
-                        วันที่ 11-13 ธ.ค 66 งานข้าวหอมมะลิโลก 101 จ.ร้อยเอ็ด บริษัท ID Drives เป็นตัวแทน proviceder ของภาคอีสานนำนวัตกรรม
-                    เข้าร่วมออกบูทโครงการโดรนชุมชนและศูนย์ซ่อมโดรนชุมชน....
-                    </p>
+                        <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                            @php
+                                // Find the position of "<p>"
+                                $startPos = strpos($blog['desc'], "<p>");
 
-                    <p class="mt-3 text-sm text-blue-500">11 ธันวาคม 66</p>
+                                // Find the position of "</p>"
+                                $endPos = strpos($blog['desc'], "</p>");
+
+                                $textBetweenTags = '';
+                                if ($startPos !== false && $endPos !== false) {
+                                    // Extract text between "<p>" and "</p>"
+                                    $textBetweenTags = substr($blog['desc'], $startPos + strlen("<p>"), $endPos - $startPos - strlen("<p>"));
+                                }
+                            @endphp
+                            {{ Illuminate\Support\Str::limit($textBetweenTags, 140, '...') }}
+                        </p>
+
+                        <p class="mt-3 text-sm text-blue-500">
+                            {{ \Carbon\Carbon::parse($blog['updated_at'])->locale('en')->isoFormat('D MMMM YYYY') }}
+                        </p>
+                    </div>
                 </div>
-            </div>
-
-            <div>
-                <img class="relative z-10 object-cover w-full rounded-md h-96" src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
-
-                <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
-                    <a href="/blog/2/detail" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
-                        How to use sticky note for problem solving
-                    </a>
-
-                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis sint autem nesciunt,
-                        laudantium quia tempore delect
-                    </p>
-
-                    <p class="mt-3 text-sm text-blue-500">20 October 2019</p>
-                </div>
-            </div>
-
-            <div>
-                <img class="relative z-10 object-cover w-full rounded-md h-96" src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
-
-                <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
-                    <a href="/blog/3/detail" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
-                        How to use sticky note for problem solving
-                    </a>
-
-                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis sint autem nesciunt,
-                        laudantium quia tempore delect
-                    </p>
-
-                    <p class="mt-3 text-sm text-blue-500">20 October 2019</p>
-                </div>
-            </div>
-
-            <div>
-                <img class="relative z-10 object-cover w-full rounded-md h-96" src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
-
-                <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
-                    <a href="/blog/4/detail" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
-                        How to use sticky note for problem solving
-                    </a>
-
-                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis sint autem nesciunt,
-                        laudantium quia tempore delect
-                    </p>
-
-                    <p class="mt-3 text-sm text-blue-500">20 October 2019</p>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>

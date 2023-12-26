@@ -45,6 +45,8 @@ use App\Http\Controllers\form_elements\InputGroups;
 use App\Http\Controllers\form_layouts\VerticalForm;
 use App\Http\Controllers\form_layouts\HorizontalForm;
 use App\Http\Controllers\tables\Basic as TablesBasic;
+use App\Models\Product;
+use App\Models\Blog;
 
 /*
 |--------------------------------------------------------------------------
@@ -75,11 +77,13 @@ Route::view('/activity', 'portfolio');
 Route::view('/contacts', 'contacts');
 Route::view('/products', 'products');
 Route::view('/blogs', 'blogs');
-Route::get('/product/{prod_id}/detail', function ($prod_id) {
-    return view('product_detail', ['prod_id' => $prod_id]);
+Route::get('/product/detail/{prod_id}', function ($prod_id) {
+    $product = Product::find($prod_id);
+    return view('product_detail', ['prod_id' => $prod_id, 'product' => $product]);
 });
-Route::get('/blog/{blog_id}/detail', function ($prod_id) {
-    return view('blog_detail', ['blog_id' => $prod_id]);
+Route::get('/blog/detail/{blog_id}', function ($blog_id) {
+    $blog = Blog::find($blog_id);
+    return view('blog_detail', ['blog_id' => $blog_id, 'blog' => $blog]);
 });
 Route::view('/services', 'services');
 
@@ -122,16 +126,23 @@ Route::middleware(['auth'])->group(function () {
         Route::post('/admin/products/store', [ProductController::class, 'storeProduct'])->name('store-product');
         Route::post('/admin/products/update/{pid}', [ProductController::class, 'updateProduct'])->name('update-product');
         Route::post('/admin/products/category/add', [ProductController::class, 'addCate'])->name('add-product-cate');
+        Route::get('/admin/products/del/{pid}', [ProductController::class, 'delProduct'])->name('del-product');
 
         // News
         Route::get('/admin/news', [NewsController::class, 'index'])->name('admin-news');
         Route::get('/admin/news/add', [NewsController::class, 'addNews'])->name('add-news');
-        Route::get('/admin/news/edit/1', [NewsController::class, 'editNews'])->name('edit-news');
+        Route::get('/admin/news/edit/{bid}', [NewsController::class, 'editNews'])->name('edit-news');
+        Route::post('/admin/news/store', [NewsController::class, 'storeNews'])->name('store-news');
+        Route::post('/admin/news/update/{bid}', [NewsController::class, 'updateNews'])->name('update-news');
+        Route::get('/admin/news/del/{bid}', [NewsController::class, 'delNews'])->name('del-news');
 
-        // News
+        // Activity
         Route::get('/admin/activities', [ActivityController::class, 'index'])->name('admin-activities');
         Route::get('/admin/activity/add', [ActivityController::class, 'addActivity'])->name('add-activity');
-        Route::get('/admin/activity/edit/1', [ActivityController::class, 'editActivity'])->name('edit-activity');
+        Route::post('/admin/activity/store', [ActivityController::class, 'storeActivity'])->name('store-activity');
+        Route::post('/admin/activity/update/{aid}', [ActivityController::class, 'updateActivity'])->name('update-activity');
+        Route::get('/admin/activity/edit/{aid}', [ActivityController::class, 'editActivity'])->name('edit-activity');
+        Route::get('/admin/activity/del/{aid}', [ActivityController::class, 'delActivity'])->name('delete-activity');
 
         // Account
         Route::get('/admin/account-setting', [AccountController::class, 'index'])->name('admin-account-setting');

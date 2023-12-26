@@ -9,6 +9,8 @@
 <!-- BEGIN: Theme JS-->
 <script src="{{ asset('assets/js/main.js') }}"></script>
 
+<script type="text/javascript" src="{{ asset('imgUploader/image-uploader.min.js') }}"></script>
+
 <!-- END: Theme JS-->
 <!-- Pricing Modal JS-->
 @stack('pricing-script')

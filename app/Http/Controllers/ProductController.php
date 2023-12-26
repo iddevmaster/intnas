@@ -24,7 +24,8 @@ class ProductController extends Controller
     public function editProduct($pid)
     {
         $product = Product::find($pid);
-        return view('content.products.edit-product', compact('product', 'pid'));
+        $categories = Product_category::all();
+        return view('content.products.edit-product', compact('product', 'pid', 'categories'));
     }
 
     public function storeProduct(Request $request) {
@@ -83,6 +84,7 @@ class ProductController extends Controller
     }
 
     public function updateProduct(Request $request, $pid) {
+        dd($request->all());
         $validatedData = $request->validate([
             'pname' => 'required|max:200',
             'pdesc' => 'required|max:1000',
@@ -126,5 +128,20 @@ class ProductController extends Controller
             $request->session()->flash('error', 'fail!');
             return redirect()->back();
         }
+    }
+
+    public function delProduct($pid)
+    {
+        $product = Product::find($pid);
+
+        $filePath = 'uploads/product/'.$product->img;
+
+        if (Storage::disk('local')->exists($filePath)) {
+            Storage::disk('local')->delete($filePath);
+        }
+
+        $product->delete();
+
+        return response()->json(['success' => true, 'data' => "Product is deleted!"]);
     }
 }

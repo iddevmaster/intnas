@@ -15,4 +15,9 @@ class Activity extends Model
         'desc',
         'media',
     ];
+
+    public function getMediaAttribute($value)
+    {
+        return json_decode($value, true);
+    }
 }

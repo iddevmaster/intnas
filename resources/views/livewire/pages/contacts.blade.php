@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Phattarachai\LineNotify\Facade\Line;
 use Livewire\Volt\Component;
+use App\Models\Contact;
 
 new class extends Component
 {
@@ -30,6 +31,18 @@ new class extends Component
             "\nSocial => ". $this->social.
             "\nข้อความ => " . $this->message
         );
+
+        $ipAddress = Request::ip();
+
+        Contact::create([
+            'name' => $this->name,
+            'email' => $this->email,
+            'agn' => $this->agency,
+            'phone' => $this->phone,
+            'messages' => $this->message,
+            'social' => $this->social,
+            'ip_addr' => $ipAddress
+        ]);
 
         $this->dispatch('success');
     }

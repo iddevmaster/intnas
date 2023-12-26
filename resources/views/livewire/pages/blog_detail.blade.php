@@ -1,10 +1,12 @@
 <?php
 
 use Livewire\Volt\Component;
+use App\Models\Blog;
 
 new class extends Component
 {
     public string $blog_id;
+    public array $blogs = [];
 
     /**
      * Delete the currently authenticated user.
@@ -12,15 +14,19 @@ new class extends Component
      public function mount($blog_id)
     {
         $this->blog_id = $blog_id;
+        $this->blogs = Blog::find($blog_id)->toArray();
     }
 }; ?>
 <section>
     <div class="ex-basic-1 py-12">
         <div class="container mx-auto px-4 sm:px-8 xl:max-w-5xl xl:px-12">
             <div class="flex justify-center ">
-                <img class="inline drone-float" src="/img/activity/ac02/04.jpg" alt="alternative" />
+                <img class="inline drone-float" src="/uploads/news/{{ $blogs['cover'] }}" alt="alternative" />
             </div>
-            <div class="indent-10">
+            <div class="my-10 px-4">
+                {!! $blogs['desc'] !!}
+            </div>
+            {{-- <div class="indent-10">
                 <p class="text-2xl my-10">
                     วันที่ 11-13 ธ.ค 66 งานข้าวหอมมะลิโลก 101 จ.ร้อยเอ็ด บริษัท ID Drives เป็นตัวแทน proviceder ของภาคอีสานนำนวัตกรรม
                     เข้าร่วมออกบูทโครงการโดรนชุมชนและศูนย์ซ่อมโดรนชุมชน
@@ -45,7 +51,7 @@ new class extends Component
             </div>
             <div class="my-10">
                 <img class="inline drone-float" src="/img/activity/ac02/08.jpg" alt="alternative" />
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
