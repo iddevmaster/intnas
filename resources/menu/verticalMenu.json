@@ -28,6 +28,12 @@
         "url": "/admin/activities"
     },
     {
+        "name": "Contacts",
+        "icon": "menu-icon tf-icons bx bxs-contact",
+        "slug": "admin-contacts",
+        "url": "/admin/contacts"
+    },
+    {
         "menuHeader": "Account"
     },
     {

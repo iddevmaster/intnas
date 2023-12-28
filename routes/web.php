@@ -9,6 +9,7 @@ use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\OrganizController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\pages\AccountSettingsAccount;
 use App\Http\Controllers\pages\AccountSettingsNotifications;
 use App\Http\Controllers\pages\AccountSettingsConnections;
@@ -47,6 +48,7 @@ use App\Http\Controllers\form_layouts\HorizontalForm;
 use App\Http\Controllers\tables\Basic as TablesBasic;
 use App\Models\Product;
 use App\Models\Blog;
+use App\Http\Controllers\CaptchaServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -70,6 +72,7 @@ use App\Models\Blog;
 //     return view('welcome');
 // });
 
+
 // Landing page
 Route::view('/', 'landing_page');
 Route::view('/home', 'landing_page');
@@ -87,7 +90,7 @@ Route::get('/blog/detail/{blog_id}', function ($blog_id) {
 });
 Route::view('/services', 'services');
 
-
+Route::get('/reload-captcha', [CaptchaServiceController::class, 'reloadCaptcha']);
 
 
 /*
@@ -153,6 +156,9 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/admin/organization', [OrganizController::class, 'index'])->name('admin-organization');
         Route::post('/admin/organization/add', [OrganizController::class, 'addAgn']);
         Route::post('/admin/organization/delete', [OrganizController::class, 'deleteData']);
+
+        // Contacts
+        Route::get('/admin/contacts', [ContactController::class, 'index'])->name('admin-contacts');
 
     // Log out
     Route::get('/admin/logout', function () {

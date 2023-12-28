@@ -41,7 +41,7 @@ new class extends Component
         </div> --}}
 
         @foreach ($activities as $activity)
-            <div class="container mx-auto px-4 sm:px-8 xl:max-w-5xl xl:px-12">
+            <div class="container mx-auto px-4 sm:px-8 xl:max-w-5xl xl:px-12 mb-10">
                 <div class="mb-5">
                     <h2>{{ $activity['title'] }}</h2>
                     <p>{{ $activity['desc'] }}</p>
