@@ -146,6 +146,7 @@ Route::middleware(['auth'])->group(function () {
         Route::post('/admin/activity/update/{aid}', [ActivityController::class, 'updateActivity'])->name('update-activity');
         Route::get('/admin/activity/edit/{aid}', [ActivityController::class, 'editActivity'])->name('edit-activity');
         Route::get('/admin/activity/del/{aid}', [ActivityController::class, 'delActivity'])->name('delete-activity');
+        Route::get('/admin/activity/{aid}/delete/media/{delmedia}', [ActivityController::class, 'delMedia'])->name('delete-media');
 
         // Account
         Route::get('/admin/account-setting', [AccountController::class, 'index'])->name('admin-account-setting');

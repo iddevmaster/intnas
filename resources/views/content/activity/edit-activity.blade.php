@@ -42,7 +42,7 @@
                                     <div class="p-0 overflow-hidden rounded">
                                         <img class="object-fit-cover" src="{{asset('uploads/activity/'. $media)}}" width="350" height="150" alt="">
                                     </div>
-                                    <button type="button" class="btn btn-sm rounded-pill btn-icon btn-danger position-absolute top-0 end-0" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-x bx-xs' ></i> <span>Delete</span>">
+                                    <button type="button" aid="{{ $activity->id }}" media="{{ $media }}" class="btn btn-sm rounded-pill btn-icon btn-danger position-absolute top-0 end-0 delBtn" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-x bx-xs' ></i> <span>Delete</span>">
                                         <i class='bx bx-x'></i>
                                     </button>
                                 </div>
@@ -74,6 +74,46 @@
 
     $(document).ready(function(){
         $('.input-images').imageUploader();
+
+        $('.delBtn').click(function() {
+            const actid = $(this).attr('aid');
+            const delmedia = $(this).attr('media');
+            Swal.fire({
+                title: "Are you sure?",
+                text: "You won't be able to revert this!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, delete it!"
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    console.log(delmedia);
+                    $.ajax({
+                        url: '/admin/activity/' + actid + '/delete/media/' + delmedia, // URL where the POST request is sent
+                        type: 'GET',
+                        success: function(response) {
+                            // Handle success. For example, showing a success message
+                            console.log(response.data);
+                            Swal.fire({
+                                title: "Deleted!",
+                                text: "Your file has been deleted.",
+                                icon: "success"
+                            })
+                            .then((result) => {
+                                if (result.isConfirmed) {
+                                    window.location.reload()
+                                }
+                            });
+                        },
+                        error: function(xhr, status, error) {
+                            // Handle errors
+                            Swal.fire('Error', 'There was a problem deleting the news.', 'error');
+                        }
+                    });
+                }
+            });
+        });
     });
 </script>
 @endsection

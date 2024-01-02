@@ -112,4 +112,27 @@ class ActivityController extends Controller
 
         return response()->json(['success' => true, 'data' => "Product is deleted!"]);
     }
+
+    public function delMedia($aid, $delmedia) {
+        $activity = Activity::find($aid);
+        $medias = $activity->media;
+        $newMedia = [];
+
+        foreach ($medias as $key => $media) {
+            $filePath = 'uploads/activity/'.$media;
+
+            if (Storage::disk('local')->exists($filePath) && $media == $delmedia) {
+                Storage::disk('local')->delete($filePath);
+            } elseif ($media !== $delmedia) {
+                if ($key == 'by') {
+                    $newMedia[$key] = $media;
+                } else {
+                    $newMedia[] = $media;
+                }
+            }
+        }
+        $activity->media = json_encode($newMedia);
+        $activity->save();
+        return response()->json(['success' => true, 'data' => $newMedia]);
+    }
 }

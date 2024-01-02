@@ -24,6 +24,7 @@
                 <th>Message</th>
                 <th>Agency</th>
                 <th>Ip</th>
+                <th>Date</th>
             </tr>
         </thead>
         <tbody class="table-border-bottom-0">
@@ -37,6 +38,7 @@
                     <td>{{ $contact->message }}</td>
                     <td>{{ $contact->agn }}</td>
                     <td>{{ $contact->ip_addr }}</td>
+                    <td>{{ $contact->created_at }}</td>
                 </tr>
             @endforeach
         </tbody>

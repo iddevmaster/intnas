@@ -172,6 +172,7 @@ return [
         Phattarachai\LineNotify\LineNotifyServiceProvider::class,
         App\Providers\MenuServiceProvider::class,
         Mews\Captcha\CaptchaServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
     ])->toArray(),
 
     /*
@@ -188,6 +189,7 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
         'Captcha' => Mews\Captcha\Facades\Captcha::class,
+        'Image' => Intervention\Image\Facades\Image::class,
     ])->toArray(),
 
 ];
