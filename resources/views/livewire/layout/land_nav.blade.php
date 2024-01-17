@@ -64,6 +64,11 @@
                         </a>
                     </div>
                 </li>
+                <style>
+                    #changelang::after {
+                        display: none;
+                    }
+                </style>
                 {{-- <li>
                     <a class="nav-link page-scroll active" href="#header">Home <span class="sr-only">(current)</span></a>
                 </li>

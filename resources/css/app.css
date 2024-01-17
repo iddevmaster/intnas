@@ -12,7 +12,3 @@
 @tailwind components;
 @tailwind utilities;
 
-
-#changelang::after {
-    display: none;
-}
