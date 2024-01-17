@@ -47,7 +47,9 @@
                     <a class="nav-link page-scroll" href="/contacts">Contacts</a>
                 </li>
                 <li class="dropdown">
-                    <div class="py-1 mx-2 dropdown-toggle cursor-pointer" id="changelang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ app()->getLocale() == 'th' ? '/img/thai.png' : '/img/english.png' }}" class="h-6" alt=""></div>
+                    <div class="py-1 mx-2 cursor-pointer" id="changelang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="{{ app()->getLocale() == 'th' ? '/img/thai.png' : '/img/english.png' }}" class="h-6" alt="">
+                    </div>
                     <div class="dropdown-menu" aria-labelledby="changelang">
                         <a class="dropdown-item cursor-pointer" href="{{ route('switch-language', ['locale' => 'th']) }}">
                             <div class="flex gap-2">
@@ -64,11 +66,6 @@
                         </a>
                     </div>
                 </li>
-                <style>
-                    #changelang::after {
-                        display: none;
-                    }
-                </style>
                 {{-- <li>
                     <a class="nav-link page-scroll active" href="#header">Home <span class="sr-only">(current)</span></a>
                 </li>
