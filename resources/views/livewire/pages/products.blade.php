@@ -58,8 +58,8 @@ new class extends Component
                                         >
                                             <h2 class="mb-6">{{ $prod['name'] }}</h2>
                                             <p class="mb-4">{{ $prod['desc'] }}</p>
-                                            <a class="btn-solid-reg mr-1.5" href="/product/detail/{{ $prod['id'] }}">See more</a>
-                                            <a class=" mr-1.5" href="">เริ่มต้น {{ number_format($prod['price'], 0, ',', ',') }} บาท</a>
+                                            <a class="btn-solid-reg mr-1.5" href="/product/detail/{{ $prod['id'] }}">{{ __('messages.see_more') }}</a>
+                                            <a class=" mr-1.5" href="">{{ __('messages.begin') }} {{ number_format($prod['price'], 0, ',', ',') }} {{ __('messages.baht') }}</a>
                                             {{-- <a class="btn-outline-reg" href="article.html">Details</a> --}}
                                     </div>
                                 </div> <!-- end of col -->

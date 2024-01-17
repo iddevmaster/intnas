@@ -65,20 +65,20 @@
                     <div class="pb-6 col-span-full md:pb-0 md:col-span-6">
                         <a rel="noopener noreferrer" target="_BLANK" href="https://iddrives.co.th/web/" class="flex flex-col items-center gap-2 justify-center space-x-3 md:justify-start">
                             <img src="/img/logoiddrives.png" width="70" alt="">
-                            <span class="self-center text-2xl font-semibold">บริษัท ไอดีไดรฟ์ จำกัด</span>
-                            <p class=" md:px-8 lg:px-24">200/222 หมู่ที่ 2 ถนน ชัยพฤกษ์ ตำบลในเมือง อำเภอเมืองขอนแก่น จังหวัดขอนแก่น 40000</p>
+                            <span class="self-center text-2xl font-semibold">{{ __('messages.iddrives') }}</span>
+                            <p class=" md:px-8 lg:px-24">{{ __('messages.addr_id') }}</p>
                             {{-- <p>โทรศัพท์ : 043-228 899</p>
                             <p>Email : idofficer@iddrives.co.th</p> --}}
                         </a>
                     </div>
 
                     <div class="col-span-12 sm:col-span-6 text-center md:text-left md:col-span-3">
-                        <p class="pb-1 text-xl font-medium text-pink-500 mb-4" >ติดต่อสอบถาม</p>
+                        <p class="pb-1 text-xl font-medium text-pink-500 mb-4" >{{ __('messages.cts') }}</p>
                         <ul>
                             <li>
                                 <div class="flex gap-4 mb-2">
                                     <i class="fa fa-phone-square text-3xl text-pink-500" aria-hidden="true"></i>
-                                    <p class="text-white">+6661 925 6996</p>
+                                    <p class="text-white">{{ __('messages.phone_id') }}</p>
                                 </div>
                             </li>
                             <li>
@@ -108,7 +108,7 @@
                         </ul>
                     </div>
                     <div class="col-span-12 sm:col-span-6 text-center md:text-left md:col-span-3">
-                        <p class="pb-1 text-xl font-medium text-pink-500 mb-4" >แผนที่</p>
+                        <p class="pb-1 text-xl font-medium text-pink-500 mb-4" >{{ __('messages.map') }}</p>
                         <div>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.0135083544146!2d102.85578767601251!3d16.424140329837293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228bea5279c7d5%3A0xd098a61935e43d5f!2zRHJvbmVUVEMgLSDguYDguKPguLXguKLguJnguJrguLTguJnguYLguJTguKPguJnguJ7guKPguYnguK3guKHguILguLbguYnguJnguJfguLDguYDguJrguLXguKLguJnguYLguJTguKPguJk!5e0!3m2!1sth!2sth!4v1702715454859!5m2!1sth!2sth"
                                 {{-- width="350"
@@ -124,7 +124,7 @@
                 </div>
                 <div class="grid justify-center pt-6 lg:justify-between">
                     <div class="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
-                        <span>©2024 บริษัท ไอดีไดรฟ์ จำกัด</span>
+                        <span>©2024 {{ __('messages.iddrivesA') }}</span>
                         {{-- <a rel="noopener noreferrer" href="#">
                             <span>Privacy policy</span>
                         </a>

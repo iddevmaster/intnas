@@ -22,29 +22,29 @@
                 <li class="dropdown">
                     <a class="nav-link dropdown-toggle" href="/home" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ __('messages.home') }}</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item page-scroll" href="#header">Home</a>
+                        <a class="dropdown-item page-scroll" href="#header">{{ __('messages.home') }}</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item page-scroll" href="#features">Features</a>
+                        <a class="dropdown-item page-scroll" href="#features">{{ __('messages.services') }}</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item page-scroll" href="#details">Details</a>
+                        <a class="dropdown-item page-scroll" href="#details">{{ __('messages.drone') }}</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item page-scroll" href="#pricing">Pricing</a>
+                        <a class="dropdown-item page-scroll" href="#pricing">{{ __('messages.course') }}</a>
                     </div>
                 </li>
                 <li>
-                    <a class="nav-link page-scroll" href="/products">Product</a>
+                    <a class="nav-link page-scroll" href="/products">{{ __('messages.products') }}</a>
                 </li>
                 <li>
-                    <a class="nav-link page-scroll" href="/services">Service</a>
+                    <a class="nav-link page-scroll" href="/services">{{ __('messages.services') }}</a>
                 </li>
                 <li>
-                    <a class="nav-link page-scroll" href="/blogs">News</a>
+                    <a class="nav-link page-scroll" href="/blogs">{{ __('messages.news') }}</a>
                 </li>
                 <li>
-                    <a class="nav-link page-scroll" href="/activity">Activity</a>
+                    <a class="nav-link page-scroll" href="/activity">{{ __('messages.activities') }}</a>
                 </li>
                 <li>
-                    <a class="nav-link page-scroll" href="/contacts">Contacts</a>
+                    <a class="nav-link page-scroll" href="/contacts">{{ __('messages.contact') }}</a>
                 </li>
                 <li class="dropdown">
                     <div class="py-1 mx-2 cursor-pointer" id="changelang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -54,14 +54,14 @@
                         <a class="dropdown-item cursor-pointer" href="{{ route('switch-language', ['locale' => 'th']) }}">
                             <div class="flex gap-2">
                                 <img src="/img/thai.png" class="h-6" alt="">
-                                <p>Thai</p>
+                                <p>{{ __('messages.thai') }}</p>
                             </div>
                         </a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item cursor-pointer" href="{{ route('switch-language', ['locale' => 'en']) }}">
                             <div class="flex gap-2">
                                 <img src="/img/english.png" class="h-6" alt="">
-                                <p>English</p>
+                                <p>{{ __('messages.eng') }}</p>
                             </div>
                         </a>
                     </div>
