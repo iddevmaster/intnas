@@ -14,5 +14,5 @@ to start dev server is:
 Don't forget to update the .env file after pulling the project from Git.
 
 after you install project,the default admin user is : 
-- Username: `admin@iddrives`
+- Username: `dronettc@iddrives`
 - Password: `11111111`
