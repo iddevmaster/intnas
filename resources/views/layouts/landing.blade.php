@@ -124,7 +124,7 @@
                 </div>
                 <div class="grid justify-center pt-6 lg:justify-between">
                     <div class="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
-                        <span>©2024 {{ __('messages.iddrivesA') }}</span>
+                        <span>©2024 {{ __('messages.iddrives') }}</span>
                         {{-- <a rel="noopener noreferrer" href="#">
                             <span>Privacy policy</span>
                         </a>
