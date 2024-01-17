@@ -20,7 +20,7 @@
                     <a class="nav-link page-scroll" href="/home">Home</a>
                 </li> --}}
                 <li class="dropdown">
-                    <a class="nav-link dropdown-toggle" href="/home" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                    <a class="nav-link dropdown-toggle" href="/home" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ __('messages.home') }}</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                         <a class="dropdown-item page-scroll" href="#header">Home</a>
                         <div class="dropdown-divider"></div>
@@ -45,6 +45,24 @@
                 </li>
                 <li>
                     <a class="nav-link page-scroll" href="/contacts">Contacts</a>
+                </li>
+                <li class="dropdown">
+                    <div class="py-1 mx-2 dropdown-toggle cursor-pointer" id="changelang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ app()->getLocale() == 'th' ? '/img/thai.png' : '/img/english.png' }}" class="h-6" alt=""></div>
+                    <div class="dropdown-menu" aria-labelledby="changelang">
+                        <a class="dropdown-item cursor-pointer" href="{{ route('switch-language', ['locale' => 'th']) }}">
+                            <div class="flex gap-2">
+                                <img src="/img/thai.png" class="h-6" alt="">
+                                <p>Thai</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item cursor-pointer" href="{{ route('switch-language', ['locale' => 'en']) }}">
+                            <div class="flex gap-2">
+                                <img src="/img/english.png" class="h-6" alt="">
+                                <p>English</p>
+                            </div>
+                        </a>
+                    </div>
                 </li>
                 {{-- <li>
                     <a class="nav-link page-scroll active" href="#header">Home <span class="sr-only">(current)</span></a>

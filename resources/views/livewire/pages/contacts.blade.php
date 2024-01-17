@@ -42,7 +42,7 @@ new class extends Component
         try {
             $ipAddress = Request::ip();
 
-            Contact::creat([
+            Contact::create([
                 'name' => $this->name,
                 'email' => $this->email,
                 'agn' => $this->agency,
@@ -64,7 +64,7 @@ new class extends Component
 
             $this->dispatch('success');
         } catch (\Throwable $th) {
-            //throw $th;
+            // throw $th;
             $this->dispatch('error');
         }
     }
@@ -83,7 +83,7 @@ new class extends Component
         <div class="bg-white relative invisible md:visible flex flex-wrap py-6 rounded shadow-md">
           <div class="lg:w-1/2 px-6">
             <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
-            <p class="mt-1">200, 222 หมู่ 2 Chaiyaphruek Rd, Nai Mueang, Mueang Khon Kaen District, Khon Kaen 40000</p>
+            <p class="mt-1">200/222 หมู่ 2 Chaiyaphruek Rd, Nai Mueang, Mueang Khon Kaen District, Khon Kaen 40000</p>
           </div>
           <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
             <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
@@ -178,7 +178,7 @@ new class extends Component
         <div class="bg-white relative md:hidden flex flex-wrap py-6 rounded shadow-md mt-10">
             <div class="lg:w-1/2 px-6">
               <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
-              <p class="mt-1">200, 222 หมู่ 2 Chaiyaphruek Rd, Nai Mueang, Mueang Khon Kaen District, Khon Kaen 40000</p>
+              <p class="mt-1">200/222 หมู่ 2 Chaiyaphruek Rd, Nai Mueang, Mueang Khon Kaen District, Khon Kaen 40000</p>
             </div>
             <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>

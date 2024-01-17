@@ -66,7 +66,7 @@
                         <a rel="noopener noreferrer" target="_BLANK" href="https://iddrives.co.th/web/" class="flex flex-col items-center gap-2 justify-center space-x-3 md:justify-start">
                             <img src="/img/logoiddrives.png" width="70" alt="">
                             <span class="self-center text-2xl font-semibold">บริษัท ไอดีไดรฟ์ จำกัด</span>
-                            <p class=" md:px-8 lg:px-24">200 222 หมู่ที่ 2 ถนน ชัยพฤกษ์ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
+                            <p class=" md:px-8 lg:px-24">200/222 หมู่ที่ 2 ถนน ชัยพฤกษ์ ตำบลในเมือง อำเภอเมืองขอนแก่น จังหวัดขอนแก่น 40000</p>
                             {{-- <p>โทรศัพท์ : 043-228 899</p>
                             <p>Email : idofficer@iddrives.co.th</p> --}}
                         </a>
@@ -82,22 +82,28 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="flex gap-4 mb-2">
-                                    <i class="fa-brands fa-square-facebook text-3xl text-pink-500"></i>
-                                    <p class="text-white">Dronettc</p>
-                                </div>
+                                <a rel="noopener noreferrer" target="_BLANK" href="https://www.facebook.com/dronettc" title="Facebook" >
+                                    <div class="flex gap-4 mb-2">
+                                        <i class="fa-brands fa-square-facebook text-3xl text-pink-500"></i>
+                                        <p class="text-white">Dronettc</p>
+                                    </div>
+                                </a>
                             </li>
                             <li>
-                                <div class="flex gap-4 mb-2">
-                                    <i class="fa-brands fa-line text-3xl text-pink-500"></i>
-                                    <p class="text-white">droneTTC</p>
-                                </div>
+                                <a rel="noopener noreferrer" target="_BLANK" href="https://lin.ee/UDqzxmt" title="Line">
+                                    <div class="flex gap-4 mb-2">
+                                        <i class="fa-brands fa-line text-3xl text-pink-500"></i>
+                                        <p class="text-white">droneTTC</p>
+                                    </div>
+                                </a>
                             </li>
                             <li>
-                                <div class="flex gap-4 mb-2">
-                                    <i class="fa-solid fa-envelope text-3xl text-pink-500"></i>
-                                    <p class="text-white">Dronettc@iddrives.co.th</p>
-                                </div>
+                                <a rel="noopener noreferrer" target="_BLANK" href="mailto:Dronettc@iddrives.co.th" title="Gmail">
+                                    <div class="flex gap-4 mb-2">
+                                        <i class="fa-solid fa-envelope text-3xl text-pink-500"></i>
+                                        <p class="text-white">Dronettc@iddrives.co.th</p>
+                                    </div>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -118,7 +124,7 @@
                 </div>
                 <div class="grid justify-center pt-6 lg:justify-between">
                     <div class="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
-                        <span>©2566 บริษัท ไอดีไดรฟ์ จำกัด</span>
+                        <span>©2024 บริษัท ไอดีไดรฟ์ จำกัด</span>
                         {{-- <a rel="noopener noreferrer" href="#">
                             <span>Privacy policy</span>
                         </a>

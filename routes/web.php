@@ -93,6 +93,19 @@ Route::view('/services', 'services');
 Route::get('/reload-captcha', [CaptchaServiceController::class, 'reloadCaptcha']);
 
 
+// Switch Language
+Route::get('/language/{locale}', function ($locale) {
+    app()->setLocale($locale);
+    session()->put('locale', $locale);
+    return redirect()->back();
+})->name('switch-language');
+
+
+
+
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Backend
@@ -219,6 +232,7 @@ Route::middleware(['auth'])->group(function () {
 
     // tables
     Route::get('/tables/basic', [TablesBasic::class, 'index'])->name('tables-basic');
+
 
 });
 
