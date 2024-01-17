@@ -98,7 +98,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a rel="noopener noreferrer" target="_BLANK" href="mailto:Dronettc@iddrives.co.th" title="Gmail">
+                                <a rel="noopener noreferrer" target="_BLANK" href="mailto:Dronettc@iddrives.co.th" title="Email">
                                     <div class="flex gap-4 mb-2">
                                         <i class="fa-solid fa-envelope text-3xl text-pink-500"></i>
                                         <p class="text-white">Dronettc@iddrives.co.th</p>
@@ -139,7 +139,7 @@
                         <a rel="noopener noreferrer" target="_BLANK" href="https://lin.ee/UDqzxmt" title="Line" class="flex items-center justify-center w-10 h-10 rounded-full bg-violet-400 text-gray-900">
                             <i class="fa-brands fa-line"></i>
                         </a>
-                        <a rel="noopener noreferrer" target="_BLANK" href="mailto:Dronettc@iddrives.co.th" title="Gmail" class="flex items-center justify-center w-10 h-10 rounded-full bg-violet-400 text-gray-900">
+                        <a rel="noopener noreferrer" target="_BLANK" href="mailto:Dronettc@iddrives.co.th" title="Email" class="flex items-center justify-center w-10 h-10 rounded-full bg-violet-400 text-gray-900">
                             <i class="fa-solid fa-envelope"></i>
                         </a>
                     </div>
