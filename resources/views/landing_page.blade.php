@@ -378,7 +378,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="card-title">โดรนเกษตร</div>
-                    <div class="price"><span class="value">15k</span></div>
+                    <div class="price"><span class="value">15,000</span></div>
                     <div class="frequency">บาท</div>
                     <p>หลักสูตรอบรม การสอนนักบินโดรนเพื่อการเกษตรมืออาชีพ</p>
                     <ul class="list mb-7 space-y-2 text-left">
@@ -410,7 +410,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="card-title">โดรนสำรวจ</div>
-                    <div class="price"><span class="value">15k</span></div>
+                    <div class="price"><span class="value">15,000</span></div>
                     <div class="frequency">บาท</div>
                     <p>หลักสูตรอบรม การสอนนักบินโดรนเพื่อการสำรวจมืออาชีพ</p>
                     <ul class="list mb-7 space-y-2 text-left">
@@ -442,7 +442,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="card-title">โดรนถ่ายภาพ</div>
-                    <div class="price"><span class="value">9k</span></div>
+                    <div class="price"><span class="value">9,000</span></div>
                     <div class="frequency">บาท</div>
                     <p>หลักสูตรอบรม การสอนนักบินโดรนถ่ายภาพมืออาชีพ</p>
                     <ul class="list mb-7 text-left space-y-2">
