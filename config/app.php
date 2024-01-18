@@ -178,6 +178,7 @@ return [
         App\Providers\MenuServiceProvider::class,
         Mews\Captcha\CaptchaServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        Jorenvh\Share\Providers\ShareServiceProvider::class,
     ])->toArray(),
 
     /*
@@ -195,6 +196,7 @@ return [
         // 'Example' => App\Facades\Example::class,
         'Captcha' => Mews\Captcha\Facades\Captcha::class,
         'Image' => Intervention\Image\Facades\Image::class,
+        'Share' => Jorenvh\Share\ShareFacade::class,
     ])->toArray(),
 
 ];
