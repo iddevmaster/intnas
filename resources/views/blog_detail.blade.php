@@ -1,6 +1,6 @@
 <x-landing-layout>
     @section('title', $blog->title)
-    @section('desc' , $blog->title)
+    {{-- @section('desc' , $blog->title) --}}
     {{-- @section('cover' , asset('uploads/news/'. $blog->cover)) --}}
 
     <!-- Header -->
