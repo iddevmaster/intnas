@@ -8,6 +8,7 @@
         <meta property="og:title" content="@yield('title', 'DroneTTC')" />
         <meta property="og:image"              content="@yield('cover', asset('img/booth.jpg'))" />
         <meta property="og:description"        content="How much does culture influence creative thinking?" />
+        <meta property="og:url" content="{{ url()->current() }}" />
 
         <title>{{ config('app.name', 'DroneTTC') }}</title>
 
