@@ -6,10 +6,8 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         {{-- <meta property="og:url"           content="" /> --}}
-        <meta property="og:type"          content="article" />
-        <meta property="og:title"         content="@yield('title', 'DroneTTC')" />
-        <meta property="og:description"   content="@yield('desc', 'DroneTTC')" />
-        <meta property="og:image"         content="@yield('img', '/img/logodronettc.png')" />
+        <meta property="og:title"         content="wadawdawddawd" />
+        <meta property="og:description"   content="awdawdadadaw" />
 
         <title>{{ config('app.name', 'DroneTTC') }}</title>
 
