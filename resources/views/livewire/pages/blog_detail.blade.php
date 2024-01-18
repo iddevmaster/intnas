@@ -48,7 +48,7 @@ new class extends Component
             <div class="flex justify-center ">
                 <img class="inline drone-float" src="/uploads/news/{{ $blogs['cover'] }}" alt="alternative" />
             </div>
-            <div class="my-2 flex justify-end">
+            <div class="flex justify-end" style="margin-top: 10px">
                 {{-- <div class="line-it-button" data-lang="th" data-type="like" data-env="REAL" data-url="{{ url()->current() }}"  style="display: none;"></div> --}}
                 <div class="fb-like"
                     data-href="{{ url()->current() }}"
