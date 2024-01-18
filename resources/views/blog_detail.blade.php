@@ -1,5 +1,5 @@
-@section('title', '{!! $blog->title !!}')
-@section('desc' , '{!! $blog->title !!}')
+@section('title', {{ $blog->title }})
+@section('desc' , {{ $blog->title }})
 
 <x-landing-layout>
 
