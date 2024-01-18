@@ -10,10 +10,10 @@
         <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8 header-content">
             <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12 fadeIn">
                 <div class="flex justify-center lg:max-w-xl lg:mx-auto">
-                    <img src="/img/logodronettc.png" alt="">
+                    <img src="/img/logodronettc.png" alt="" class="drop-shadow-[0_0_0.5px_rgba(255,255,255,1.25)]">
                 </div>
                 {{-- <h1 class="text-center h1-large mb-5 text-white fadeIn" >Drone Technology Training Center</h1> --}}
-                <h1 class="text-center h1-large mb-5 text-white fadeIn" id="typewriter"></h1>
+                <h1 class="text-center md:text-5xl mb-5 text-white fadeIn" id="typewriter"></h1>
                 {{-- <div class="w-full h-full flex justify-center items-center">
                     <h1 id="typewriter" class="text-4xl font-bold"></h1>
                 </div> --}}
