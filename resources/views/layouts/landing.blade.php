@@ -7,7 +7,7 @@
 
         <meta property="og:title" content="@yield('title', 'DroneTTC')" />
         <meta property="og:type"               content="article" />
-        <meta property="og:image"              content="@yield('cover', asset('img/logodronettc.png/'))" />
+        <meta property="og:image"              content="{{ asset('img/logodronettc.png') }}" />
 
         <title>{{ config('app.name', 'DroneTTC') }}</title>
 
