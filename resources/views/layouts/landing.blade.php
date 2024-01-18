@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <meta property="og:description" content="@yield('desc', 'Iddrives')" />
         <meta property="og:title" content="@yield('title', 'DroneTTC')" />
+        <meta property="og:type"               content="article" />
+        <meta property="og:image"              content="@yield('cover', asset('img/logodronettc.png/'))" />
 
         <title>{{ config('app.name', 'DroneTTC') }}</title>
 
