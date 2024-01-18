@@ -56,7 +56,7 @@
             <!-- Card -->
             <div class="card">
                 <div class="card-image">
-                    <img src="images/features-icon-1.svg" alt="alternative" />
+                    <img src="img/icons/dealer.png" alt="alternative" />
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">ตัวแทนจำหน่ายโดรน</h5>
@@ -68,7 +68,7 @@
             <!-- Card -->
             <div class="card">
                 <div class="card-image">
-                    <img src="images/features-icon-2.svg" alt="alternative" />
+                    <img src="img/icons/course.png" alt="alternative" />
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">หลักสูตรอบรม</h5>
@@ -80,7 +80,7 @@
             <!-- Card -->
             <div class="card">
                 <div class="card-image">
-                    <img src="images/features-icon-3.svg" alt="alternative" />
+                    <img src="img/icons/regis.png" alt="alternative" />
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">ขึ้นทะเบียนโดรน</h5>
@@ -92,7 +92,7 @@
             <!-- Card -->
             <div class="card">
                 <div class="card-image">
-                    <img src="images/features-icon-4.svg" alt="alternative" />
+                    <img src="img/icons/ins.png" alt="alternative" />
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">ทำประกันภัยโดรน</h5>
@@ -104,7 +104,7 @@
             <!-- Card -->
             <div class="card">
                 <div class="card-image">
-                    <img src="images/features-icon-5.svg" alt="alternative" />
+                    <img src="img/icons/service.png" alt="alternative" />
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">บริการฉีดพ่นด้วยโดรน</h5>
@@ -116,7 +116,7 @@
             <!-- Card -->
             <div class="card">
                 <div class="card-image">
-                    <img src="images/features-icon-6.svg" alt="alternative" />
+                    <img src="img/icons/ma.png" alt="alternative" />
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">ซ่อมบำรุง</h5>
@@ -137,7 +137,7 @@
                 <div class="mb-16 lg:mb-0 xl:mt-16"
                     data-aos="zoom-in"
                     data-aos-once="true"
-                    data-aos-delay="300"
+                    data-aos-delay="400"
                     data-aos-offset="200"
                     data-aos-duration="400"
                     data-aos-once="true"
@@ -149,15 +149,16 @@
                         <p class="mb-4 indent-8">โดรนเกษตรสามารถฉีดพ่นยาฆ่าแมลงและปุ๋ยได้อย่างทั่วถึงและแม่นยำกว่าการเดินฉีดแบบเดิมๆ ช่วยให้พืชได้รับสารอาหารและสารป้องกันกำจัดศัตรูพืชอย่างเพียงพอและมีประสิทธิภาพ</p>
                 </div>
             </div> <!-- end of col -->
-            <div class="lg:col-span-7 transition hover:scale-125">
+            <div class="lg:col-span-7 transition hover:scale-125 ">
                 <div class="xl:ml-14"
-                    data-aos="fade-left"
-                    {{-- data-aos-offset="200" --}}
-                    {{-- data-aos-delay="50" --}}
-                    data-aos-duration="600"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
+                    data-aos="zoom-in"
                     data-aos-once="true"
+                    data-aos-delay="300"
+                    data-aos-offset="200"
+                    data-aos-duration="400"
+                    data-aos-once="true"
+                    data-aos-mirror="true"
+                    data-aos-easing="ease-in-out"
                     >
                         <img class="inline drone-float" src="img/droneagri.png" alt="alternative" />
                 </div>
@@ -172,11 +173,14 @@
         <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
             <div class="lg:col-span-7 transition hover:scale-125">
                 <div class="mb-12 lg:mb-0 xl:mr-14"
-                    data-aos="fade-right"
-                    data-aos-duration="600"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
+                    data-aos="zoom-in"
                     data-aos-once="true"
+                    data-aos-delay="300"
+                    data-aos-offset="200"
+                    data-aos-duration="400"
+                    data-aos-once="true"
+                    data-aos-mirror="true"
+                    data-aos-easing="ease-in-out"
                     >
                         <img class="inline drone-float" src="img/dronesurv.png" alt="alternative" />
                 </div>
@@ -185,7 +189,7 @@
                 <div class="xl:mt-12"
                     data-aos="zoom-in"
                     data-aos-once="true"
-                    data-aos-delay="300"
+                    data-aos-delay="400"
                     data-aos-offset="200"
                     data-aos-duration="400"
                     data-aos-once="true"
@@ -260,7 +264,7 @@
                 <div class="mb-16 lg:mb-0 xl:mt-16"
                     data-aos="zoom-in"
                     data-aos-once="true"
-                    data-aos-delay="300"
+                    data-aos-delay="400"
                     data-aos-offset="200"
                     data-aos-duration="400"
                     data-aos-once="true"
@@ -275,11 +279,14 @@
             </div> <!-- end of col -->
             <div class="lg:col-span-7 transition hover:scale-125">
                 <div class="ml-14"
-                    data-aos="fade-left"
-                    data-aos-duration="600"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
+                    data-aos="zoom-in"
                     data-aos-once="true"
+                    data-aos-delay="300"
+                    data-aos-offset="200"
+                    data-aos-duration="400"
+                    data-aos-once="true"
+                    data-aos-mirror="true"
+                    data-aos-easing="ease-in-out"
                     >
                         <img class="inline drone-float" src="img/dronecamera.png" alt="alternative" />
                 </div>

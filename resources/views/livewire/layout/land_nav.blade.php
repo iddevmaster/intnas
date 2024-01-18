@@ -1,13 +1,13 @@
 <!-- Navigation -->
-<nav class="navbar fixed-top">
+<nav class="navbar fixed-top w-full">
     <div class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between lg:flex-nowrap">
 
         <!-- Text Logo - Use this if you don't have a graphic logo -->
         <!-- <a class="text-gray-800 font-semibold text-3xl leading-4 no-underline page-scroll" href="index.html">Pavo</a> -->
 
         <!-- Image Logo -->
-        <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="">
-            <img src="/img/logodronettc.png" alt="alternative" class="h-14" />
+        <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="/">
+            <img src="/img/logodronettc.png" alt="alternative" class="h-8 sm:h-10  md:h-12 lg:h-14" />
         </a>
 
         <button class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400" type="button" data-toggle="offcanvas">
