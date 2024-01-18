@@ -7,7 +7,7 @@
 
         <!-- Image Logo -->
         <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="">
-            <img src="/img/logodronettc.png" alt="alternative" class="h-10" />
+            <img src="/img/logodronettc.png" alt="alternative" class="h-14" />
         </a>
 
         <button class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400" type="button" data-toggle="offcanvas">
@@ -15,7 +15,7 @@
         </button>
 
         <div class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center" id="navbarsExampleDefault">
-            <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
+            <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col text-lg list-none lg:mt-0 lg:mb-0 lg:flex-row">
                 {{-- <li>
                     <a class="nav-link page-scroll" href="/home">Home</a>
                 </li> --}}
@@ -48,7 +48,7 @@
                 </li>
                 <li class="dropdown">
                     <div class="py-1 mx-2 cursor-pointer" id="changelang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="{{ app()->getLocale() == 'th' ? '/img/thai.png' : '/img/english.png' }}" class="h-6" alt="">
+                        <img src="{{ app()->getLocale() == 'th' ? '/img/thai.png' : '/img/english.png' }}" class="h-7" alt="">
                     </div>
                     <div class="dropdown-menu" aria-labelledby="changelang">
                         <a class="dropdown-item cursor-pointer" href="{{ route('switch-language', ['locale' => 'th']) }}">

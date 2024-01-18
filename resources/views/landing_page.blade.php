@@ -4,7 +4,7 @@
     <header id="header" class="header py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32">
         <div class="video-background">
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="/img/poster.jpg" onload="this.load()">
-                <source src="/video/forest.mp4" type="video/mp4">
+                <source src="/video/cover.mp4" type="video/mp4">
             </video>
         </div>
         <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8 header-content">
@@ -289,7 +289,7 @@
     <!-- end of details 3 -->
 
 
-    <!-- Statistics -->
+    {{-- <!-- Statistics -->
     <div class="counter">
         <div class="container px-4 sm:px-8">
 
@@ -320,7 +320,7 @@
 
         </div> <!-- end of container -->
     </div> <!-- end of counter -->
-    <!-- end of statistics -->
+    <!-- end of statistics --> --}}
 
 
     <!-- Video -->
@@ -580,7 +580,7 @@ type(); // Start the typewriter effect
     min-width: 100%;
     min-height: 100%;
     z-index: 1;
-    filter: brightness(0.4);
+    filter: brightness(0.8);
 }
 .header-content {
     z-index: 2;
