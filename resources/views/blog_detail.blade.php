@@ -1,6 +1,6 @@
 <x-landing-layout>
-    @section('title', '{{ $blog->title }}')
-    @section('desc' , '{{ $blog->title }}')
+    @section('title', $blog->title)
+    @section('desc' , $blog->title)
 
     <!-- Header -->
     <header class="ex-header bg-gray">
