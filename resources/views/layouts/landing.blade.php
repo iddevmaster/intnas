@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <meta property="og:description" content="Laravel SEO Test" />
-        <meta property="og:title" content="Laravel SEO" />
+        <meta property="og:description" content="@yield('desc', 'Iddrives')" />
+        <meta property="og:title" content="@yield('title', 'DroneTTC')" />
 
         <title>{{ config('app.name', 'DroneTTC') }}</title>
 
