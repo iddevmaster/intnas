@@ -23,20 +23,12 @@ new class extends Component
 <section>
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v18.0" nonce="w25IGfIl"></script>
     <div class="ex-basic-1 py-12">
         <div class="container mx-auto px-4 sm:px-8 xl:max-w-5xl xl:px-12">
             {{-- {!! $shareComponent !!} --}}
             <div class="flex items-center justify-end py-2 " style="gap: 10px">
                 <div class="line-it-button" data-lang="th" data-type="share-a" data-env="REAL" data-url="{{ url()->current() }}" data-color="default" data-size="small" data-count="true" data-ver="3" style="display: none;"></div>
-                <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
 
                 <!-- Your share button code -->
                 <div class="fb-share-button"
@@ -56,9 +48,21 @@ new class extends Component
             <div class="flex justify-center ">
                 <img class="inline drone-float" src="/uploads/news/{{ $blogs['cover'] }}" alt="alternative" />
             </div>
+            <div class="my-2 flex justify-end">
+                {{-- <div class="line-it-button" data-lang="th" data-type="like" data-env="REAL" data-url="{{ url()->current() }}"  style="display: none;"></div> --}}
+                <div class="fb-like"
+                    data-href="{{ url()->current() }}"
+                    data-width=""
+                    data-layout="button_count"
+                    data-action="like"
+                    data-size="small"
+                    data-share="false">
+                </div>
+            </div>
             <div class="my-10 px-4">
                 {!! $blogs['desc'] !!}
             </div>
         </div>
     </div>
+    <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
 </section>
