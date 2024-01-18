@@ -55,9 +55,9 @@ new class extends Component
             <div class="flex justify-center ">
                 <img class="inline drone-float" src="/uploads/news/{{ $blogs['cover'] }}" alt="alternative" />
             </div>
-            <div class="m-2 flex justify-end">
+            {{-- <div class="m-2 flex justify-end">
                 <div class="line-it-button" data-lang="th" data-type="like" data-env="REAL" data-url="{{ url()->current() }}"  style="display: none;"></div>
-            </div>
+            </div> --}}
             <div class="my-10 px-4">
                 {!! $blogs['desc'] !!}
             </div>
