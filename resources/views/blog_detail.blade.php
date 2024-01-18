@@ -1,6 +1,22 @@
+@php
+    // Find the position of "<p>"
+    $startPos = strpos($blog->desc, "<p>");
+
+    // Find the position of "</p>"
+    $endPos = strpos($blog->desc, "</p>");
+
+    $textBetweenTags = '';
+    if ($startPos !== false && $endPos !== false) {
+        // Extract text between "<p>" and "</p>"
+        $textBetweenTags = substr($blog->desc, $startPos + strlen("<p>"), $endPos - $startPos - strlen("<p>"));
+    }
+
+    $desc = Illuminate\Support\Str::limit($textBetweenTags, 50, '...');
+@endphp
+
 <x-landing-layout>
     @section('title', $blog->title)
-    {{-- @section('desc' , $blog->title) --}}
+    @section('desc' , $desc)
     @section('cover' , asset('uploads/news/'. $blog->cover))
 
     <!-- Header -->
