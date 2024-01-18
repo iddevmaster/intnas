@@ -56,15 +56,7 @@ new class extends Component
                 <img class="inline drone-float" src="/uploads/news/{{ $blogs['cover'] }}" alt="alternative" />
             </div>
             <div class="m-2 flex justify-end">
-                {{-- <div class="line-it-button" data-lang="th" data-type="like" data-env="REAL" data-url="{{ url()->current() }}"  style="display: none;"></div> --}}
-                <div class="fb-like"
-                    data-href="http://web.iddriver.com/blog/detail/{{ $blogs['id'] }}"
-                    data-width=""
-                    data-layout="button_count"
-                    data-action="like"
-                    data-size="small"
-                    data-share="false">
-                </div>
+                <div class="line-it-button" data-lang="th" data-type="like" data-env="REAL" data-url="{{ url()->current() }}"  style="display: none;"></div>
             </div>
             <div class="my-10 px-4">
                 {!! $blogs['desc'] !!}
