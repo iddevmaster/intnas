@@ -34,7 +34,7 @@ new class extends Component
     <div class="ex-basic-1 py-12">
         <div class="container mx-auto px-4 sm:px-8 xl:max-w-5xl xl:px-12">
             {{-- {!! $shareComponent !!} --}}
-            <div class="flex gap-5 items-center justify-end py-2">
+            <div class="flex items-center justify-end py-2 gap-5">
                 <div class="line-it-button" data-lang="th" data-type="share-a" data-env="REAL" data-url="{{ url()->current() }}" data-color="default" data-size="small" data-count="true" data-ver="3" style="display: none;"></div>
                 <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
 
