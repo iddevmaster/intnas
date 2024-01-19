@@ -138,6 +138,12 @@
                             <span>Terms of service</span>
                         </a> --}}
                     </div>
+
+                    <div>
+                        {{-- href="https://www.freecounterstat.com" --}}
+                        <a title="Visitor counter"><img src="https://counter7.optistats.ovh/private/freecounterstat.php?c=q1brx8flcc666yxpe6ypatgjulw1znnu" border="0" title="Visitor counter" alt="Visitor counter"></a>
+                    </div>
+
                     <div class="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
                         <a rel="noopener noreferrer" target="_BLANK" href="https://www.facebook.com/dronettc" title="Facebook" class="flex items-center justify-center w-10 h-10 rounded-full bg-violet-400 text-gray-900">
                             <i class="fa-brands fa-facebook-f"></i>
