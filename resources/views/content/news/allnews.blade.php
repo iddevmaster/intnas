@@ -29,6 +29,7 @@
                 <th>#</th>
                 <th>cover</th>
                 <th>Title</th>
+                <th>Type</th>
                 <th>update</th>
                 <th>Actions</th>
             </tr>
@@ -39,6 +40,7 @@
                     <td>{{ $index + 1 }}</td>
                     <td><img src="/uploads/news/{{ $blog->cover }}" width="60" alt=""></td>
                     <td>{{ $blog->title }}</td>
+                    <td>{{ ($blog->type == 0) ? 'News' : 'Activity' }}</td>
                     <td>{{ $blog->updated_at }}</td>
                     <td>
                         <a href="{{ route('edit-news', ['bid' => $blog->id]) }}">

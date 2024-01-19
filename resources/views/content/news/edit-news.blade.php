@@ -49,6 +49,14 @@
                 <input type="text" class="form-control" required maxlength="500" value="{{ $blog->title }}" name="news_title" id="defaultFormControlInput" placeholder="Product Name" aria-describedby="defaultFormControlHelp" />
             </div>
 
+            <div class="mb-3">
+                <label for="exampleFormControlSelect1" class="form-label">category</label>
+                <select class="form-select" value="{{ $blog->type }}" required name="news_cate" id="exampleFormControlSelect1" aria-label="Example select with button addon">
+                    <option value="0" {{ $blog->type == 0 ? 'selected' : ''}}>News</option>
+                    <option value="1" {{ $blog->type == 1 ? 'selected' : ''}}>Blog</option>
+                </select>
+            </div>
+
             <div class="divider my-5">
                 <div class="divider-text">News Detail Page</div>
             </div>

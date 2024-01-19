@@ -107,7 +107,7 @@
                                 <a rel="noopener noreferrer" target="_BLANK" href="mailto:Dronettc@iddrives.co.th" title="Email">
                                     <div class="flex gap-4 mb-2">
                                         <i class="fa-solid fa-envelope text-3xl text-pink-500"></i>
-                                        <p class="text-white">Dronettc@iddrives.co.th</p>
+                                        <p class="text-white " style="overflow-wrap: anywhere">Dronettc@iddrives.co.th</p>
                                     </div>
                                 </a>
                             </li>

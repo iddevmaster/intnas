@@ -30,6 +30,7 @@ class NewsController extends Controller
         $validatedData = $request->validate([
             'news_title' => 'required|max:1000',
             'news_desc' => 'required|string',
+            'news_cate' => 'required|max:100',
             'news_cover' => 'image|mimes:jpeg,png|max:20480',
         ]);
         try {
@@ -48,6 +49,7 @@ class NewsController extends Controller
                 'title' => $validatedData['news_title'],
                 'cover' => $fileName,
                 'desc' => $validatedData['news_desc'],
+                'type' => $validatedData['news_cate'],
                 'create_by' => $request->user()->id,
             ]);
 
@@ -66,6 +68,7 @@ class NewsController extends Controller
         $validatedData = $request->validate([
             'news_title' => 'required|max:1000',
             'news_desc' => 'required|string',
+            'news_cate' => 'required|max:100',
             'news_cover' => 'image|mimes:jpeg,png|max:20480',
         ]);
 
@@ -92,6 +95,7 @@ class NewsController extends Controller
 
             $blog->title = $validatedData['news_title'];
             $blog->desc = $validatedData['news_desc'];
+            $blog->type = $validatedData['news_cate'];
             $blog->save();
 
             $request->session()->flash('status', 'You change has been saved!');

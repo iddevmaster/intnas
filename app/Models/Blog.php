@@ -15,5 +15,6 @@ class Blog extends Model
         'cover',
         'desc',
         'create_by',
+        'type',
     ];
 }

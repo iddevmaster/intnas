@@ -22,7 +22,7 @@
         "url": "/admin/news"
     },
     {
-        "name": "Activity",
+        "name": "Gallery",
         "icon": "menu-icon tf-icons bx bx-calendar",
         "slug": "admin-activities",
         "url": "/admin/activities"

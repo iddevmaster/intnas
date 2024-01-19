@@ -3,7 +3,7 @@
     <!-- Header -->
     <header class="ex-header bg-gray">
         <div class="container px-4 sm:px-8 xl:px-4">
-            <h1 class="xl:ml-24">{{ __('messages.activities') }}</h1>
+            <h1 class="xl:ml-24">Promotions</h1>
             <nav class="bg-grey-light w-full rounded-md xl:ml-24">
                 <ol class="list-reset flex">
                     <li>
@@ -17,7 +17,7 @@
                         <span class="mx-2 text-neutral-500 dark:text-neutral-400">></span>
                     </li>
                     <li style="color: #eb427e">
-                        {{ __('messages.activities') }}
+                        Promotions
                     </li>
                 </ol>
             </nav>
@@ -26,6 +26,6 @@
     </header> <!-- end of ex-header -->
     <!-- end of header -->
 
-    <livewire:pages.portfolio />
+    <livewire:pages.promotions />
 
 </x-landing-layout>

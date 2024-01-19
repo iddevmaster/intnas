@@ -4,13 +4,13 @@
 
 @section('content')
 <h4 class="py-3 mb-4">
-  <span class="text-muted fw-light">Main /</span> Activity
+  <span class="text-muted fw-light">Main /</span> Gallery
 </h4>
 
 <!-- Hoverable Table rows -->
 <div class="card">
   <div class="card-header d-flex justify-content-between">
-    <h5>Activities</h5>
+    <h5>Gallery</h5>
     <a href="{{ route('add-activity') }}">
         <button type="button" class="btn btn-icon btn-success" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-plus bx-xs' ></i> <span>Add Activity</span>">
             <span class="tf-icons bx bx-plus"></span>

@@ -41,7 +41,7 @@
                     <a class="nav-link page-scroll" href="/blogs">{{ __('messages.news') }}</a>
                 </li>
                 <li>
-                    <a class="nav-link page-scroll" href="/activity">{{ __('messages.activities') }}</a>
+                    <a class="nav-link page-scroll" href="/activity">Promotions</a>
                 </li>
                 <li>
                     <a class="nav-link page-scroll" href="/contacts">{{ __('messages.contact') }}</a>
