@@ -762,7 +762,7 @@ button:hover{
         <h2 class="error-subtitle">
          Have you tried turning it off and on again?
         </h2>
-        <a href="/login"><button type="button">กลับไปยังหน้าหลัก</button></a>
+        <a href="/"><button type="button">กลับไปยังหน้าหลัก</button></a>
 
 
       </div>
