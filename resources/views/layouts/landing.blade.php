@@ -63,7 +63,7 @@
             'resources/js/pavo/scripts.js',
         ])
     </head>
-    <body data-spy="scroll" data-target=".fixed-top" style="background-image: url('https://static.vecteezy.com/system/resources/thumbnails/017/607/403/small/blur-abstract-image-with-shining-lights-green-bokeh-background-vector.jpg')">
+    <body data-spy="scroll" data-target=".fixed-top">
 
         <livewire:layout.land_nav />
 
