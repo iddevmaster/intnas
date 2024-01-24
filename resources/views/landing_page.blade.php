@@ -341,10 +341,7 @@
                 {{-- <video class="w-full shadow-lg" autoplay loop controls>
                     <source src="/video/banner.mp4" type="video/mp4" />
                 </video> --}}
-                {{-- <video playsinline="playsinline" autoplay="autoplay" id="videoElement" loop="loop" preload="auto">
-                    <source src="/video/banner.mp4" type="video/mp4">
-                </video> --}}
-                <video autoplay loop controls id="videoElement" preload="auto">
+                <video playsinline="playsinline" autoplay="autoplay" id="videoElement" loop="loop" preload="auto">
                     <source src="/video/banner.mp4" type="video/mp4">
                 </video>
             </div> <!-- end of slider-container -->
