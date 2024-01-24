@@ -174,6 +174,8 @@
 
         {{-- aos animations --}}
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
         <script>
           AOS.init();
         </script>
