@@ -44,6 +44,10 @@
         {{-- Sweet alert --}}
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+
         @livewireScripts
 
         <!-- Scripts -->
