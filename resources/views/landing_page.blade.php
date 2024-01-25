@@ -1,40 +1,40 @@
 <x-landing-layout>
 
-    <!-- Header -->
-    <header id="header" class="header py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32">
-        <a href="/services">
-            <div class="video-background">
-                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="/img/poster.jpg" onload="this.load()">
-                    <source src="/video/cover.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8 header-content">
-                <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12 fadeIn">
-                    <div class="flex justify-center lg:max-w-xl lg:mx-auto">
-                        <img src="/img/logodronettc.png" alt="" class="drop-shadow-[0_0_0.5px_rgba(255,255,255,1.25)]">
+    <a href="/services">
+        <!-- Header -->
+        <header id="header" class="header py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32">
+                <div class="video-background">
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="/img/poster.jpg" onload="this.load()">
+                        <source src="/video/cover.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8 header-content">
+                    <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12 fadeIn">
+                        <div class="flex justify-center lg:max-w-xl lg:mx-auto">
+                            <img src="/img/logodronettc.png" alt="" class="drop-shadow-[0_0_0.5px_rgba(255,255,255,1.25)]">
+                        </div>
+                        {{-- <h1 class="text-center h1-large mb-5 text-white fadeIn" >Drone Technology Training Center</h1> --}}
+                        <h1 class="text-center md:text-5xl mb-5 text-white fadeIn" id="typewriter"></h1>
+                        {{-- <div class="w-full h-full flex justify-center items-center">
+                            <h1 id="typewriter" class="text-4xl font-bold"></h1>
+                        </div> --}}
+                        {{-- ศูนย์ฝึกอบรมเทคโนโลยีโดรนสำหรับผู้ที่หลงใหลในการบินและนวัตกรรม, --}}
+                        <p class="text-center p-large mb-8 text-gray-200 fadeIn2">
+                            เปิดประตูสู่โลกแห่งทักษะการบินพร้อมทั้งประสบการณ์ทางปฏิบัติและความรู้เฉพาะทางจากผู้เชี่ยวชาญ
+                        </p>
+                        {{-- <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Download</a>
+                        <a class="btn-solid-lg secondary" href="#your-link"><i class="fab fa-google-play"></i>Download</a> --}}
                     </div>
-                    {{-- <h1 class="text-center h1-large mb-5 text-white fadeIn" >Drone Technology Training Center</h1> --}}
-                    <h1 class="text-center md:text-5xl mb-5 text-white fadeIn" id="typewriter"></h1>
-                    {{-- <div class="w-full h-full flex justify-center items-center">
-                        <h1 id="typewriter" class="text-4xl font-bold"></h1>
-                    </div> --}}
-                    {{-- ศูนย์ฝึกอบรมเทคโนโลยีโดรนสำหรับผู้ที่หลงใหลในการบินและนวัตกรรม, --}}
-                    <p class="text-center p-large mb-8 text-gray-200 fadeIn2">
-                        เปิดประตูสู่โลกแห่งทักษะการบินพร้อมทั้งประสบการณ์ทางปฏิบัติและความรู้เฉพาะทางจากผู้เชี่ยวชาญ
-                    </p>
-                    {{-- <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Download</a>
-                    <a class="btn-solid-lg secondary" href="#your-link"><i class="fab fa-google-play"></i>Download</a> --}}
-                </div>
-                <div class="xl:text-right hidden sm:flex justify-center items-center slideInRight">
-                    <img
-                        class="inline sm:w-1/3 lg:w-auto drone-float "
-                        src="img/dronewhite.png"
-                        alt="alternative" />
-                </div>
-            </div> <!-- end of container -->
-        </a>
-    </header> <!-- end of header -->
-    <!-- end of header -->
+                    <div class="xl:text-right hidden sm:flex justify-center items-center slideInRight">
+                        <img
+                            class="inline sm:w-1/3 lg:w-auto drone-float "
+                            src="img/dronewhite.png"
+                            alt="alternative" />
+                    </div>
+                </div> <!-- end of container -->
+        </header> <!-- end of header -->
+        <!-- end of header -->
+    </a>
 
 
     <!-- Introduction -->
