@@ -312,7 +312,13 @@
         </div>
         <div class="central-body">
             <img class="image-404" src="http://salehriaz.com/404Page/img/404.svg" width="300px">
-            <a href="/" class="btn-go-home">GO BACK HOME</a>
+            <button class="btn-go-home" onclick="goBack()">GO BACK</button>
+            <script>
+                function goBack() {
+                  // This will navigate back to the previous page in the browser's history
+                  window.history.back();
+                }
+            </script>
         </div>
         <div class="objects">
             <img class="object_rocket" src="http://salehriaz.com/404Page/img/rocket.svg" width="40px">

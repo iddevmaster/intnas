@@ -762,8 +762,13 @@ button:hover{
         <h2 class="error-subtitle">
          Have you tried turning it off and on again?
         </h2>
-        <a href="/"><button type="button">กลับไปยังหน้าหลัก</button></a>
-
+        <button type="button" onclick="goBack()">กลับไปยังก่อนหน้า</button>
+        <script>
+            function goBack() {
+              // This will navigate back to the previous page in the browser's history
+              window.history.back();
+            }
+        </script>
 
       </div>
 
