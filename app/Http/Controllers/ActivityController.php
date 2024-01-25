@@ -32,14 +32,16 @@ class ActivityController extends Controller
             'ac_title' => 'required|max:1000',
             'ac_desc' => 'max:2000',
         ]);
+
         try {
             $media = [];
             $media['by'] = $request->user()->id;
-            if ($request->hasFile('images')) {
-                foreach ($request->file('images') as $index => $image) {
+
+            foreach ($request->file('images') as $index => $image) {
+                if ($request->hasFile('image')) {
                     // Process each uploaded file
                     $imageName = $index . now()->format('dmYHis') . '.' . $image->getClientOriginalExtension();
-                    $path = Storage::disk('local')->putFileAs('uploads/activity', $image, $imageName);
+                    $path = $image->storeAs('uploads/activity', $imageName, 'local');
                     // You can save the $imageName to the database or perform any other action as needed
 
                     $media[] = $imageName;
@@ -65,7 +67,6 @@ class ActivityController extends Controller
             'ac_title' => 'required|max:1000',
             'ac_desc' => 'max:2000',
         ]);
-        dd($request->all());
         try {
             $activity = Activity::find($aid);
             $media = $activity->media;
@@ -75,7 +76,7 @@ class ActivityController extends Controller
                 foreach ($request->file('images') as $index => $image) {
                     // Process each uploaded file
                     $imageName = $index . now()->format('dmYHis') . '.' . $image->getClientOriginalExtension();
-                    $path = Storage::disk('local')->putFileAs('uploads/activity', $image, $imageName);
+                    $path = $image->storeAs('uploads/activity', $imageName, 'local');
                     // You can save the $imageName to the database or perform any other action as needed
 
                     $media[] = $imageName;
