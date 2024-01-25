@@ -27,11 +27,16 @@ class ActivityController extends Controller
 
     public function storeActivity(Request $request)
     {
-        $request->validate([
+        $validator = validator($request->all(), [
             'images.*' => 'image|mimes:jpeg,png,jpg|max:20480',
             'ac_title' => 'required|max:1000',
             'ac_desc' => 'max:2000',
         ]);
+
+        if ($validator->fails()) {
+            $firstError = $validator->errors()->first('images.0');
+            return redirect()->back()->with('error', $firstError);
+        }
         try {
             $media = [];
             $media['by'] = $request->user()->id;
@@ -60,11 +65,16 @@ class ActivityController extends Controller
 
     public function updateActivity(Request $request, $aid)
     {
-        $request->validate([
+        $validator = validator($request->all(), [
             'images.*' => 'image|mimes:jpeg,png,jpg|max:20480',
             'ac_title' => 'required|max:1000',
             'ac_desc' => 'max:2000',
         ]);
+
+        if ($validator->fails()) {
+            $firstError = $validator->errors()->first('images.0');
+            return redirect()->back()->with('error', $firstError);
+        }
         try {
             $activity = Activity::find($aid);
             $media = $activity->media;
