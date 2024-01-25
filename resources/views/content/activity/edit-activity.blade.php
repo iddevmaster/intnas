@@ -24,12 +24,12 @@
 
             <div class="mb-3">
                 <label for="defaultFormControlInput" class="form-label">Title</label>
-                <input type="text" name="ac_title" value="{{ $activity->title }}" required maxlength="500" class="form-control" id="defaultFormControlInput" placeholder="Product Name" aria-describedby="defaultFormControlHelp" />
+                <input type="text" name="ac_title" value="{{ $activity->title }}" required maxlength="500" class="form-control" id="defaultFormControlInput" placeholder="Activity title" aria-describedby="defaultFormControlHelp" />
             </div>
 
             <div class="mb-3">
                 <label for="defaultFormControlInput" class="form-label">Description</label>
-                <input type="text" class="form-control" value="{{ $activity->desc }}" name="ac_desc" maxlength="1000" id="defaultFormControlInput" placeholder="Product Name" aria-describedby="defaultFormControlHelp" />
+                <input type="text" class="form-control" value="{{ $activity->desc }}" name="ac_desc" maxlength="1000" id="defaultFormControlInput" placeholder="Activity description" aria-describedby="defaultFormControlHelp" />
             </div>
 
             <div class="mb-5">
@@ -53,7 +53,7 @@
             </div>
 
             <div class="mb-5">
-                <label for="prodetail" class="form-label">Upload</label>
+                <label for="prodetail" class="form-label">Upload <span class="text-secondary" style="font-size: 10px">( Allowed jpeg,png or jpg. Max size of 10Mb. )</span></label>
                 <div class="input-images"></div>
             </div>
 

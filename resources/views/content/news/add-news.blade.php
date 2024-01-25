@@ -46,7 +46,7 @@
 
             <div class="mb-3">
                 <label for="defaultFormControlInput" class="form-label">Title</label>
-                <input type="text" class="form-control" required maxlength="500" name="news_title" id="defaultFormControlInput" placeholder="Product Name" aria-describedby="defaultFormControlHelp" />
+                <input type="text" class="form-control" required maxlength="500" name="news_title" id="defaultFormControlInput" placeholder="News title" aria-describedby="defaultFormControlHelp" />
             </div>
 
             <div class="mb-3">
@@ -63,7 +63,7 @@
 
             <div class="mb-5">
                 <label for="prodetail" class="form-label">Description</label>
-                <textarea id="prodetail" name="news_desc" placeholder="Product Detail"></textarea>
+                <textarea id="prodetail" name="news_desc" placeholder="News Description"></textarea>
             </div>
 
             <div>
