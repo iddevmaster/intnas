@@ -50,4 +50,9 @@ return [
     'promotion' => 'Promotion',
     'expired' => 'Expired',
 
+    // News
+    'all' => 'All',
+    'blogs' => 'Blogs',
+    'gallery' => 'Gallery',
+
 ];

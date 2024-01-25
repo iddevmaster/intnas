@@ -44,7 +44,7 @@
                 role="tab"
                 aria-controls="tabs-home01"
                 aria-selected="true"
-                >All</a
+                >{{ __('messages.all') }}</a
             >
         </li>
         <li role="presentation" class="flex-auto text-center">
@@ -56,7 +56,7 @@
                 role="tab"
                 aria-controls="tabs-profile01"
                 aria-selected="false"
-                >News</a
+                >{{ __("messages.news") }}</a
             >
         </li>
         <li role="presentation" class="flex-auto text-center">
@@ -68,7 +68,7 @@
                 role="tab"
                 aria-controls="tabs-messages01"
                 aria-selected="false"
-                >Blogs</a
+                >{{ __('messages.blogs') }}</a
             >
         </li>
         <li role="presentation" class="flex-auto text-center">
@@ -80,7 +80,7 @@
                 role="tab"
                 aria-controls="tabs-contact01"
                 aria-selected="false"
-                >Gallery</a
+                >{{ __('messages.gallery') }}</a
             >
         </li>
     </ul>

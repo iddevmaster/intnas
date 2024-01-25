@@ -48,4 +48,9 @@ return [
     // Promotion
     'promotion' => 'โปรโมชั่น',
     'expired' => 'หมดอายุ',
+
+    // News
+    'all' => 'ทั้งหมด',
+    'blogs' => 'บทความ',
+    'gallery' => 'แกลเลอรี่',
 ];
