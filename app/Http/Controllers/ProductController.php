@@ -84,7 +84,6 @@ class ProductController extends Controller
     }
 
     public function updateProduct(Request $request, $pid) {
-        dd($request->all());
         $validatedData = $request->validate([
             'pname' => 'required|max:200',
             'pdesc' => 'required|max:1000',
