@@ -31,11 +31,19 @@
                         <a class="dropdown-item page-scroll" href="#pricing">{{ __('messages.course') }}</a>
                     </div>
                 </li>
-                <li>
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ __('messages.products') }}</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown02">
+                        <a class="dropdown-item page-scroll" href="/products">{{ __('messages.products') }}</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item page-scroll" href="/services">{{ __('messages.services') }}</a>
+                    </div>
+                </li>
+                {{-- <li>
                     <a class="nav-link page-scroll" href="/products">{{ __('messages.products') }}</a>
                 </li>
                 <li>
-                    <a class="nav-link page-scroll" href="/services">{{ __('messages.services') }}</a>
+                    <a class="nav-link page-scroll" href="/services">{{ __('messages.services') }}</a> --}}
                 </li>
                 <li>
                     <a class="nav-link page-scroll" href="/blogs">{{ __('messages.news') }}</a>
