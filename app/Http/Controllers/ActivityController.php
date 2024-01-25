@@ -32,19 +32,17 @@ class ActivityController extends Controller
             'ac_title' => 'required|max:1000',
             'ac_desc' => 'max:2000',
         ]);
-
         try {
             $media = [];
             $media['by'] = $request->user()->id;
+            if ($request->images && $request->hasFile('images')) {
+                foreach ($request->file('images') as $index => $image) {
+                        // Process each uploaded file
+                        $imageName = $index . now()->format('dmYHis') . '.' . $image->getClientOriginalExtension();
+                        $path = $image->storeAs('uploads/activity', $imageName, 'local');
+                        // You can save the $imageName to the database or perform any other action as needed
 
-            foreach ($request->file('images') as $index => $image) {
-                if ($request->hasFile('image')) {
-                    // Process each uploaded file
-                    $imageName = $index . now()->format('dmYHis') . '.' . $image->getClientOriginalExtension();
-                    $path = $image->storeAs('uploads/activity', $imageName, 'local');
-                    // You can save the $imageName to the database or perform any other action as needed
-
-                    $media[] = $imageName;
+                        $media[] = $imageName;
                 }
             }
 
@@ -56,7 +54,7 @@ class ActivityController extends Controller
 
             return redirect()->route('admin-activities')->with('success', 'Create activity successfully.');
         } catch (\Throwable $th) {
-            return redirect()->back()->with('error', 'Someting wrong!');
+            return redirect()->back()->with('error', $th->getMessage());
         }
     }
 
@@ -72,7 +70,7 @@ class ActivityController extends Controller
             $media = $activity->media;
             $media['by'] = $request->user()->id;
 
-            if ($request->hasFile('images')) {
+            if ($request->images && $request->hasFile('images')) {
                 foreach ($request->file('images') as $index => $image) {
                     // Process each uploaded file
                     $imageName = $index . now()->format('dmYHis') . '.' . $image->getClientOriginalExtension();
