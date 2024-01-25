@@ -65,7 +65,7 @@ class ActivityController extends Controller
             'ac_title' => 'required|max:1000',
             'ac_desc' => 'max:2000',
         ]);
-
+        dd($request->all());
         try {
             $activity = Activity::find($aid);
             $media = $activity->media;
