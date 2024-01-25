@@ -11,7 +11,7 @@ class PromotionController extends Controller
     public function index()
     {
         $promotions = Promotion::orderBy('id', 'desc')->get();
-        return view('content.promotion.allpromotion', compact('promotions'));
+        return view('content.promotion.allPromotion', compact('promotions'));
     }
 
     public function addPromotion()
