@@ -34,7 +34,7 @@ class ActivityController extends Controller
         ]);
 
         if ($validator->fails()) {
-            $firstError = $validator->errors()->first('images.0');
+            $firstError = $validator->errors()->first();
             return redirect()->back()->with('error', $firstError);
         }
         try {
@@ -72,7 +72,7 @@ class ActivityController extends Controller
         ]);
 
         if ($validator->fails()) {
-            $firstError = $validator->errors()->first('images.0');
+            $firstError = $validator->errors()->first();
             return redirect()->back()->with('error', $firstError);
         }
         try {
