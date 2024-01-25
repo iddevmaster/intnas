@@ -44,4 +44,8 @@ return [
     'see_more' => 'เพิ่มเติม',
     'baht' => 'บาท',
     'begin' => 'เริ่มต้น',
+
+    // Promotion
+    'promotion' => 'โปรโมชั่น',
+    'expired' => 'หมดอายุ',
 ];

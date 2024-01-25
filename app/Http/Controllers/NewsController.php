@@ -85,7 +85,7 @@ class NewsController extends Controller
                 // Store the file in the 'public' disk with the generated name
                 $path = Storage::disk('local')->putFileAs('uploads/news', $file, $fileName);
 
-                $filePath = 'uploads/product/'.$blog->cover;
+                $filePath = 'uploads/news/'.$blog->cover;
                 if (Storage::disk('local')->exists($filePath)) {
                     Storage::disk('local')->delete($filePath);
                 }

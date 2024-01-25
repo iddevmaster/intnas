@@ -48,7 +48,9 @@ use App\Http\Controllers\form_layouts\HorizontalForm;
 use App\Http\Controllers\tables\Basic as TablesBasic;
 use App\Models\Product;
 use App\Models\Blog;
+use App\Models\Promotion;
 use App\Http\Controllers\CaptchaServiceController;
+use App\Http\Controllers\PromotionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -76,7 +78,7 @@ use App\Http\Controllers\CaptchaServiceController;
 // Landing page
 Route::view('/', 'landing_page');
 Route::view('/home', 'landing_page');
-Route::view('/activity', 'portfolio');
+Route::view('/promotions', 'portfolio');
 Route::view('/contacts', 'contacts');
 Route::view('/products', 'products');
 Route::view('/blogs', 'blogs');
@@ -87,6 +89,10 @@ Route::get('/product/detail/{prod_id}', function ($prod_id) {
 Route::get('/blog/detail/{blog_id}', function ($blog_id) {
     $blog = Blog::find($blog_id);
     return view('blog_detail', ['blog_id' => $blog_id, 'blog' => $blog]);
+});
+Route::get('/promotion/detail/{prom_id}', function ($prom_id) {
+    $promotion = Promotion::find($prom_id);
+    return view('promotion_detail', ['prom_id' => $prom_id, 'promotion' => $promotion]);
 });
 Route::view('/services', 'services');
 
@@ -151,6 +157,14 @@ Route::middleware(['auth'])->group(function () {
         Route::post('/admin/news/store', [NewsController::class, 'storeNews'])->name('store-news');
         Route::post('/admin/news/update/{bid}', [NewsController::class, 'updateNews'])->name('update-news');
         Route::get('/admin/news/del/{bid}', [NewsController::class, 'delNews'])->name('del-news');
+
+        // Promotion
+        Route::get('/admin/promotion', [PromotionController::class, 'index'])->name('admin-promotion');
+        Route::get('/admin/promotion/add', [PromotionController::class, 'addPromotion'])->name('add-promotion');
+        Route::get('/admin/promotion/edit/{bid}', [PromotionController::class, 'editPromotion'])->name('edit-promotion');
+        Route::post('/admin/promotion/store', [PromotionController::class, 'storePromotion'])->name('store-promotion');
+        Route::post('/admin/promotion/update/{bid}', [PromotionController::class, 'updatePromotion'])->name('update-promotion');
+        Route::get('/admin/promotion/del/{bid}', [PromotionController::class, 'delPromotion'])->name('del-promotion');
 
         // Activity
         Route::get('/admin/activities', [ActivityController::class, 'index'])->name('admin-activities');

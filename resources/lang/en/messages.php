@@ -45,4 +45,9 @@ return [
     'see_more' => 'See more',
     'baht' => 'Baht',
     'begin' => 'Begin',
+
+    // Promotion
+    'promotion' => 'Promotion',
+    'expired' => 'Expired',
+
 ];

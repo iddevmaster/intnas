@@ -351,7 +351,6 @@
     </div> <!-- end of slider-1 -->
     <!-- end of Video -->
 
-
     <!-- Testimonials -->
     <div class="py-32 container px-4 sm:px-6 md:px-8">
         <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
