@@ -35,7 +35,7 @@ class ActivityController extends Controller
         try {
             $media = [];
             $media['by'] = $request->user()->id;
-            if ($request->images && $request->hasFile('images')) {
+            if ($request->images) {
                 foreach ($request->file('images') as $index => $image) {
                         // Process each uploaded file
                         $imageName = $index . now()->format('dmYHis') . '.' . $image->getClientOriginalExtension();
@@ -70,7 +70,7 @@ class ActivityController extends Controller
             $media = $activity->media;
             $media['by'] = $request->user()->id;
 
-            if ($request->images && $request->hasFile('images')) {
+            if ($request->images) {
                 foreach ($request->file('images') as $index => $image) {
                     // Process each uploaded file
                     $imageName = $index . now()->format('dmYHis') . '.' . $image->getClientOriginalExtension();
