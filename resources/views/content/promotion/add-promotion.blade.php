@@ -73,7 +73,15 @@
 <!--/ Hoverable Table rows -->
 <script>
     tinymce.init({
-        selector: 'textarea#prodetail'
+        selector: 'textarea#prodetail',
+        plugins: 'print preview  importcss tinydrive searchreplace autolink autosave save directionality visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern noneditable help charmap quickbars linkchecker emoticons',
+        menubar: 'file edit view insert format tools table tc help',
+        toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | a11ycheck ltr rtl | showcomments addcomment',
+        autosave_ask_before_unload: true,
+        autosave_interval: '10s',
+        autosave_restore_when_empty: false,
+        autosave_retention: '2m',
+        importcss_append: true,
     });
 
     $('input[name="daterange"]').daterangepicker({
