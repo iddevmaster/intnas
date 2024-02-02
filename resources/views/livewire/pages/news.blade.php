@@ -53,7 +53,7 @@ new class extends Component
                                         $textBetweenTags = substr($blog['desc'], $startPos + strlen("<p>"), $endPos - $startPos - strlen("<p>"));
                                     }
                                 @endphp
-                                {{ Illuminate\Support\Str::limit($textBetweenTags, 130, '...') }}
+                                {!! Illuminate\Support\Str::limit($textBetweenTags, 130, '...') !!}
                             </p>
 
                             <div class="flex mt-3 justify-between">
