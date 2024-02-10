@@ -48,6 +48,9 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
 
+        <script src="https://cdn.websitepolicies.io/lib/cconsent/cconsent.min.js" defer></script>
+        <script>window.addEventListener("load",function(){window.wpcb.init({"colors":{"popup":{"background":"#ffe8ff","text":"#000000","border":"#9f5ec2"},"button":{"background":"#9f5ec2","text":"#ffffff"}},"position":"bottom","border":"thin","corners":"normal"})});</script>
+
         @livewireScripts
 
         <!-- Scripts -->
