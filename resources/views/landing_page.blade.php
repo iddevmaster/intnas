@@ -340,12 +340,12 @@
 
             <!-- container -->
             <div class="container">
-                {{-- <video class="w-full shadow-lg" autoplay loop controls>
+                <video class="w-full shadow-lg" controls playsinline="playsinline" preload="auto">
                     <source src="/video/banner.mp4" type="video/mp4" />
-                </video> --}}
-                <video playsinline="playsinline" autoplay="autoplay" id="videoElement" loop="loop" preload="auto">
-                    <source src="/video/banner.mp4" type="video/mp4">
                 </video>
+                {{-- <video playsinline="playsinline" autoplay="autoplay" id="videoElement" loop="loop" preload="auto">
+                    <source src="/video/banner.mp4" type="video/mp4">
+                </video> --}}
             </div> <!-- end of slider-container -->
             <!-- end of container -->
 
@@ -494,38 +494,6 @@
     </div> <!-- end of basic-5 -->
     <!-- end of conclusion -->
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    var video = document.getElementById('videoElement');
-    video.volume = 0.2;
-    // Function to check if the video is in the viewport
-    function checkIfVideoInView() {
-        var rect = video.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-    // Event listener for scrolling and resizing
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleScroll);
-
-    function handleScroll() {
-        if (checkIfVideoInView()) {
-            if (video.paused) {
-                video.play();
-            }
-        } else {
-            // video.currentTime = 0;
-            video.pause();
-        }
-    }
-
-    // Initial check
-    handleScroll();
-});
 
 const words = ["Drone Technology Training Center", "Welcome to DroneTTC", "We are DroneTTC."];
 let i = 0;
