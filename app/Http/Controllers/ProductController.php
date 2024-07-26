@@ -32,7 +32,6 @@ class ProductController extends Controller
         $validatedData = $request->validate([
             'pname' => 'required|max:200',
             'pdesc' => 'required|max:1000',
-            'pcategory' => 'required|max:200',
             'pprice' => 'required|max:200',
             'pdetail' => 'string',
             'uploadImg' => 'image|mimes:jpeg,png|max:20480',
@@ -53,7 +52,7 @@ class ProductController extends Controller
             $product = Product::create([
                 'name' => $validatedData['pname'],
                 'desc' => $validatedData['pdesc'],
-                'category' => $validatedData['pcategory'],
+                'category' => "",
                 'price' => $validatedData['pprice'],
                 'detail' => $validatedData['pdetail'],
                 'create_by' => $request->user()->id,
@@ -87,7 +86,6 @@ class ProductController extends Controller
         $validatedData = $request->validate([
             'pname' => 'required|max:200',
             'pdesc' => 'required|max:1000',
-            'pcategory' => 'required|max:200',
             'pprice' => 'required|max:200',
             'pdetail' => 'string',
             'uploadImg' => 'image|mimes:jpeg,png|max:20480',
@@ -114,7 +112,7 @@ class ProductController extends Controller
             $product->update([
                 'name' => $validatedData['pname'],
                 'desc' => $validatedData['pdesc'],
-                'category' => $validatedData['pcategory'],
+                'category' => "",
                 'price' => $validatedData['pprice'],
                 'detail' => $validatedData['pdetail'],
                 'img' => $fileName,

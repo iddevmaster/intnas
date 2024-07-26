@@ -52,13 +52,13 @@ new class extends Component
                 'ip_addr' => $ipAddress
             ]);
 
-            Line::send("\nชื่อ => ". $this->name .
-                "\nEmail => ". $this->email .
-                "\nหน่วยงาน => ". $this->agency .
-                "\nโทรศัพท์ => ". $this->phone .
-                "\nSocial => ". $this->social.
-                "\nข้อความ => " . $this->message
-            );
+            // Line::send("\nชื่อ => ". $this->name .
+            //     "\nEmail => ". $this->email .
+            //     "\nหน่วยงาน => ". $this->agency .
+            //     "\nโทรศัพท์ => ". $this->phone .
+            //     "\nSocial => ". $this->social.
+            //     "\nข้อความ => " . $this->message
+            // );
 
             RateLimiter::hit($key, $decayMinutes * 60);
 

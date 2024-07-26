@@ -6,7 +6,7 @@
       <span class="app-brand-logo demo">
         @include('_partials.macros',["width"=>25,"withbg"=>'var(--bs-primary)'])
       </span>
-      <p class="fw-bold ms-2 mb-0 fs-4">DroneTTC <span class="fs-6 text-danger">Admin</span></p>
+      <p class="fw-bold ms-2 mb-0 fs-4">IDVSS <span class="fs-6 text-danger">Admin</span></p>
     </a>
 
     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">

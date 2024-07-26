@@ -3,7 +3,7 @@
     <!-- Header -->
     <header class="ex-header bg-gray">
         <div class="container px-4 sm:px-8 xl:px-4">
-            <h1 class="xl:ml-24">{{ __('messages.products') }}</h1>
+            <h1 class="xl:ml-24">{{ __('messages.course_open') }}</h1>
             <nav class="bg-grey-light w-full rounded-md xl:ml-24">
                 <ol class="list-reset flex">
                     <li>
@@ -17,7 +17,7 @@
                         <span class="mx-2 text-neutral-500 dark:text-neutral-400">></span>
                     </li>
                     <li style="color: #eb427e">
-                        {{ __('messages.products') }}
+                        {{ __('messages.course_open') }}
                     </li>
                 </ol>
             </nav>

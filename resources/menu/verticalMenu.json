@@ -22,12 +22,6 @@
         "url": "/admin/news"
     },
     {
-        "name": "Promotion",
-        "icon": "menu-icon tf-icons bx bx-gift",
-        "slug": "admin-promotion",
-        "url": "/admin/promotion"
-    },
-    {
         "name": "Gallery",
         "icon": "menu-icon tf-icons bx bx-calendar",
         "slug": "admin-activities",

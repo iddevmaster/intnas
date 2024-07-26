@@ -1,23 +1,20 @@
 import './bootstrap';
-import { initTE, Tooltip, Select, Animate, Modal, Ripple, Tab, Lightbox} from "tw-elements";
+import { Tooltip, Select, Modal, Ripple, Tab, Lightbox, initTWE, Carousel} from "tw-elements";
 
 
 // TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com
-initTE({ Tooltip });
+initTWE({ Tooltip });
 
 // TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com
 // Initialization for ES Users
-initTE({ Select });
-
-
-// TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com
-// Initialization for ES Users
-initTE({ Animate });
+initTWE({ Select });
 
 
 // Initialization for ES Users
-initTE({ Modal, Ripple });
+initTWE({ Modal, Ripple });
 
-initTE({ Tab });
+initTWE({ Tab });
 
-initTE({ Lightbox });
+initTWE({ Lightbox });
+
+initTWE({ Carousel  });

@@ -15,7 +15,9 @@ return [
     'eng' => 'English',
     'iddrives' => 'ID DRIVES CO.,LTD.',
     'map' => 'Map',
-
+    'course_open' => 'Courses offered',
+    'blog_news' => 'Articles and news',
+    'about' => 'About us',
 
     // Contact
     'addr' => 'Address',

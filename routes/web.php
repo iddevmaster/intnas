@@ -51,6 +51,7 @@ use App\Models\Blog;
 use App\Models\Promotion;
 use App\Http\Controllers\CaptchaServiceController;
 use App\Http\Controllers\PromotionController;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -76,25 +77,28 @@ use App\Http\Controllers\PromotionController;
 
 
 // Landing page
-Route::view('/', 'landing_page');
-Route::view('/home', 'landing_page');
-Route::view('/promotions', 'portfolio');
-Route::view('/contacts', 'contacts');
-Route::view('/products', 'products');
-Route::view('/blogs', 'blogs');
-Route::get('/product/detail/{prod_id}', function ($prod_id) {
+Route::get('/', function (Request $request) {
+    return view('landing_page');
+})->middleware('track.visitors');
+Route::view('/home', 'landing_page')->middleware('track.visitors');
+Route::view('/promotions', 'portfolio')->middleware('track.visitors');
+Route::view('/contacts', 'contacts')->middleware('track.visitors');
+Route::view('/courses', 'products')->middleware('track.visitors');
+Route::view('/blogs', 'blogs')->middleware('track.visitors');
+Route::view('/aboutme', 'about')->middleware('track.visitors');
+Route::get('/course/detail/{prod_id}', function ($prod_id) {
     $product = Product::find($prod_id);
     return view('product_detail', ['prod_id' => $prod_id, 'product' => $product]);
-});
+})->middleware('track.visitors');
 Route::get('/blog/detail/{blog_id}', function ($blog_id) {
     $blog = Blog::find($blog_id);
     return view('blog_detail', ['blog_id' => $blog_id, 'blog' => $blog]);
-});
+})->middleware('track.visitors');
 Route::get('/promotion/detail/{prom_id}', function ($prom_id) {
     $promotion = Promotion::find($prom_id);
     return view('promotion_detail', ['prom_id' => $prom_id, 'promotion' => $promotion]);
-});
-Route::view('/services', 'services');
+})->middleware('track.visitors');
+Route::view('/services', 'services')->middleware('track.visitors');
 
 Route::get('/reload-captcha', [CaptchaServiceController::class, 'reloadCaptcha']);
 
@@ -132,7 +136,9 @@ Route::middleware(['auth'])->group(function () {
     });
 
     // Main Page Route
-    Route::get('/admin', [Analytics::class, 'index'])->name('dashboard-analytics');
+    Route::get('/admin', function () {
+        return redirect()->route('dashboard-analytics');
+    });
     Route::get('/admin/main', [Analytics::class, 'index'])->name('dashboard-analytics');
     Route::get('/logout', function () {
         Auth::logout();
@@ -246,7 +252,6 @@ Route::middleware(['auth'])->group(function () {
 
     // tables
     Route::get('/tables/basic', [TablesBasic::class, 'index'])->name('tables-basic');
-
 
 });
 

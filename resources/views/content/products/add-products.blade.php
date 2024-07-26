@@ -49,7 +49,7 @@
                 <input type="text" class="form-control" required maxlength="1000" name="pdesc" id="defaultFormControlInput" placeholder="Product Description" aria-describedby="defaultFormControlHelp" />
             </div>
             <div class="mb-3 d-flex flex-wrap gap-4">
-                <div>
+                {{-- <div>
                     <label for="exampleFormControlSelect1" class="form-label">category</label>
                     <div class="input-group">
                         <select class="form-select" required name="pcategory" id="exampleFormControlSelect1" aria-label="Example select with button addon">
@@ -60,7 +60,7 @@
                         </select>
                         <button class="btn btn-sm btn-outline-primary addcate" type="button"><i class='bx bx-plus'></i></button>
                     </div>
-                </div>
+                </div> --}}
 
                 <div>
                     <label for="defaultFormControlInput" class="form-label">Price</label>

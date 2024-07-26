@@ -28,9 +28,7 @@
         <tr>
             <th>#</th>
             <th>Name</th>
-            <th>category</th>
             <th>price</th>
-            <th>stock</th>
             <th>Actions</th>
         </tr>
       </thead>
@@ -39,9 +37,7 @@
             <tr>
                 <td>{{ $index + 1 }}</td>
                 <td><img src="/uploads/product/{{ $product->img }}" width="50" alt=""> <span class="fw-medium">{{ $product->name }}</span></td>
-                <td>{{ optional($product->getCate)->prefix }}</td>
                 <td>{{ $product->price }}</td>
-                <td><span class="badge bg-label-primary me-1">2/10</span></td>
                 <td>
                 <a href="{{ route('edit-product', ['pid' => $product->id]) }}">
                     <button type="button" class="btn btn-icon btn-primary" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-cog bx-xs' ></i> <span>Edit product</span>">
