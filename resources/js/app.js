@@ -14,6 +14,4 @@ initTWE({ Modal, Ripple });
 
 initTWE({ Tab });
 
-initTWE({ Lightbox });
-
 initTWE({ Carousel  });
