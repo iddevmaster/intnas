@@ -101,8 +101,8 @@
                 <div class="pb-6 col-span-full md:pb-0 md:col-span-6">
                     <a rel="noopener noreferrer" target="_BLANK" href="https://iddrives.co.th/web/"
                         class="flex flex-col items-center gap-2 justify-center space-x-3 md:justify-start">
-                        <img src="/img/logoiddrives.png" width="70" alt="">
-                        <span class="self-center text-2xl font-semibold">{{ __('messages.iddrives') }}</span>
+                        <img src="/img/logoschool.jpg" width="70" alt="">
+                        <span class="self-center text-2xl font-semibold">{{ __('messages.idss') }}</span>
                         <p class=" md:px-8 lg:px-24">{{ __('messages.addr_id') }}</p>
                         {{-- <p>โทรศัพท์ : 043-228 899</p>
                             <p>Email : idofficer@iddrives.co.th</p> --}}
@@ -119,7 +119,8 @@
                             </div>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" target="_BLANK" href="https://www.facebook.com/people/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99-%E0%B9%84%E0%B8%AD%E0%B8%94%E0%B8%B5-%E0%B8%AA%E0%B8%AD%E0%B8%99%E0%B8%97%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%8A%E0%B8%B5%E0%B8%9E/61556289056119/"
+                            <a rel="noopener noreferrer" target="_BLANK"
+                                href="https://www.facebook.com/people/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99-%E0%B9%84%E0%B8%AD%E0%B8%94%E0%B8%B5-%E0%B8%AA%E0%B8%AD%E0%B8%99%E0%B8%97%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%8A%E0%B8%B5%E0%B8%9E/61556289056119/"
                                 title="Facebook">
                                 <div class="flex gap-4 mb-2">
                                     <i class="fa-brands fa-square-facebook text-3xl text-pink-500"></i>
@@ -128,12 +129,13 @@
                             </a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="" title="Line">
+                            <button class="w-full" type="button" data-twe-toggle="modal" data-twe-target="#lineqrmodal" data-twe-ripple-init
+                            data-twe-ripple-color="light">
                                 <div class="flex gap-4 mb-2">
                                     <i class="fa-brands fa-line text-3xl text-pink-500"></i>
                                     <p class="text-white">@099kcyha</p>
                                 </div>
-                            </a>
+                            </button>
                         </li>
                         <li>
                             <a rel="noopener noreferrer" target="_BLANK" href="mailto:idss@iddrives.co.th"
@@ -149,8 +151,10 @@
                 <div class="col-span-12 sm:col-span-6 text-center md:text-left md:col-span-3">
                     <p class="pb-1 text-xl font-medium text-pink-500 mb-4">{{ __('messages.map') }}</p>
                     <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3826.802361079415!2d102.82182207514373!3d16.43486098429892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDI2JzA1LjUiTiAxMDLCsDQ5JzI3LjgiRQ!5e0!3m2!1sen!2sth!4v1728635948003!5m2!1sen!2sth"
-                            class="w-full h-full" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3826.802361079415!2d102.82182207514373!3d16.43486098429892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDI2JzA1LjUiTiAxMDLCsDQ5JzI3LjgiRQ!5e0!3m2!1sen!2sth!4v1728635948003!5m2!1sen!2sth"
+                            class="w-full h-full" width="400" height="300" style="border:0;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -172,21 +176,43 @@
                 </div>
 
                 <div class="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
-                    <a rel="noopener noreferrer" target="_BLANK" href="https://www.facebook.com/people/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99-%E0%B9%84%E0%B8%AD%E0%B8%94%E0%B8%B5-%E0%B8%AA%E0%B8%AD%E0%B8%99%E0%B8%97%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%8A%E0%B8%B5%E0%B8%9E/61556289056119/"
+                    <a rel="noopener noreferrer" target="_BLANK"
+                        href="https://www.facebook.com/people/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99-%E0%B9%84%E0%B8%AD%E0%B8%94%E0%B8%B5-%E0%B8%AA%E0%B8%AD%E0%B8%99%E0%B8%97%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%8A%E0%B8%B5%E0%B8%9E/61556289056119/"
                         title="Facebook"
                         class="flex items-center justify-center w-10 h-10 rounded-full bg-violet-400 text-gray-900">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a rel="noopener noreferrer" target="_BLANK" href="https://lin.ee/@099kcyha" title="Line"
+                    {{-- <a rel="noopener noreferrer" target="_BLANK" href="https://lin.ee/@099kcyha" title="Line"
                         class="flex items-center justify-center w-10 h-10 rounded-full bg-violet-400 text-gray-900">
                         <i class="fa-brands fa-line"></i>
-                    </a>
-                    <a rel="noopener noreferrer" target="_BLANK" href="mailto:idss@iddrives.co.th"
-                        title="Email"
+                    </a> --}}
+                    <!-- Button trigger modal -->
+                    <button type="button"
+                        class="flex items-center justify-center w-10 h-10 rounded-full bg-violet-400 text-gray-900"
+                        data-twe-toggle="modal" data-twe-target="#lineqrmodal" data-twe-ripple-init
+                        data-twe-ripple-color="light">
+                        <i class="fa-brands fa-line"></i>
+                    </button>
+                    <a rel="noopener noreferrer" target="_BLANK" href="mailto:idss@iddrives.co.th" title="Email"
                         class="flex items-center justify-center w-10 h-10 rounded-full bg-violet-400 text-gray-900">
                         <i class="fa-solid fa-envelope"></i>
                     </a>
                 </div>
+                <!-- Modal -->
+                <div data-twe-modal-init
+                class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+                id="lineqrmodal" tabindex="-1" aria-labelledby="lineqrmodalLabel" aria-hidden="true">
+                <div data-twe-modal-dialog-ref
+                    class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]">
+                    <div
+                        class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark">
+                        <!-- Modal body -->
+                        <div class="relative flex-auto p-4" data-twe-modal-body-ref>
+                            <img src="/img/lineqr.jpg" width="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </footer>

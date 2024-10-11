@@ -14,6 +14,7 @@ return [
     'thai' => 'Thai',
     'eng' => 'English',
     'iddrives' => 'ID DRIVES CO.,LTD.',
+    'idss' => 'ID Vocational Skill School',
     'map' => 'Map',
     'course_open' => 'Courses offered',
     'blog_news' => 'Articles and news',
