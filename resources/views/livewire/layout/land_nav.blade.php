@@ -7,7 +7,7 @@
 
         <!-- Image Logo -->
         <a class="flex gap-2 mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="/">
-            <img src="/img/logoschool.png" alt="alternative" class="h-8 sm:h-10  md:h-12 lg:h-14" />
+            <img src="/img/logoschool.jpg" alt="alternative" class="h-8 sm:h-10  md:h-12 lg:h-14" />
             <div class="self-center">
                 <p class="font-bold">โรงเรียนไอดีสอนทักษะอาชีพ</p>
                 <p class="font-bold text-sm">ID Vocational Skill School</p>

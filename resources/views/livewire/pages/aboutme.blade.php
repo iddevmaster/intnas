@@ -59,7 +59,7 @@
                 <div class="flex items-center mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
                     <div
                         class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-indigo-500 flex-shrink-0">
-                        <img src="/img/logoschool.png" alt="alternative" />
+                        <img src="/img/logoschool.jpg" alt="alternative" />
                     </div>
                     <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
                         <h2 class="text-gray-900 text-lg md:text-4xl title-font font-medium mb-2">ตราของโรงเรียน</h2>

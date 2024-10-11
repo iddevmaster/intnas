@@ -8,14 +8,14 @@
 
     <meta property="og:title" content="@yield('title', 'IDSS')" />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="@yield('cover', asset('img/logoschool.png'))" />
+    <meta property="og:image" content="@yield('cover', asset('img/logoschool.jpg'))" />
     <meta property="og:description" content="@yield('desc', 'โรงเรียนไอดีสอนทักษะอาชีพ เป็นสถาบันการศึกษาเอกชนที่พัฒนาองค์ความรู้เพื่อใช้ในการฝึกอบรมที่เน้นด้านทักษะอาชีพสร้างงานสร้างรายได้ด้วยระบบแพลตฟอร์ม (Platform) รวมทั้งสามารถนำไปต่อยอดในการศึกษาต่อในระดับขั้นสูงได้ ประยุกต์ใช้ในกิจการและธุรกิจที่มีอยู่ หรือธุรกิจใหม่ทั้งในและต่างประเทศ')" />
     <meta property="og:url" content="{{ url()->current() }}" />
 
     <title>{{ config('app.name', 'IDSS') }}</title>
 
     <!-- icon  -->
-    <link rel="icon" href="img/logoschool.png" />
+    <link rel="icon" href="img/logoschool.jpg" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">

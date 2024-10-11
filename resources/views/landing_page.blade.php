@@ -83,6 +83,30 @@
             <!-- Card -->
             <div class="card">
                 <div class="card-image">
+                    <img src="img/icons/child_icon.png" alt="alternative" />
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">การดูแลเด็กเล็ก</h5>
+                    {{-- <p class="mb-4">ตัวแทนจำหน่ายโดรนอย่างเป็นทางการ คุณภาพระดับโลก</p> --}}
+                </div>
+            </div>
+            <!-- end of card -->
+
+            <!-- Card -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/icons/old_icon.png" alt="alternative" />
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">การดูแลผู้สูงอายุ</h5>
+                    {{-- <p class="mb-4">หลักสูตรอบรมคุณภาพ จากผู้เชี่ยวชาญ ประสบการณ์ตรง</p> --}}
+                </div>
+            </div>
+            <!-- end of card -->
+
+            <!-- Card -->
+            <div class="card">
+                <div class="card-image">
                     <img src="img/icons/japan_icon.png" alt="alternative" />
                 </div>
                 <div class="card-body">
@@ -113,30 +137,6 @@
                     {{-- <p class="mb-4">อะไหล่แท้ มาตรฐานสากล รับประกันผลงาน มั่นใจได้</p> --}}
                 </div>
             </div>
-
-            <!-- Card -->
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/icons/child_icon.png" alt="alternative" />
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">การดูแลเด็กเล็ก</h5>
-                    {{-- <p class="mb-4">ตัวแทนจำหน่ายโดรนอย่างเป็นทางการ คุณภาพระดับโลก</p> --}}
-                </div>
-            </div>
-            <!-- end of card -->
-
-            <!-- Card -->
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/icons/old_icon.png" alt="alternative" />
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">การดูแลผู้สูงอายุ</h5>
-                    {{-- <p class="mb-4">หลักสูตรอบรมคุณภาพ จากผู้เชี่ยวชาญ ประสบการณ์ตรง</p> --}}
-                </div>
-            </div>
-            <!-- end of card -->
 
             <!-- Card -->
             <div class="card">
