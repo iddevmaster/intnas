@@ -149,11 +149,8 @@
                 <div class="col-span-12 sm:col-span-6 text-center md:text-left md:col-span-3">
                     <p class="pb-1 text-xl font-medium text-pink-500 mb-4">{{ __('messages.map') }}</p>
                     <div>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.0135083544146!2d102.85578767601251!3d16.424140329837293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228bea5279c7d5%3A0xd098a61935e43d5f!2zRHJvbmVUVEMgLSDguYDguKPguLXguKLguJnguJrguLTguJnguYLguJTguKPguJnguJ7guKPguYnguK3guKHguILguLbguYnguJnguJfguLDguYDguJrguLXguKLguJnguYLguJTguKPguJk!5e0!3m2!1sth!2sth!4v1702715454859!5m2!1sth!2sth"
-                            {{-- width="350"
-                                height="200" --}} class="w-full h-full" style="border:0;" allowfullscreen=""
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d552.6940361662431!2d102.85845543226012!3d16.424057638851004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228bd08e1f92a3%3A0x54941db8580c4b1a!2z4LmC4Lij4LiH4LmA4Lij4Li14Lii4LiZ4Liq4Lit4LiZ4LiC4Lix4Lia4Lij4LiWIElEIERyaXZlciDguKrguLLguILguLLguILguK3guJnguYHguIHguYjguJkg4Liq4Liz4LiZ4Lix4LiB4LiH4Liy4LiZ4LmD4Lir4LiN4LmIIOC5guC4meC4meC4l-C4seC4mQ!5e0!3m2!1sen!2sth!4v1728633479615!5m2!1sen!2sth"
+                            class="w-full h-full" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
                 </div>
@@ -176,16 +173,16 @@
                 </div>
 
                 <div class="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
-                    <a rel="noopener noreferrer" target="_BLANK" href="https://www.facebook.com/dronettc"
+                    <a rel="noopener noreferrer" target="_BLANK" href="https://www.facebook.com/people/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99-%E0%B9%84%E0%B8%AD%E0%B8%94%E0%B8%B5-%E0%B8%AA%E0%B8%AD%E0%B8%99%E0%B8%97%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%8A%E0%B8%B5%E0%B8%9E/61556289056119/"
                         title="Facebook"
                         class="flex items-center justify-center w-10 h-10 rounded-full bg-violet-400 text-gray-900">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a rel="noopener noreferrer" target="_BLANK" href="https://lin.ee/UDqzxmt" title="Line"
+                    <a rel="noopener noreferrer" target="_BLANK" href="https://lin.ee/@099kcyha" title="Line"
                         class="flex items-center justify-center w-10 h-10 rounded-full bg-violet-400 text-gray-900">
                         <i class="fa-brands fa-line"></i>
                     </a>
-                    <a rel="noopener noreferrer" target="_BLANK" href="mailto:Dronettc@iddrives.co.th"
+                    <a rel="noopener noreferrer" target="_BLANK" href="mailto:idss@iddrives.co.th"
                         title="Email"
                         class="flex items-center justify-center w-10 h-10 rounded-full bg-violet-400 text-gray-900">
                         <i class="fa-solid fa-envelope"></i>

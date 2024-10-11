@@ -79,38 +79,15 @@
     <div id="features" class="cards-1">
         <p class="text-4xl mb-12 font-bold text-black">หลักสูตรที่เปิดสอน</p>
         <div class="container px-4 sm:px-8 xl:px-4">
-            <!-- Card -->
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/icons/dealer.png" alt="alternative" />
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">การดูและเด็กเล็ก</h5>
-                    <p class="mb-4">ตัวแทนจำหน่ายโดรนอย่างเป็นทางการ คุณภาพระดับโลก</p>
-                </div>
-            </div>
-            <!-- end of card -->
 
             <!-- Card -->
             <div class="card">
                 <div class="card-image">
-                    <img src="img/icons/course.png" alt="alternative" />
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">การดูแลผู้สูงอายุ</h5>
-                    <p class="mb-4">หลักสูตรอบรมคุณภาพ จากผู้เชี่ยวชาญ ประสบการณ์ตรง</p>
-                </div>
-            </div>
-            <!-- end of card -->
-
-            <!-- Card -->
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/icons/regis.png" alt="alternative" />
+                    <img src="img/icons/japan_icon.png" alt="alternative" />
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">ภาษาญี่ปุ่น</h5>
-                    <p class="mb-4">ถูกต้องตามกฎหมาย สะดวก รวดเร็ว ปลอดภัย ไปกับเรา</p>
+                    {{-- <p class="mb-4">ถูกต้องตามกฎหมาย สะดวก รวดเร็ว ปลอดภัย ไปกับเรา</p> --}}
                 </div>
             </div>
             <!-- end of card -->
@@ -118,43 +95,89 @@
             <!-- Card -->
             <div class="card">
                 <div class="card-image">
-                    <img src="img/icons/ins.png" alt="alternative" />
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">การจัดการวิดีโอสำหรับการตลาดดิจิทัล</h5>
-                    <p class="mb-4">ทำประกันภัยโดรนกับเรา มั่นใจในความปลอดภัย บินได้อย่างไร้ขีดจำกัด</p>
-                </div>
-            </div>
-            <!-- end of card -->
-
-            <!-- Card -->
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/icons/service.png" alt="alternative" />
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">การวางแผนและบริหารจัดการการตลาดดิจิทัล</h5>
-                    <p class="mb-4">ตอบโจทย์ทุกความต้องการ รวดเร็ว ปลอดภัย ด้วยเทคโนโลยีล้ำสมัย</p>
-                </div>
-            </div>
-            <!-- end of card -->
-
-            <!-- Card -->
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/icons/ma.png" alt="alternative" />
+                    <img src="img/icons/english_icon.png" alt="alternative" />
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">ภาษาอังกฤษ</h5>
-                    <p class="mb-4">อะไหล่แท้ มาตรฐานสากล รับประกันผลงาน มั่นใจได้</p>
+                    {{-- <p class="mb-4">อะไหล่แท้ มาตรฐานสากล รับประกันผลงาน มั่นใจได้</p> --}}
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/icons/china_icon.png" alt="alternative" />
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">ภาษาจีน</h5>
+                    {{-- <p class="mb-4">อะไหล่แท้ มาตรฐานสากล รับประกันผลงาน มั่นใจได้</p> --}}
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/icons/child_icon.png" alt="alternative" />
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">การดูแลเด็กเล็ก</h5>
+                    {{-- <p class="mb-4">ตัวแทนจำหน่ายโดรนอย่างเป็นทางการ คุณภาพระดับโลก</p> --}}
+                </div>
+            </div>
+            <!-- end of card -->
+
+            <!-- Card -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/icons/old_icon.png" alt="alternative" />
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">การดูแลผู้สูงอายุ</h5>
+                    {{-- <p class="mb-4">หลักสูตรอบรมคุณภาพ จากผู้เชี่ยวชาญ ประสบการณ์ตรง</p> --}}
+                </div>
+            </div>
+            <!-- end of card -->
+
+            <!-- Card -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/icons/videomkt_icon.png" alt="alternative" />
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">การจัดการวิดีโอสำหรับการตลาดดิจิทัล</h5>
+                    {{-- <p class="mb-4">ทำประกันภัยโดรนกับเรา มั่นใจในความปลอดภัย บินได้อย่างไร้ขีดจำกัด</p> --}}
+                </div>
+            </div>
+            <!-- end of card -->
+
+            <!-- Card -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/icons/managemkt_icon.png" alt="alternative" />
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">การวางแผนและบริหารจัดการการตลาดดิจิทัล</h5>
+                    {{-- <p class="mb-4">ตอบโจทย์ทุกความต้องการ รวดเร็ว ปลอดภัย ด้วยเทคโนโลยีล้ำสมัย</p> --}}
+                </div>
+            </div>
+            <!-- end of card -->
+
+            <!-- Card -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/icons/socialmedia_icon.png" alt="alternative" />
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">การใช้สื่อสังคมออนไลน์เพื่อทำการตลาดดิจิทัล</h5>
+                    {{-- <p class="mb-4">อะไหล่แท้ มาตรฐานสากล รับประกันผลงาน มั่นใจได้</p> --}}
                 </div>
             </div>
             <!-- end of card -->
 
         </div> <!-- end of container -->
         <a href="/courses"
-            class="inline-block rounded-full bg-[#f1f9fc] hover:bg-info px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-gray-700 hover:text-white shadow-info-1 transition duration-150 ease-in-out hover:shadow-info-2 focus:bg-info-accent-300 focus:shadow-info-2 focus:outline-none focus:ring-0 active:bg-info-600 active:shadow-info-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
-             หลักสูตรทั้งหมด
+            class="inline-block rounded-full bg-[#e6f8ff] hover:bg-info px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-gray-700 hover:text-white shadow-info-1 transition duration-150 ease-in-out hover:shadow-info-2 focus:bg-info-accent-300 focus:shadow-info-2 focus:outline-none focus:ring-0 active:bg-info-600 active:shadow-info-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+             รายละเอียดหลักสูตรทั้งหมด
         </a>
     </div> <!-- end of cards-1 -->
     <!-- end of features -->
@@ -164,8 +187,8 @@
     <div class="slider-1 py-32 bg-gray" id="blogsandnews">
         <div class="container px-4 sm:px-8">
             <h2 class="text-center lg:max-w-xl lg:mx-auto">บทความและข่าวสาร</h2>
-            <p class="mb-10 text-center lg:max-w-xl lg:mx-auto">จุดประกายความเป็นมืออาชีพ
-                พัฒนาทักษะการบินโดรนและนำไปใช้ในอาชีพที่หลากหลาย</p>
+            {{-- <p class="mb-10 text-center lg:max-w-xl lg:mx-auto">จุดประกายความเป็นมืออาชีพ
+                พัฒนาทักษะการบินโดรนและนำไปใช้ในอาชีพที่หลากหลาย</p> --}}
 
             <div class="container px-6 py-4 mx-auto">
                 <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-3">
@@ -233,10 +256,9 @@
     <!-- Pricing -->
     <div id="pricing" class="cards-2">
         <div class="container px-4 pb-px sm:px-8">
-            <h2 class="mb-2.5 text-white lg:max-w-xl lg:mx-auto">หลักสูตรอบรมเชิงปฏิบัติการ</h2>
+            <h2 class="mb-2.5 text-white lg:max-w-xl lg:mx-auto">วิสัยทัศน์</h2>
             <p class="mb-16 text-white lg:max-w-3xl lg:mx-auto">
-                หลักสูตรการบินโดรนที่ถูกออกแบบมาอย่างพิถีพิถันเพื่อมอบประสบการณ์ที่คุ้มค่าและการฝึกอบรมที่ครอบคลุมให้กับคุณ
-                ไม่ว่าคุณจะเป็นมือใหม่ที่กำลังเริ่มต้นหรือผู้ที่มีประสบการณ์และต้องการพัฒนาทักษะของตนเอง
+                มุ่งเป็นศูนย์ฝึกอบรมชั้นนำของอาเซียนสู่สากล เน้นพัฒนาทรัพยากรมนุษย์ด้วยระบบที่เป็นมาตรฐาน เสริมสร้างทักษะอาชีพด้วยหลักสูตรที่ตอบสนองความต้องการและความจำเป็นของตลาดแรงงานไทยและต่างประเทศ
             </p>
 
 
@@ -250,7 +272,7 @@
     <div id="download" class="basic-5">
         <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2">
             <div class="mb-16 lg:mb-0">
-                <img src="img/controller.png" alt="alternative" />
+                <img src="img/footer.jpg" alt="alternative" />
             </div>
             <div class="lg:mt-24 xl:mt-44 xl:ml-12">
                 <p class="mb-9 text-gray-800 text-2xl leading-10">
