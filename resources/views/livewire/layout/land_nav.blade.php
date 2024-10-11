@@ -10,7 +10,7 @@
             <img src="/img/logoschool.png" alt="alternative" class="h-8 sm:h-10  md:h-12 lg:h-14" />
             <div class="self-center">
                 <p class="font-bold">โรงเรียนไอดีสอนทักษะอาชีพ</p>
-                <p class="font-bold text-sm">ID vocational Skill School</p>
+                <p class="font-bold text-sm">ID Vocational Skill School</p>
             </div>
         </a>
 

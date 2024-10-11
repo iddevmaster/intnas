@@ -87,7 +87,7 @@ new class extends Component
           </div>
           <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
             <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">{{ __('messages.email') }}</h2>
-            <a class="text-indigo-500 leading-relaxed">Dronettc@iddrives.co.th</a>
+            <a class="text-indigo-500 leading-relaxed">idss@iddrives.co.th</a>
             <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">{{ __('messages.phone') }}</h2>
             <p class="leading-relaxed">{{ __('messages.phone_id') }}</p>
           </div>

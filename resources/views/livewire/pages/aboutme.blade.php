@@ -3,7 +3,7 @@
         <div class="container mx-auto px-4 sm:px-8 xl:max-w-5xl xl:px-12">
             <div class="mb-10">
                 <h1 class="text-center sm:text-3xl text-2xl">โรงเรียนไอดีสอนทักษะอาชีพ</h1>
-                <h1 class="text-center sm:text-3xl text-2xl">(ID vocational Skill School)</h1>
+                <h1 class="text-center sm:text-3xl text-2xl">(ID Vocational Skill School)</h1>
             </div>
 
             <div class="grid grid-cols-3 gap-y-10 text-black">
@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-span-2 bg-gray-100 p-4 indent-10">
                     <p>
-                        โรงเรียนไอดีสอนทักษะอาชีพ (ID vocational Skill School) ภายใต้การรับรองจากกระทรวงศึกษาธิการ
+                        โรงเรียนไอดีสอนทักษะอาชีพ (ID Vocational Skill School) ภายใต้การรับรองจากกระทรวงศึกษาธิการ
                         และบริหารงานโดย บริษัท ไอดีไดรฟ์ จำกัด ที่มีประสบการณ์ความเชี่ยวชาญไม่น้อยกว่า 30 ปี
                         ในการบริหารงานตามมาตรฐานสากลด้วยการรับรองธรรมาภิบาล จากกรมพัฒนาธุรกิจการค้า
                         พร้อมทั้งได้รับการรับรอง ISO 9001 ระบบมาตรฐานบริหารงานคุณภาพระดับสากล ISO 27001

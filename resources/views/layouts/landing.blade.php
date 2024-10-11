@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <meta property="og:title" content="@yield('title', 'IDVSS')" />
+    <meta property="og:title" content="@yield('title', 'IDSS')" />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="@yield('cover', asset('img/logodronettc.png'))" />
-    <meta property="og:description" content="@yield('desc', 'Iddrives')" />
+    <meta property="og:image" content="@yield('cover', asset('img/logoschool.png'))" />
+    <meta property="og:description" content="@yield('desc', 'โรงเรียนไอดีสอนทักษะอาชีพ เป็นสถาบันการศึกษาเอกชนที่พัฒนาองค์ความรู้เพื่อใช้ในการฝึกอบรมที่เน้นด้านทักษะอาชีพสร้างงานสร้างรายได้ด้วยระบบแพลตฟอร์ม (Platform) รวมทั้งสามารถนำไปต่อยอดในการศึกษาต่อในระดับขั้นสูงได้ ประยุกต์ใช้ในกิจการและธุรกิจที่มีอยู่ หรือธุรกิจใหม่ทั้งในและต่างประเทศ')" />
     <meta property="og:url" content="{{ url()->current() }}" />
 
-    <title>{{ config('app.name', 'IDVSS') }}</title>
+    <title>{{ config('app.name', 'IDSS') }}</title>
 
     <!-- icon  -->
     <link rel="icon" href="img/logoschool.png" />
@@ -119,28 +119,28 @@
                             </div>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" target="_BLANK" href="https://www.facebook.com/dronettc"
+                            <a rel="noopener noreferrer" target="_BLANK" href="https://www.facebook.com/people/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99-%E0%B9%84%E0%B8%AD%E0%B8%94%E0%B8%B5-%E0%B8%AA%E0%B8%AD%E0%B8%99%E0%B8%97%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%8A%E0%B8%B5%E0%B8%9E/61556289056119/"
                                 title="Facebook">
                                 <div class="flex gap-4 mb-2">
                                     <i class="fa-brands fa-square-facebook text-3xl text-pink-500"></i>
-                                    <p class="text-white">Dronettc</p>
+                                    <p class="text-white">โรงเรียน ไอดี สอนทักษะอาชีพ</p>
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" target="_BLANK" href="https://lin.ee/UDqzxmt" title="Line">
+                            <a rel="noopener noreferrer" href="" title="Line">
                                 <div class="flex gap-4 mb-2">
                                     <i class="fa-brands fa-line text-3xl text-pink-500"></i>
-                                    <p class="text-white">@droneTTC</p>
+                                    <p class="text-white">@099kcyha</p>
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" target="_BLANK" href="mailto:Dronettc@iddrives.co.th"
+                            <a rel="noopener noreferrer" target="_BLANK" href="mailto:idss@iddrives.co.th"
                                 title="Email">
                                 <div class="flex gap-4 mb-2">
                                     <i class="fa-solid fa-envelope text-3xl text-pink-500"></i>
-                                    <p class="text-white " style="overflow-wrap: anywhere">Dronettc@iddrives.co.th</p>
+                                    <p class="text-white " style="overflow-wrap: anywhere">idss@iddrives.co.th</p>
                                 </div>
                             </a>
                         </li>
