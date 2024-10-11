@@ -9,7 +9,7 @@
   <title>IDSS Admin</title>
 
     <!-- icon  -->
-    <link rel="icon" href="img/dronecamera.png" />
+    <link rel="icon" href="img/logoschool.png" />
 
 
   <meta name="description" content="{{ config('variables.templateDescription') ? config('variables.templateDescription') : '' }}" />
