@@ -21,7 +21,7 @@ return [
 
     // Contact
     'addr' => 'Address',
-    'addr_id' => '200/222 Chaiyaphruek Rd, Nai Mueang, Mueang Khon Kaen District, Khon Kaen 40000',
+    'addr_id' => '150 Mittraphap Rd, Nai Mueang, Mueang Khon Kaen District, Khon Kaen 40000',
     'email' => 'Email',
     'phone' => 'Phone',
     'phone_id' => '+6661 925 6996',

@@ -149,9 +149,8 @@
                 <div class="col-span-12 sm:col-span-6 text-center md:text-left md:col-span-3">
                     <p class="pb-1 text-xl font-medium text-pink-500 mb-4">{{ __('messages.map') }}</p>
                     <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d552.6940361662431!2d102.85845543226012!3d16.424057638851004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228bd08e1f92a3%3A0x54941db8580c4b1a!2z4LmC4Lij4LiH4LmA4Lij4Li14Lii4LiZ4Liq4Lit4LiZ4LiC4Lix4Lia4Lij4LiWIElEIERyaXZlciDguKrguLLguILguLLguILguK3guJnguYHguIHguYjguJkg4Liq4Liz4LiZ4Lix4LiB4LiH4Liy4LiZ4LmD4Lir4LiN4LmIIOC5guC4meC4meC4l-C4seC4mQ!5e0!3m2!1sen!2sth!4v1728633479615!5m2!1sen!2sth"
-                            class="w-full h-full" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3826.802361079415!2d102.82182207514373!3d16.43486098429892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDI2JzA1LjUiTiAxMDLCsDQ5JzI3LjgiRQ!5e0!3m2!1sen!2sth!4v1728635948003!5m2!1sen!2sth"
+                            class="w-full h-full" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>

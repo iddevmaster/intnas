@@ -83,7 +83,7 @@ new class extends Component {
                 marginwidth="0" scrolling="no"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.0135083544146!2d102.85578767601251!3d16.424140329837293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228bea5279c7d5%3A0xd098a61935e43d5f!2zRHJvbmVUVEMgLSDguYDguKPguLXguKLguJnguJrguLTguJnguYLguJTguKPguJnguJ7guKPguYnguK3guKHguILguLbguYnguJnguJfguLDguYDguJrguLXguKLguJnguYLguJTguKPguJk!5e0!3m2!1sth!2sth!4v1702540459595!5m2!1sth!2sth">
             </iframe> --}}
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d552.6940361662431!2d102.85845543226012!3d16.424057638851004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228bd08e1f92a3%3A0x54941db8580c4b1a!2z4LmC4Lij4LiH4LmA4Lij4Li14Lii4LiZ4Liq4Lit4LiZ4LiC4Lix4Lia4Lij4LiWIElEIERyaXZlciDguKrguLLguILguLLguILguK3guJnguYHguIHguYjguJkg4Liq4Liz4LiZ4Lix4LiB4LiH4Liy4LiZ4LmD4Lir4LiN4LmIIOC5guC4meC4meC4l-C4seC4mQ!5e0!3m2!1sen!2sth!4v1728633479615!5m2!1sen!2sth"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3826.802361079415!2d102.82182207514373!3d16.43486098429892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDI2JzA1LjUiTiAxMDLCsDQ5JzI3LjgiRQ!5e0!3m2!1sen!2sth!4v1728635948003!5m2!1sen!2sth"
                 width="100%" height="100%" class="absolute inset-0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
             <div class="bg-white relative invisible md:visible flex flex-wrap py-6 rounded shadow-md">
