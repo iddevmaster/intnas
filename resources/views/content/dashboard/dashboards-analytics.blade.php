@@ -53,7 +53,7 @@
                 @endphp
                 <span class="fw-semibold d-block mb-1">ผู้เข้าชมเดือนนี้</span>
                 <h3 class="card-title mb-2">{{ number_format($visitor_this_month, 0, ',', ',') }}</h3>
-                <small class="text-success fw-semibold"><i class='bx bx-up-arrow-alt'></i>{{ round($visitor_this_month * 100 / $last_visitor->id, 2) }}</small>
+                <small class="text-success fw-semibold"><i class='bx bx-up-arrow-alt'></i>{{ round($visitor_this_month * 100 / $last_visitor->id, 2) }}%</small>
             </div>
         </div>
         <div class="card flex-fill">
