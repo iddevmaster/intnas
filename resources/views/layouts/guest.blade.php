@@ -6,6 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'IDSS') }}</title>
+        <link rel="icon" href="/img/logoschool.jpg" />
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
