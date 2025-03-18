@@ -12,7 +12,11 @@
                     $bannersCollection = collect($banners);
                 @endphp
                 <!--First item-->
-                @if (count($banners ?? []) > 0)
+                <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-twe-carousel-item data-twe-carousel-active>
+                    <img src="/img/banners/banner-2.jpg" class="block w-full" alt="Wild Landscape" />
+                </div>
+                {{-- @if (count($banners ?? []) > 0)
                     <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                         data-twe-carousel-item data-twe-carousel-active>
                         <img src="{{ $banners[0] }}" class="block w-full" alt="Wild Landscape" />
@@ -28,7 +32,7 @@
                         data-twe-carousel-item data-twe-carousel-active>
                         <img src="/img/intBanner.jpg" class="block w-full" alt="Wild Landscape" />
                     </div>
-                @endif
+                @endif --}}
             </div>
 
             <!--Carousel controls - prev item-->
@@ -272,7 +276,7 @@
     <div id="download" class="basic-5">
         <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2">
             <div class="mb-16 lg:mb-0">
-                <img src="img/footer.jpg" alt="alternative" />
+                <img src="img/contact.jpg" alt="alternative" />
             </div>
             <div class="lg:mt-24 xl:mt-44 xl:ml-12">
                 <p class="mb-9 text-gray-800 text-2xl leading-10">
